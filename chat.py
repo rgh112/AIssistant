@@ -3,11 +3,12 @@ from flask import Flask, render_template, request, jsonify
 
 import openai
 from flask_cors import CORS
-import os
 from dotenv import load_dotenv
-
+import os
 from googleapiclient.discovery import build
-load_dotenv()
+
+
+load_dotenv("./.env")
 
 app = Flask(__name__)
 CORS(app, resources={r"/ask": {"origins": "*"}})
@@ -77,6 +78,8 @@ def ask():
     except Exception as e:
         print(f"An exception occurred: {e}")
         return jsonify({"error": str(e)})
+
+print("API Key:", os.getenv("OPENAI_API_KEY"))
 
 
 # Run the Flask app
