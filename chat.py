@@ -7,14 +7,7 @@ import os
 from dotenv import load_dotenv
 
 from googleapiclient.discovery import build
-
-
 load_dotenv()
-
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-CSE_ID = os.getenv("CSE_ID")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
 
 app = Flask(__name__)
 CORS(app, resources={r"/ask": {"origins": "*"}})
@@ -26,7 +19,7 @@ def google_search(search_query, api_key, cse_id, **kwargs):
     return res['items']
 
 # Set the OpenAI API key
-openai.api_key = OPENAI_API_KEY
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Handle requests to the home page
 @app.route("/")
@@ -49,8 +42,8 @@ def ask():
         print(f"Received question: {question}")
 
         # Your Google API Key and CSE ID
-        my_api_key = GOOGLE_API_KEY
-        my_cse_id = CSE_ID
+        my_api_key = os.getenv("GOOGLE_API_KEY")
+        my_cse_id = os.getenv("CSE_ID")
 
         # If the question is a Google Search
         if question.startswith("Google Search: "):
