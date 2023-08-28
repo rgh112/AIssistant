@@ -1,0 +1,950 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.whole-translation-ijp {
+  width: 100%;
+  height: 83.2rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.whole-translation-ijp .rectangle-4117-caJ {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 74.6rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f8f7f6;
+  border-radius: 1.7rem;
+}
+.whole-translation-ijp .group-79-hLr {
+  width: 162.8rem;
+  height: 155.3444rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.whole-translation-ijp .group-79-hLr .expanddownlight-kpv {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 69.2625rem;
+  top: 1.8948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4116-GoG {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 23.1rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f8f7f6;
+  border-radius: 1.7rem;
+}
+.whole-translation-ijp .group-79-hLr .closeround-BQS {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 45.975rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .closeround-ubL {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 97.475rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .dux2009-SrA {
+  width: 7.4rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 32.1rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .note-1-wH8 {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 85.2rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .add-Sjg {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 53.4rem;
+  top: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .search-mGA {
+  width: 1.8667rem;
+  height: 1.8667rem;
+  position: absolute;
+  left: 14.9667rem;
+  top: 1.8667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .translate-3-tra {
+  width: 2.2917rem;
+  height: 2.2917rem;
+  position: absolute;
+  left: 18.6042rem;
+  top: 1.6042rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .expanddownlight-Dtr {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 8.7875rem;
+  top: 2.0552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .item-2023-05-03-959-3-k86 {
+  width: 51.8rem;
+  height: 71.7rem;
+  position: absolute;
+  left: 11.5rem;
+  top: 10.5rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .vector-271-cRC {
+  width: 1rem;
+  height: 0;
+  position: absolute;
+  left: 32rem;
+  top: 7.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .item-515-wiN {
+  width: 3.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 37.7rem;
+  top: 6.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .ellipse-70-FDG {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 34.3rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.whole-translation-ijp .group-79-hLr .highlighter-4-kfp {
+  width: 2.5259rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 18.5rem;
+  top: 5.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .format-textbox-3-Uri {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 25.6rem;
+  top: 5.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .line-5-DJW {
+  width: 6.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 37.4rem;
+  top: 8.2rem;
+  background-color: #918f8f;
+}
+.whole-translation-ijp .group-79-hLr .mouse-pointer-3-wVQ {
+  width: 1.7618rem;
+  height: 2.4221rem;
+  position: absolute;
+  left: 15rem;
+  top: 5.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .ellipse-71-gC6 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 31.6rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4120-PcJ {
+  width: 60.7rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 6.5rem;
+  top: 0;
+  background-color: #ffffff;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4128-w82 {
+  width: 60.8rem;
+  height: 9.3rem;
+  position: absolute;
+  left: 67.2rem;
+  top: 0;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4121-HSn {
+  width: 60.7rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 67.2rem;
+  top: 0;
+  background-color: #ffffff;
+}
+.whole-translation-ijp .group-79-hLr .item-2023-05-03-959-4-DLS {
+  width: 106.6rem;
+  height: 147.6rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4123-H5Q {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 74.6rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 1.7rem;
+}
+.whole-translation-ijp .group-79-hLr .expanddownlight-nH4 {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 69.2625rem;
+  top: 1.8948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4122-usU {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 23.1rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 1.7rem;
+}
+.whole-translation-ijp .group-79-hLr .closeround-pjY {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 45.975rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .closeround-MzN {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 97.475rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4128-J8v {
+  width: 60.7rem;
+  height: 4rem;
+  position: absolute;
+  left: 6.5rem;
+  top: 5.2rem;
+  background-color: #f5f5f5;
+}
+.whole-translation-ijp .group-79-hLr .the-attention-blink--psx {
+  width: 15.4rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 28.3rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4113-jV8 {
+  width: 6.5rem;
+  height: 83.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+}
+.whole-translation-ijp .group-79-hLr .note-1-4nJ {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 85.2rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .vuesax-linear-setting-2-nCW {
+  width: 3.8rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 1.6rem;
+  top: 71.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .add-uH8 {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 53.4rem;
+  top: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .search-RFU {
+  width: 1.8667rem;
+  height: 1.8667rem;
+  position: absolute;
+  left: 14.9667rem;
+  top: 1.8667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .translate-4-m4S {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 18.5rem;
+  top: 1.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .expanddownlight-tuk {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 8.7875rem;
+  top: 2.0552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .vector-272-SAa {
+  width: 1rem;
+  height: 0;
+  position: absolute;
+  left: 32rem;
+  top: 7.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .item-515-ana {
+  width: 3.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 37.7rem;
+  top: 6.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .ellipse-72-toG {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 34.3rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.whole-translation-ijp .group-79-hLr .highlighter-5-o9Y {
+  width: 2.5259rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 18.5rem;
+  top: 5.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .format-textbox-4-8Si {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 25.6rem;
+  top: 5.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .line-6-4bG {
+  width: 6.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 37.4rem;
+  top: 8.2rem;
+  background-color: #918f8f;
+}
+.whole-translation-ijp .group-79-hLr .mouse-pointer-4-br6 {
+  width: 1.7618rem;
+  height: 2.4221rem;
+  position: absolute;
+  left: 15rem;
+  top: 5.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .ellipse-73-wQA {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 31.6rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.whole-translation-ijp .group-79-hLr .group-78-2wQ {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 34.7rem;
+  top: 6.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .polygon-4-ZgS {
+  width: 0.8rem;
+  height: 0.7rem;
+  position: absolute;
+  left: 42.2rem;
+  top: 6.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.05rem;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4125-h1x {
+  width: 0.8rem;
+  height: 14.4rem;
+  position: absolute;
+  left: 65.9rem;
+  top: 9.7rem;
+  background-color: #918f8f;
+  border-radius: 1rem;
+}
+.whole-translation-ijp .group-79-hLr .filedockduotone-cPp {
+  width: 1.4583rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 50.9208rem;
+  top: 2.1125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4128-ihk {
+  width: 60.8rem;
+  height: 4rem;
+  position: absolute;
+  left: 67.2rem;
+  top: 5.2rem;
+  background-color: #f5f5f5;
+}
+.whole-translation-ijp .group-79-hLr .add-rJA {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 105.1rem;
+  top: 2.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .filedockduotone-mg2 {
+  width: 1.4583rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 102.6208rem;
+  top: 2.0125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .tutorial-Vrv {
+  width: 4.6rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 60.3rem;
+  top: 6.4rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .questionfill-p8W {
+  width: 1.425rem;
+  height: 1.425rem;
+  position: absolute;
+  left: 58.6375rem;
+  top: 6.4375rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .imgbox-YqC {
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  left: 22.25rem;
+  top: 6.05rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .rectangle-4126-tPG {
+  width: 60.5rem;
+  height: 74.3rem;
+  position: absolute;
+  left: 67.2rem;
+  top: 8.9rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+}
+.whole-translation-ijp .group-79-hLr .back-boU {
+  width: 2.2rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 80.9rem;
+  top: 6.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .vector-273-9KC {
+  width: 2.2rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 84.8rem;
+  top: 6.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .polygon-5-Guc {
+  width: 1.1rem;
+  height: 1rem;
+  position: absolute;
+  left: 98.1rem;
+  top: 7.5rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.1rem;
+}
+.whole-translation-ijp .group-79-hLr .heading-QF8 {
+  width: 6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 91.3rem;
+  top: 7.1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .meatballsmenu-6te {
+  width: 1.4rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 120.6rem;
+  top: 7.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .polygon-6-3J6 {
+  width: 1.1rem;
+  height: 1rem;
+  position: absolute;
+  left: 116.7rem;
+  top: 7.1rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.1rem;
+}
+.whole-translation-ijp .group-79-hLr .sortalfalight-aJ2 {
+  width: 1.45rem;
+  height: 2.0542rem;
+  position: absolute;
+  left: 115.025rem;
+  top: 6.5625rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .group-79-hLr .u-WSa {
+  width: 1.8rem;
+  height: 3rem;
+  position: absolute;
+  left: 111.5rem;
+  top: 6.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .i-dGJ {
+  width: 0.7rem;
+  height: 3rem;
+  position: absolute;
+  left: 108.9rem;
+  top: 6.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  font-style: italic;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .b-k62 {
+  width: 1.6rem;
+  height: 3rem;
+  position: absolute;
+  left: 105.4rem;
+  top: 6.3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .group-79-hLr .line-7-58J {
+  width: 0.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 88.7rem;
+  top: 6.9rem;
+  background-color: #bcbcbc;
+}
+.whole-translation-ijp .group-79-hLr .line-8-QgN {
+  width: 0.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 100.9rem;
+  top: 6.8rem;
+  background-color: #bcbcbc;
+}
+.whole-translation-ijp .group-79-hLr .group-90-YGn {
+  width: 4.7rem;
+  height: 78.1rem;
+  position: absolute;
+  left: 1.1rem;
+  top: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.whole-translation-ijp .group-79-hLr .group-90-YGn .user-4F8 {
+  margin: 0rem 0.1rem 2.4rem 0rem;
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.whole-translation-ijp .group-79-hLr .group-90-YGn .dashboard-nS2 {
+  margin: 0rem 0.3rem 0.3rem 0rem;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.whole-translation-ijp .group-79-hLr .group-90-YGn .dashboard-vHL {
+  margin-bottom: 1.4125rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.whole-translation-ijp .group-79-hLr .group-90-YGn .bookmarkfill-FqQ {
+  margin: 0rem 0.2rem 0.5rem 0rem;
+  width: 2.2rem;
+  height: 2.3879rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.whole-translation-ijp .group-79-hLr .group-90-YGn .contents-zHC {
+  margin-bottom: 58.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.whole-translation-ijp .group-79-hLr .group-90-YGn .logout-iyt {
+  margin-left: 0.1rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.whole-translation-ijp .group-79-hLr .ellipse-209-4H4 {
+  width: 7.2rem;
+  height: 7.2rem;
+  position: absolute;
+  left: 115.7rem;
+  top: 71.9rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 3.6rem;
+}
+.whole-translation-ijp .group-79-hLr .chatalt3duotone-xdL {
+  width: 3.0667rem;
+  height: 3.3264rem;
+  position: absolute;
+  left: 117.7667rem;
+  top: 73.9667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .rectangle-4169-HQi {
+  width: 138.8rem;
+  height: 93rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(21, 21, 21, 0.400000006);
+}
+.whole-translation-ijp .item-2023-05-27-331-1-R18 {
+  width: 4.7rem;
+  height: 4.3rem;
+  position: absolute;
+  left: 17.7rem;
+  top: 0.6rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 1rem;
+}
+.whole-translation-ijp .rectangle-4171-Uzz {
+  width: 5.4rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 17.3rem;
+  top: 0.2rem;
+  border: solid 0.1rem #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+.whole-translation-ijp .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8 {
+  width: 67.6rem;
+  height: 6.8rem;
+  position: absolute;
+  left: 17.7rem;
+  top: 7.2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.whole-translation-ijp .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8 .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8-sub-0 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.whole-translation-ijp .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8 .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8-sub-1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.whole-translation-ijp .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8 .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8-sub-2 {
+}
+.whole-translation-ijp .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8 .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8-sub-3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.whole-translation-ijp .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8 .whole-translation-can-translate-the-whole-thesis-in-to-a-selected-language-ao8-sub-4 {
+}
+.whole-translation-ijp .interactive-question-can-ask-questions-to-the-ai-t54 {
+  width: 33.4rem;
+  height: 6.8rem;
+  position: absolute;
+  left: 77.4rem;
+  top: 64.4rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.whole-translation-ijp .interactive-question-can-ask-questions-to-the-ai-t54 .interactive-question-can-ask-questions-to-the-ai-t54-sub-0 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.whole-translation-ijp .interactive-question-can-ask-questions-to-the-ai-t54 .interactive-question-can-ask-questions-to-the-ai-t54-sub-1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.whole-translation-ijp .interactive-question-can-ask-questions-to-the-ai-t54 .interactive-question-can-ask-questions-to-the-ai-t54-sub-2 {
+}
+.whole-translation-ijp .next--bNn {
+  width: 6.4rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 104.5rem;
+  top: 71.9rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.whole-translation-ijp .ellipse-210-5Yr {
+  width: 7.2rem;
+  height: 7.2rem;
+  position: absolute;
+  left: 115.7rem;
+  top: 71.9rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 3.6rem;
+}
+.whole-translation-ijp .chatalt3duotone-yu8 {
+  width: 3.0667rem;
+  height: 3.3264rem;
+  position: absolute;
+  left: 117.7667rem;
+  top: 73.9667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.whole-translation-ijp .ellipse-211-v3g {
+  width: 9.6rem;
+  height: 9.6rem;
+  position: absolute;
+  left: 114.5rem;
+  top: 70.8rem;
+  border: solid 0.1rem #ffffff;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 4.8rem;
+}
+.whole-translation-ijp .skip--RWE {
+  width: 6.2rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 111.4rem;
+  top: 9.7rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}

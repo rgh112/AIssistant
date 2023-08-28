@@ -1,0 +1,205 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.dictionary-4TQ {
+  width: 100%;
+  height: 83.2rem;
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/bg-NSr.png');
+  background-color: #ffffff;
+}
+.dictionary-4TQ .rectangle-4133-PVg {
+  width: 10.4rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 74rem;
+  top: 23rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.dictionary-4TQ .group-94-hmG {
+  box-sizing: border-box;
+  padding: 1.4rem 1.7rem 2.3rem 2.4rem;
+  width: 23.1rem;
+  height: 22.9rem;
+  position: absolute;
+  left: 73.5rem;
+  top: 25.8rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+}
+.dictionary-4TQ .group-94-hmG .auto-group-nzc6-nni {
+  margin-bottom: 1.6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.dictionary-4TQ .group-94-hmG .auto-group-nzc6-nni .from-selected-wQi {
+  margin-right: 5.2rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.dictionary-4TQ .group-94-hmG .auto-group-nzc6-nni .x-FwC {
+  margin-bottom: 0.6rem;
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.dictionary-4TQ .group-94-hmG .add-memo-zdt {
+  margin: 0rem 0rem 2.2rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.dictionary-4TQ .group-94-hmG .summarize-WML {
+  margin: 0rem 0rem 2.4rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.dictionary-4TQ .group-94-hmG .translate-E2S {
+  margin: 0rem 0rem 2.4rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.dictionary-4TQ .group-94-hmG .dictionary-9v6 {
+  margin-left: 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.dictionary-4TQ .rectangle-4169-3Vg {
+  width: 138.8rem;
+  height: 93rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(21, 21, 21, 0.400000006);
+}
+.dictionary-4TQ .rectangle-43-Nnr {
+  width: 23.1rem;
+  height: 5.85rem;
+  position: absolute;
+  left: 73.5rem;
+  top: 42.85rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+}
+.dictionary-4TQ .dictionary-HQ2 {
+  width: 8.4rem;
+  height: 2.1rem;
+  position: absolute;
+  left: 76.8rem;
+  top: 44.3rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.dictionary-4TQ .dictionary-can-look-up-thedefinition-of-a-word-atv {
+  width: 23.8rem;
+  height: 10.2rem;
+  position: absolute;
+  left: 99.4rem;
+  top: 43.4rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.dictionary-4TQ .dictionary-can-look-up-thedefinition-of-a-word-atv .dictionary-can-look-up-thedefinition-of-a-word-atv-sub-0 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.dictionary-4TQ .dictionary-can-look-up-thedefinition-of-a-word-atv .dictionary-can-look-up-thedefinition-of-a-word-atv-sub-1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.dictionary-4TQ .dictionary-can-look-up-thedefinition-of-a-word-atv .dictionary-can-look-up-thedefinition-of-a-word-atv-sub-2 {
+}
+.dictionary-4TQ .next--jok {
+  width: 6.4rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 116.8rem;
+  top: 54.2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.dictionary-4TQ .rectangle-4172-qrn {
+  width: 25.6rem;
+  height: 26.3rem;
+  position: absolute;
+  left: 72.3rem;
+  top: 23.8rem;
+  border: solid 0.1rem #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+.dictionary-4TQ .skip--Kmx {
+  width: 6.2rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 118.2rem;
+  top: 77.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}

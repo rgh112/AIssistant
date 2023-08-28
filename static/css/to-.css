@@ -1,0 +1,796 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.to--KcA {
+  width: 100%;
+  height: 83.2rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.to--KcA .item-2023-05-03-1131-2-e8e {
+  width: 105.8738rem;
+  height: 147.6rem;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 4.2rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL {
+  width: 128rem;
+  height: 83.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece {
+  box-sizing: border-box;
+  padding-top: 0.1rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-bgej-yq8 {
+  width: 6.5rem;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-bgej-yq8 .vuesax-linear-setting-2-j3c {
+  width: 3.8rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 1.6rem;
+  top: 71.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-bgej-yq8 .group-90-rP8 {
+  width: 4.7rem;
+  height: 78.1rem;
+  position: absolute;
+  left: 1.1rem;
+  top: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-bgej-yq8 .group-90-rP8 .user-mW6 {
+  margin: 0rem 0.1rem 2.4rem 0rem;
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-bgej-yq8 .group-90-rP8 .dashboard-UfQ {
+  margin: 0rem 0.3rem 0.3rem 0rem;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-bgej-yq8 .group-90-rP8 .dashboard-Qox {
+  margin-bottom: 1.4125rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-bgej-yq8 .group-90-rP8 .bookmarkfill-LBp {
+  margin: 0rem 0.2rem 0.5rem 0rem;
+  width: 2.2rem;
+  height: 2.3879rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-bgej-yq8 .group-90-rP8 .contents-TGS {
+  margin-bottom: 58.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-bgej-yq8 .group-90-rP8 .logout-abx {
+  margin-left: 0.1rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t {
+  width: 60.7rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 9.2rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .rectangle-4116-VVx {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 16.6rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f8f7f6;
+  border-radius: 1.7rem;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .closeround-Npe {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 39.475rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .dux2009-WR4 {
+  width: 7.4rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 25.6rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .add-QmL {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 46.9rem;
+  top: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .search-j2v {
+  width: 1.8667rem;
+  height: 1.8667rem;
+  position: absolute;
+  left: 8.4667rem;
+  top: 1.8667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .translate-3-G2r {
+  width: 2.2917rem;
+  height: 2.2917rem;
+  position: absolute;
+  left: 12.1042rem;
+  top: 1.6042rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .expanddownlight-zUe {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.2875rem;
+  top: 2.0552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .vector-271-L2i {
+  width: 1rem;
+  height: 0;
+  position: absolute;
+  left: 25.5rem;
+  top: 7.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .item-515-fqg {
+  width: 3.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 31.2rem;
+  top: 6.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .ellipse-70-mti {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 27.8rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .highlighter-4-gVt {
+  width: 2.5258rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 12rem;
+  top: 5.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .format-textbox-3-1HG {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 19.1rem;
+  top: 5.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .line-5-wRp {
+  width: 6.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 8.2rem;
+  background-color: #918f8f;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .mouse-pointer-3-Giz {
+  width: 1.7618rem;
+  height: 2.4221rem;
+  position: absolute;
+  left: 8.5rem;
+  top: 5.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .ellipse-71-zQ6 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 25.1rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .rectangle-4120-hZQ {
+  width: 60.7rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .rectangle-4122-3NN {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 16.6rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 1.7rem;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .closeround-9AW {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 39.475rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .rectangle-4128-Uia {
+  width: 60.7rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 5.2rem;
+  background-color: #f5f5f5;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .the-attention-blink--Dw4 {
+  width: 15.4rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 21.8rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .add-Xwk {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 46.9rem;
+  top: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .search-FMx {
+  width: 1.8667rem;
+  height: 1.8667rem;
+  position: absolute;
+  left: 8.4667rem;
+  top: 1.8667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .expanddownlight-nMt {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.2875rem;
+  top: 2.0552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .item-515-X4a {
+  width: 3.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 31.2rem;
+  top: 6.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .ellipse-72-dNW {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 27.8rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .highlighter-5-Xyg {
+  width: 2.5258rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 12rem;
+  top: 5.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .format-textbox-4-GgN {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 19.1rem;
+  top: 5.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .line-6-cES {
+  width: 6.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 8.2rem;
+  background-color: #918f8f;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .mouse-pointer-4-9VG {
+  width: 1.7618rem;
+  height: 2.4221rem;
+  position: absolute;
+  left: 8.5rem;
+  top: 5.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .group-114-HbU {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 25.1rem;
+  top: 6.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .group-78-QAJ {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 28.2rem;
+  top: 6.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .polygon-4-wR8 {
+  width: 0.8rem;
+  height: 0.7rem;
+  position: absolute;
+  left: 35.7rem;
+  top: 6.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.05rem;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .filedockduotone-4ke {
+  width: 1.4583rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 44.4208rem;
+  top: 2.1125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .tutorial-XPL {
+  width: 4.6rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 53.8rem;
+  top: 6.4rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .questionfill-q98 {
+  width: 1.425rem;
+  height: 1.425rem;
+  position: absolute;
+  left: 52.1375rem;
+  top: 6.4375rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .imgbox-ASJ {
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  left: 15.75rem;
+  top: 6.05rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .auto-group-xmu2-1an .item-2023-06-02-217-1-tt6 {
+  width: 2.7rem;
+  height: 2.7rem;
+  position: absolute;
+  left: 11.4rem;
+  top: 1.4rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-ntug-Ece .auto-group-svfu-z9t .rectangle-4125-YBx {
+  margin-right: 0.5rem;
+  width: 0.8rem;
+  height: 14.4rem;
+  background-color: #918f8f;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi {
+  width: 60.8rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .expanddownlight-MfC {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.0625rem;
+  top: 1.8948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .closeround-Uzi {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 30.275rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .note-1-DSW {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 18rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .rectangle-4128-KVY {
+  width: 60.8rem;
+  height: 9.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .rectangle-4121-rkN {
+  width: 60.7rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .rectangle-4123-bhx {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 7.4rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 1.7rem;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .expanddownlight-Wa2 {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.0625rem;
+  top: 1.8948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .closeround-eAS {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 30.275rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .note-1-yiW {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 18rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .rectangle-4128-6HL {
+  width: 60.8rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 5.2rem;
+  background-color: #f5f5f5;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .add-3Ca {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 37.9rem;
+  top: 2.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .filedockduotone-xaS {
+  width: 1.4583rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 35.4208rem;
+  top: 2.0125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .rectangle-4126-VqG {
+  width: 60.5rem;
+  height: 74.3rem;
+  position: absolute;
+  left: 0;
+  top: 8.9rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .polygon-5-pMk {
+  width: 1.1rem;
+  height: 1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 7.5rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.1rem;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .heading-xD4 {
+  width: 6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 24.1rem;
+  top: 7.1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .meatballsmenu-sav {
+  width: 1.4rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 53.4rem;
+  top: 7.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .polygon-6-DPt {
+  width: 1.1rem;
+  height: 1rem;
+  position: absolute;
+  left: 49.5rem;
+  top: 7.1rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.1rem;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .sortalfalight-MFC {
+  width: 1.45rem;
+  height: 2.0542rem;
+  position: absolute;
+  left: 47.825rem;
+  top: 6.5625rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .u-Uai {
+  width: 1.8rem;
+  height: 3rem;
+  position: absolute;
+  left: 44.3rem;
+  top: 6.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .i-zox {
+  width: 0.7rem;
+  height: 3rem;
+  position: absolute;
+  left: 41.7rem;
+  top: 6.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  font-style: italic;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .b-W1c {
+  width: 1.6rem;
+  height: 3rem;
+  position: absolute;
+  left: 38.2rem;
+  top: 6.3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .line-7-zhU {
+  width: 0.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 21.5rem;
+  top: 6.9rem;
+  background-color: #bcbcbc;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .line-8-XBc {
+  width: 0.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 33.7rem;
+  top: 6.8rem;
+  background-color: #bcbcbc;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .ellipse-209-SZU {
+  width: 7.2rem;
+  height: 7.2rem;
+  position: absolute;
+  left: 48.5rem;
+  top: 71.9rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 3.6rem;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .chatalt3duotone-Ler {
+  width: 3.0667rem;
+  height: 3.3264rem;
+  position: absolute;
+  left: 50.5667rem;
+  top: 73.9667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .back-fSE {
+  width: 2.2rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 13.7rem;
+  top: 6.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.to--KcA .group-79-6mL .auto-group-umzv-Tpi .vector-273-Pd8 {
+  width: 2.2rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 17.6rem;
+  top: 6.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}

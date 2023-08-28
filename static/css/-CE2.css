@@ -1,0 +1,22 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 29.7rem;
+}.item-2023-06-04-214-1-Kb4 {
+  width: 100%;
+  height: 32.2rem;
+  object-fit: cover;
+  vertical-align: top;
+}

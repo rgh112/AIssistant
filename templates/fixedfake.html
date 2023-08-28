@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>논문 읽는 화면 - 민제 건희야 이거 써야해 고친 버전</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Times+New+Roman%3A400%2C700"/>
+  <link rel="stylesheet" href="../static/css/-wDG.css"/>
+<style>
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 38%;
+    background-color: white; /* 흰색 배경 추가 */
+  }
+
+  .gray-line {
+    background-color: #f5f5f5;
+    height: 0.3rem;
+  }
+
+  .writing-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-color: #ffffff;
+  }
+
+  .chat-output {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+
+  .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #424040;
+  }
+
+  .chat-input input {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  .writing-area {
+    flex-grow: 1;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+  }
+
+  .user-message {
+    background-color: #F5F5F5; /* 회색으로 변경 */
+    color: black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .bot-message {
+    background-color: #D5E5F5; /* 답변의 배경색을 연한 파란색으로 변경 */
+    color: black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .chatbot-title {
+    text-align: center;
+    background-color: #ffffff;
+    color: #424040;
+    height: 20px;
+    font-family: Inter, 'Source Sans Pro';
+    font-size: 1.7rem;
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+  /* Submit 버튼 스타일 변경 */
+  #chat-submit {
+    background-color: #D5E5F5;
+    color: #424040;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* 팝업창에 대한 스타일 추가 */
+  .popup {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 1.4rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    height: 8rem;
+    left: 0;
+    padding: 2rem 2.3rem 2rem 2.3rem;
+    position: absolute;
+    top: 0;
+    width: 40rem;
+    font-size: 1.3rem;
+    font-family: 'Source Sans Pro';
+    /* Enable scrolling if the content exceeds the boundaries */
+    overflow: auto;
+  }
+
+  .translate-button {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .dropdown-menu {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 1.4rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    height: 22.9rem;
+    left: 61.5rem;
+    padding: 1.4rem 1.7rem 2.3rem 2.4rem;
+    position: absolute;
+    top: 31.4rem;
+    width: 23.1rem;
+  }
+
+
+  .dropdown-menu button {
+    display: block;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .dropdown-menu button:hover {
+    background-color: #ddd;
+  }
+
+  .sub-dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 2;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+
+  /* 제목 스타일 추가 */
+  .dropdown-menu .dropdown-title {
+    color: #4f4f4f;
+    flex-shrink: 0;
+    font-family: Inter, 'Source Sans Pro';
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2125;
+    margin-right: 5.2rem;
+    white-space: nowrap;
+  }
+
+    /* CSS 파일 */
+  .option-button {
+    color: #4f4f4f;
+    font-family: Inter, 'Source Sans Pro';
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.2125;
+    margin: 1rem 0rem 1rem 0rem;
+    white-space: nowrap;
+  }
+
+  /* CSS 파일 */
+  .language-button {
+    color: #4f4f4f;
+    font-family: Inter, 'Source Sans Pro';
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.2125;
+    margin: 1rem 0rem 1rem 0rem;
+    white-space: nowrap;
+  }
+
+  .popup_dropdown {
+  display: none;
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  height: 10.9rem;
+  left: 61.5rem;
+  padding: 1rem 1.7rem 1rem 2.4rem;
+  position: absolute;
+  top: 31.4rem;
+  width: 23.1rem;
+}
+
+.group-118-Eo8 {
+    background-color: #ffffff;
+    border-radius: 1.4rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 0.4rem;
+    padding: 2.6rem 2.3rem 5.9rem 3.3rem;
+    width: 42%;
+    height: 20%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+}
+.option-button {
+    display: block;
+    padding: 5px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+.google-search-popup {
+    position: absolute;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+}
+
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let lastMouseX = 0, lastMouseY = 0;
+
+    function clearSelectionAndClosePopups() {
+      window.getSelection().removeAllRanges();
+      dropdownMenu.style.display = 'none';
+    }
+
+    async function handleGoogleSearch(query) {
+      console.log("Handling Google Search for query:", query);
+      try {
+        // Make a server request here to get search results
+        // For demonstration, I'm setting a dummy result.
+        const searchResults = 'Dummy Google Search Results for query: ' + query;
+        
+        // Update the popup with search results
+        document.getElementById("google-search-results").textContent = searchResults;
+        
+        // Show the popup at the last mouse click position
+          googleSearchPopup.style.left = `${lastMouseX}px`;
+          googleSearchPopup.style.top = `${lastMouseY}px`;
+          googleSearchPopup.style.display = 'block';
+
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+
+    const dropdownMenu = document.createElement('div');
+    dropdownMenu.className = 'dropdown-menu';
+    document.body.appendChild(dropdownMenu);
+
+    const options = ['Google Search', 'Add memo'];
+    options.forEach(option => {
+      const button = document.createElement('button');
+      button.textContent = option;
+      button.classList.add('option-button');
+      dropdownMenu.appendChild(button);
+
+      button.addEventListener('click', function(event) {
+        event.stopPropagation();
+        dropdownMenu.style.display = 'none';
+        
+        if (option === 'Google Search') {
+          // 팝업 위치 설정
+          googleSearchPopup.style.left = `${dropdownPosition.x}px`;
+          googleSearchPopup.style.top = `${dropdownPosition.y}px`;
+
+          // 팝업 표시
+          googleSearchPopup.style.display = 'block';
+        }
+
+        if (option === 'Add memo') {
+            const highlightedText = window.getSelection().toString().trim();
+            const writingArea = document.querySelector('.writing-area');
+            if (writingArea && highlightedText) {
+              writingArea.value += highlightedText + "\n";
+            }
+            clearSelectionAndClosePopups();
+          }
+        
+        clearSelectionAndClosePopups();
+      });
+    });
+
+    let dropdownPosition = { x: 0, y: 0 };
+
+    document.addEventListener('mouseup', function(event) {
+      const selectedText = window.getSelection().toString().trim();
+      if (selectedText) {
+        dropdownMenu.style.display = 'block';
+        dropdownMenu.style.left = `${event.pageX}px`;
+        dropdownMenu.style.top = `${event.pageY}px`;
+
+        // Save the position
+        dropdownPosition.x = event.pageX;
+        dropdownPosition.y = event.pageY;
+      } else {
+        dropdownMenu.style.display = 'none';
+      }
+    });
+
+    const googleSearchPopup = document.getElementById("google-search-popup");
+    const googleSearchInput = document.getElementById("google-search-input");
+    const googleSearchForm = document.getElementById("google-search-form");
+
+    googleSearchForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const query = googleSearchInput.value;
+      handleGoogleSearch(query);
+    });
+
+    document.addEventListener('click', function(event) {
+      if (event.target.closest('.dropdown-menu') === null && event.target.closest('#google-search-popup') === null) {
+        //clearSelectionAndClosePopups();
+        googleSearchPopup.style.display = 'none';
+      }
+    });
+
+
+
+  });
+</script>
+</head>
+
+<body>
+<div class="item--fLA">
+  <div class="group-79-X7U">
+    <div class="auto-group-eydg-fUa">
+      <img class="vuesax-linear-setting-2-c8v" src="../static/assets/vuesax-linear-setting-2-QmU.png"/>
+      <div class="group-90-7bU">
+        <img class="vuesax-linear-profile-circle-co8" src="../static/assets/vuesax-linear-profile-circle-sGz.png"/>
+        <img class="dashboard-w4i" src="../static/assets/dashboard-cEr.png"/>
+        <p class="dashboard-ezi">Dashboard</p>
+        <img class="bookmarkfill-AiA" src="../static/assets/bookmarkfill-Cqt.png"/>
+        <p class="contents-gwQ">Contents</p>
+        <img class="logout-d5x" src="../static/assets/logout-V1Y.png"/>
+      </div>
+    </div>
+    <div class="auto-group-ufaw-KjU">
+      <div class="auto-group-ca6a-Gei">
+        <div class="auto-group-nmin-CoG">
+          <img class="closeround-JrJ" src="../static/assets/closeround-qwt.png"/>
+          <p class="add-Ejx">Add </p>
+          <img class="search-Lnz" src="../static/assets/search-NhL.png"/>
+          <img class="expanddownlight-sH8" src="../static/assets/expanddownlight-XRg.png"/>
+          <img class="vector-271-axE" src="REPLACE_IMAGE:161:493"/>
+          <p class="item-515-jKL">51.5%</p>
+          <div class="ellipse-70-2ZL">
+          </div>
+          <img class="highlighter-4-WUW" src="../static/assets/highlighter-4-s6n.png"/>
+          <img class="format-textbox-3-eKp" src="../static/assets/format-textbox-3-7kz.png"/>
+          <div class="line-5-B4r">
+          </div>
+          <img class="mouse-pointer-3-umY" src="../static/assets/mouse-pointer-3-eaz.png"/>
+          <div class="ellipse-71-ej8">
+          </div>
+          <div class="rectangle-4122-Z5Q">
+          </div>
+          <img class="closeround-4H4" src="../static/assets/closeround-Lwp.png"/>
+          <div class="rectangle-4128-C8N">
+          </div>
+          <p class="add-LEa">Add </p>
+          <img class="search-3ug" src="../static/assets/search-xd4.png"/>
+          <img class="expanddownlight-PTk" src="../static/assets/expanddownlight-m3U.png"/>
+          <p class="item-515-KMQ">51.5%</p>
+          <div class="ellipse-72-dN6">
+          </div>
+          <img class="format-textbox-4-YEA" src="../static/assets/format-textbox-4-fcA.png"/>
+          <div class="line-6-Udc">
+          </div>
+          <img class="mouse-pointer-4-pBg" src="../static/assets/mouse-pointer-4-74J.png"/>
+          <img class="group-78-YdU" src="../static/assets/group-78-ALE.png"/>
+          <img class="polygon-4-VHp" src="../static/assets/polygon-4-WAJ.png"/>
+          <img class="filedockduotone-ctE" src="../static/assets/filedockduotone-hKk.png"/>
+          <p class="tutorial-9dG">Tutorial</p>
+          <img class="questionfill-GSz" src="../static/assets/questionfill-Yg6.png"/>
+          <img class="imgbox-bEN" src="../static/assets/imgbox-wjL.png"/>
+          <p class="the-attention-blink--1ot">The Attention Blink:...</p>
+          <img class="vector-Wke" src="../static/assets/vector-9GS.png"/>
+          <img class="group-113-3En" src="../static/assets/group-113-peS.png"/>
+          <img class="item-2023-06-02-212-1-Nnr" src="../static/assets/-DBc.png"/>
+        </div>
+        <div class="auto-group-95mq-din">
+          <div class="auto-group-aybt-xWA">
+            <div class="item-2023-05-03-959-4-66a">
+            </div>
+            <div class="auto-group-jwlv-7XU">
+              <div class="group-97-3vv">
+                <div class="rectangle-4165-kqL">
+                </div>
+                <div class="rectangle-4166-HaN">
+                </div>
+                <p class="figure-1-standard-attentional-blink-ab-task-and-results-a-graphical-depiction-of-a-lag-3-trial-on-which-a-large-ab-deficit-is-typically-observed-in-a-standard-ab-task-in-this-task-subjects-are-required-to-search-for-two-letter-targets-target-1-t1-target-2-t2-among-digit-distractors-and-report-them-at-the-end-of-the-stream-typically-both-t1-serial-position-and-t1t2-lag-are-varied-across-trials-each-gray-frame-represents-the-presentation-of-a-stimulus-for-100-msec-b-characteristic-t1-and-t2-t1-t2-report-given-t1-correct-report-accuracy-as-a-function-of-t1t2-lag-RwU">    Figure 1. Standard attentional blink (AB) task and results. (A) Graphical depiction of a lag 3 trial (on which a large AB deficit is typically observed) in a standard AB task. In this task, subjects are required to search for two letter targets (Target 1, T1; Target 2, T2) among digit distractors and report them at the  end of the stream. Typically, both T1 serial position and T1–T2 lag are varied across trials. Each gray frame represents the presentation of a stimulus for 100 msec. (B) Characteristic T1 and T2 |T1 (T2 report given T1 correct) report accuracy as a function of T1–T2 lag.</p>
+                <p class="a-striking-characteristic-of-temporal-attention-is-that-even-with-rsvp-rates-of-up-to-approximately-16-items-sec-the-selection-and-encoding-of-a-single-target-is-quite-easy-lawrence-1971-found-that-at-this-presentation-rate-target-report-accuracy-was-approximately-70-with-rsvp-streams-of-words-that-contained-a-single-target-defined-either-featurally-uppercase-letters-as-opposed-to-lowercase-letters-or-categorically-animal-word-among-nonanimal-words-similarly-in-a-seminal-article-potter-1975-see-also-potter-faulconer-1975-thorpe-fize-marlot-1996-demonstrated-that-when-subjects-searched-rsvp-streams-of-scenes-8-items-sec-accuracy-was-comparable-whether-they-looked-for-a-particular-stimulus-that-they-had-seen-previously-or-one-that-had-simply-been-described-to-them-the-results-discussed-above-could-be-taken-to-suggest-that-target-processing-in-rsvp-is-complete-after-only-100-msec-however-it-can-be-shown-that-this-is-not-the-case-when-an-additional-target-is-added-to-an-rsvp-stream-in-fact-at-presentation-rates-of-approximately-100-msec-item-subjects-show-a-remarkable-deficit-in-reporting-the-second-t2-of-two-different-targets-presented-among-distractors-if-it-appears-within-approximately-200500-msec-of-the-first-target-t1-broadbent-broadbent-1987-raymond-et-al-1992-this-effect-is-the-ab-figure-1b-and-is-an-important-discovery-since-it-helps-characterize-the-limits-of-our-ability-to-consciously-perceive-stimuli-that-are-distributed-across-time-sergent-dehaene-2004-U2a">
+                    A striking characteristic of temporal attention is that, even with RSVP rates of up to approximately 16 items/sec, the selection and encoding of a single target is quite easy. Lawrence (1971) found that, at this presentation rate, target report accuracy was approximately 70% with RSVP streams of words that contained a single target defined either featurally (uppercase letters as opposed to lowercase letters) or categorically (animal word among nonanimal words). Similarly, in a seminal article, Potter (1975; see also Potter &amp; Faulconer, 1975; Thorpe, Fize, &amp; Marlot, 1996) demonstrated that, when subjects searched RSVP streams of scenes (8 items/sec), accuracy was comparable whether they looked for a particular stimulus that they had seen previously or one that had simply been described to them.
+                <br/>
+                    The results discussed above could be taken to suggest that target processing in RSVP is complete after only 100 msec. However, it can be shown that this is not the case when an additional target is added to an RSVP stream. In fact, at presentation rates of approximately 100 msec/item, subjects show a remarkable deficit in reporting the second (T2) of two different targets presented among distractors if it appears within approximately 200–500 msec of the first target (T1; Broadbent &amp; Broadbent, 1987; Raymond et al., 1992). This effect is the AB (Figure 1B) and is an important discovery, since it helps characterize the limits of our ability to consciously perceive stimuli that are distributed across time (Sergent &amp; Dehaene, 2004).
+                </p>
+                <p class="the-discovery-of-the-attentional-blink-rUN">The Discovery of the Attentional Blink</p>
+                <div class="item-2023-05-03-959-3-X4i">
+                </div>
+              </div>
+              <p class="tion-of-a-second-each-eg-100-msec-and-subjects-are-typically-required-either-to-report-all-the-items-presented-full-report-or-to-report-prespecified-target-items-and-ignore-the-remaining-distractor-stimuli-partial-report-the-basic-rationale-behind-rsvp-paradigms-is-that-by-stressing-the-temporal-processing-mechanisms-to-their-limit-researchers-are-able-to-assess-the-rate-at-which-information-is-analyzed-and-encoded-chun-wolfe-2001-coltheart-1999-8KQ">tion of a second each (e.g., 100 msec), and subjects are typically required either to report all the items presented (full report) or to report prespecified target item(s) and ignore the remaining distractor stimuli (partial report). The basic rationale behind RSVP paradigms is that, by stressing the temporal processing mechanisms to their limit, researchers are able to assess the rate at which information is analyzed and encoded (Chun &amp; Wolfe, 2001; Coltheart, 1999).</p>
+              <p class="broadbent-and-broadbent-1987-were-the-first-to-report-an-ab-when-they-presented-subjects-with-rsvp-streams-of-words-containing-two-targets-defined-by-either-category-or-letter-case-on-trials-on-which-t1-was-reported-correctly-t2-performance-was-impaired-if-it-appeared-up-to-half-a-second-after-t1-broadbent-and-broadbent-explained-this-result-by-proposing-that-although-early-perceptual-features-were-extracted-in-parallel-from-rsvp-streams-at-short-temporal-intervals-target-identification-processes-interfered-with-one-another-thereby-resulting-in-the-t2-deficit-a-similar-posttarget-processing-deficit-was-found-by-weichselgartner-and-sperling-1987-in-one-of-their-experiments-subjects-were-presented-with-rsvp-streams-of-digits-at-the-rate-of-100-msec-item-and-their-task-was-to-name-an-outlined-or-bright-digit-t1-and-then-the-three-stimuli-that-directly-followed-it-subjects-typically-reported-t1-the-subsequent-SDc">
+                 Broadbent and Broadbent (1987) were the first to report an AB when they presented subjects with RSVP streams of words containing two targets defined by either category or letter case. On trials on which T1 was reported correctly, T2 performance was impaired if it appeared up to half a second after T1. Broadbent and Broadbent explained this result by proposing that although early perceptual features were extracted in parallel from RSVP streams, at short temporal intervals target identification processes interfered with one another, thereby resulting in the T2 deficit.
+              <br/>
+                  A similar posttarget processing deficit was found by Weichselgartner and Sperling (1987). In one of their experiments, subjects were presented with RSVP streams of digits at the rate of 100 msec/item, and their task was to name an outlined or bright digit (T1) and then the three stimuli that directly followed it. Subjects typically reported T1, the subsequent
+              </p>
+            </div>
+          </div>
+          <div class="rectangle-4125-ace">
+          </div>
+        </div>
+      </div>
+      <div class="auto-group-ucyc-Vjc">
+        <img class="expanddownlight-bne" src="../static/assets/expanddownlight-5qg.png"/>
+        <img class="closeround-Jwx" src="../static/assets/closeround-e7Y.png"/>
+        <p class="note-1-27G">Note 1</p>
+        <div class="rectangle-4123-uRx">
+        </div>
+        <img class="expanddownlight-nke" src="../static/assets/expanddownlight-mbc.png"/>
+        <img class="closeround-uaN" src="../static/assets/closeround-Nyc.png"/>
+        <p class="note-1-phL">Note 1</p>
+        <div class="rectangle-4128-7gS">
+        </div>
+        <p class="add-Sii">Add </p>
+        <img class="filedockduotone-kUW" src="../static/assets/filedockduotone-8ge.png"/>
+        <div class="rectangle-4126-5mg">
+          <div class="writing-container">
+            <textarea class="writing-area" placeholder="Write your notes..."></textarea>
+          </div>
+          <div class="chatbot">
+            <h1 class="chatbot-title">Ask your Questions to AI</h1>
+          </div>
+          <div class="chat-container">
+            <div class="chat-output" id="chat-output"></div>
+            <div class="gray-line"></div>
+            <div class="chat-input">
+              <input type="text" id="chat-input" placeholder="Ask any questions..." />
+              <button id="chat-submit" onclick="onChatSubmit()">Submit</button>
+            </div>
+          </div>
+        </div>
+        <img class="polygon-5-oBt" src="../static/assets/polygon-5-TK4.png"/>
+        <p class="heading-7yG">Heading</p>
+        <img class="meatballsmenu-q8a" src="../static/assets/meatballsmenu-9N6.png"/>
+        <img class="polygon-6-mH8" src="../static/assets/polygon-6-1ok.png"/>
+        <img class="sortalfalight-t6r" src="../static/assets/sortalfalight-2jg.png"/>
+        <p class="u-RMg">U</p>
+        <p class="i-wav">I</p>
+        <p class="b-fmp">B</p>
+        <div class="line-7-bQa">
+        </div>
+        <div class="line-8-8vJ">
+        </div>
+        <img class="back-7nE" src="../static/assets/back-WpE.png"/>
+        <img class="vector-273-enA" src="../static/assets/vector-273-dug.png"/>
+        <div id="google-search-popup" class="google-search-popup">
+          <form id="google-search-form">
+            <input id="google-search-input" type="text" placeholder="Google Search" />
+            <button type="submit">Search</button>
+          </form>
+          <div id="google-search-results">
+            <!-- Search results will appear here -->
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</body>

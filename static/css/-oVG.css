@@ -1,0 +1,429 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.item--3Ya {
+  width: 100%;
+  height: 83.2rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.item--3Ya .group-79-L1t {
+  width: 102.4792rem;
+  height: 74rem;
+  position: absolute;
+  left: 1.6rem;
+  top: 1.2rem;
+}
+.item--3Ya .group-79-L1t .auto-group-heaj-2fQ {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 67.6625rem;
+  top: 0.6948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .group-79-L1t .auto-group-gwbc-jJv {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 21.5rem;
+  top: 0;
+}
+.item--3Ya .group-79-L1t .auto-group-gwbc-jJv .closeround-ewg {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 22.875rem;
+  top: 1.875rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .group-79-L1t .auto-group-gwbc-jJv .rectangle-4122-Zok {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 1.7rem;
+}
+.item--3Ya .group-79-L1t .auto-group-gwbc-jJv .closeround-4kW {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 22.875rem;
+  top: 1.875rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .group-79-L1t .auto-group-gwbc-jJv .the-attention-blink--oTC {
+  width: 15.4rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 5.2rem;
+  top: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--3Ya .group-79-L1t .auto-group-rnai-UZL {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 73rem;
+  top: 0;
+}
+.item--3Ya .group-79-L1t .auto-group-rnai-UZL .closeround-13U {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 22.875rem;
+  top: 1.875rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .group-79-L1t .auto-group-rnai-UZL .note-1-8dt {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 10.6rem;
+  top: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--3Ya .group-79-L1t .auto-group-rnai-UZL .rectangle-4123-r46 {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 1.7rem;
+}
+.item--3Ya .group-79-L1t .auto-group-rnai-UZL .closeround-xsp {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 22.875rem;
+  top: 1.875rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .group-79-L1t .auto-group-rnai-UZL .note-1-6UE {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 10.6rem;
+  top: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--3Ya .group-79-L1t .auto-group-gdaw-Qjp {
+  width: 1.8667rem;
+  height: 1.8667rem;
+  position: absolute;
+  left: 13.3667rem;
+  top: 0.6667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .group-79-L1t .auto-group-2jye-XpS {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 7.1875rem;
+  top: 0.8552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .group-79-L1t .auto-group-xdwn-GGE {
+  width: 5.1rem;
+  height: 56.3875rem;
+  position: absolute;
+  left: 0;
+  top: 17.6125rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.item--3Ya .group-79-L1t .auto-group-xdwn-GGE .bookmarkfill-bJW {
+  margin: 0rem 0rem 0.5rem 1rem;
+  width: 2.2rem;
+  height: 2.3879rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--3Ya .group-79-L1t .auto-group-xdwn-GGE .contents-upz {
+  margin: 0rem 0rem 48.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--3Ya .group-79-L1t .auto-group-xdwn-GGE .vuesax-linear-setting-2-2Pp {
+  margin-right: 1.3rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--3Ya .group-79-L1t .filedockduotone-kqc {
+  width: 1.4583rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 101.0208rem;
+  top: 0.8125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .group-79-L1t .item-2023-06-02-212-1-VYJ {
+  width: 2.8rem;
+  height: 2.7rem;
+  position: absolute;
+  left: 16.3rem;
+  top: 0.3rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.item--3Ya .group-79-L1t .filedockduotone-wv6 {
+  width: 1.4583rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 49.3208rem;
+  top: 1.0125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .rectangle-4128-GhU {
+  width: 128rem;
+  height: 81.1rem;
+  position: absolute;
+  left: 0;
+  top: 5.2rem;
+  background-color: #ffffff;
+}
+.item--3Ya .group-119-1QA {
+  width: 18.2rem;
+  height: 22.8rem;
+  position: absolute;
+  left: 77.6rem;
+  top: 20.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1199999973);
+  border-radius: 0.6rem;
+}
+.item--3Ya .group-119-1QA .rectangle-4141-MD8 {
+  width: 100%;
+  height: 22.8rem;
+  background-color: #e5f2ff;
+  border-radius: 0.6rem;
+}
+.item--3Ya .hci-ux-r9t {
+  width: 8.2rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 14.9rem;
+  top: 10.8rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--3Ya .group-124-m1x {
+  box-sizing: border-box;
+  padding: 1.019rem 1.121rem 1.121rem 1.019rem;
+  width: 5.4rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 7.8rem;
+  top: 9.5rem;
+  background-color: rgba(196, 217, 252, 0.5);
+  border-radius: 0.6rem;
+}
+.item--3Ya .group-124-m1x .vuesax-linear-folder-TvN {
+  width: 3.2604rem;
+  height: 3.2604rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .vuesax-linear-folder-ydp {
+  width: 20.9rem;
+  height: 20.9rem;
+  position: absolute;
+  left: 8.5rem;
+  top: 51.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .upload-v3G {
+  width: 8.5rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 15.1rem;
+  top: 45.7rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--3Ya .sacks2008-Rki {
+  width: 11.8rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 34.8rem;
+  top: 45.7rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--3Ya .scholl2012-wUA {
+  width: 11.6rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 57.3rem;
+  top: 45.7rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--3Ya .note-2-rLE {
+  width: 6.4rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 83.5rem;
+  top: 45.4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--3Ya .last-semester-NZU {
+  width: 13.6rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 12.2rem;
+  top: 73.1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--3Ya .sugita2006-5in {
+  width: 12.1rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 104.1rem;
+  top: 45.7rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--3Ya .rectangle-4174-QFG {
+  width: 17.6rem;
+  height: 22.7rem;
+  position: absolute;
+  left: 10rem;
+  top: 20.2rem;
+  border: dashed 0.1rem #1656c1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+}
+.item--3Ya .group-120-WJJ {
+  width: 3.0625rem;
+  height: 3.0625rem;
+  position: absolute;
+  left: 17.3rem;
+  top: 30.1rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .expanddownlight-3p2 {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 4.7875rem;
+  top: 11.4552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--3Ya .image-5-BfL {
+  width: 17.3rem;
+  height: 23.1rem;
+  position: absolute;
+  left: 32.5rem;
+  top: 20.2rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 0.8rem;
+}
+.item--3Ya .image-6-i9U {
+  width: 17.8rem;
+  height: 23.1rem;
+  position: absolute;
+  left: 55rem;
+  top: 20.2rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 0.8rem;
+}
+.item--3Ya .image-7-e38 {
+  width: 17.8rem;
+  height: 23rem;
+  position: absolute;
+  left: 101.2rem;
+  top: 20.2rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 0.8rem;
+}

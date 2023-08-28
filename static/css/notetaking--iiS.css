@@ -1,0 +1,1238 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.notetaking--eAr {
+  width: 100%;
+  height: 83.2rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.notetaking--eAr .rectangle-4117-MLA {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 74.6rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f8f7f6;
+  border-radius: 1.7rem;
+}
+.notetaking--eAr .group-79-3Cz {
+  width: 128rem;
+  height: 89.7444rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-swge-men {
+  width: 6.5rem;
+  height: 83.2rem;
+  position: relative;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-swge-men .vuesax-linear-setting-2-WcN {
+  width: 3.8rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 1.6rem;
+  top: 71.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-swge-men .group-90-2ai {
+  width: 4.7rem;
+  height: 78.1rem;
+  position: absolute;
+  left: 1.1rem;
+  top: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-swge-men .group-90-2ai .user-wxa {
+  margin: 0rem 0.1rem 2.4rem 0rem;
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-swge-men .group-90-2ai .dashboard-GEA {
+  margin: 0rem 0.3rem 0.3rem 0rem;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-swge-men .group-90-2ai .dashboard-AqL {
+  margin-bottom: 63.9rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-swge-men .group-90-2ai .logout-V6v {
+  margin-left: 0.1rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz {
+  width: 121.5rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .expanddownlight-Eii {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 62.7625rem;
+  top: 1.8948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .rectangle-4116-kwx {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 16.6rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f8f7f6;
+  border-radius: 1.7rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .closeround-Spn {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 39.475rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .closeround-ms4 {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 90.975rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .dux2009-W3x {
+  width: 7.4rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 25.6rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .note-1-CBg {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 78.7rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .add-hPL {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 46.9rem;
+  top: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .search-Dca {
+  width: 1.8667rem;
+  height: 1.8666rem;
+  position: absolute;
+  left: 8.4667rem;
+  top: 1.8667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .translate-3-MCz {
+  width: 2.2917rem;
+  height: 2.2917rem;
+  position: absolute;
+  left: 12.1042rem;
+  top: 1.6042rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .expanddownlight-fzN {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.2875rem;
+  top: 2.0552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .item-2023-05-03-959-3-cPp {
+  width: 51.8rem;
+  height: 71.7rem;
+  position: absolute;
+  left: 5rem;
+  top: 10.5rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .vector-271-US2 {
+  width: 1rem;
+  height: 0;
+  position: absolute;
+  left: 25.5rem;
+  top: 7.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .item-515-DeW {
+  width: 3.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 31.2rem;
+  top: 6.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .ellipse-70-XfC {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 27.8rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .highlighter-4-cwY {
+  width: 2.5259rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 12rem;
+  top: 5.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .format-textbox-3-wiv {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 19.1rem;
+  top: 5.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .line-5-5KL {
+  width: 6.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 8.2rem;
+  background-color: #918f8f;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .mouse-pointer-3-1Cz {
+  width: 1.7618rem;
+  height: 2.4221rem;
+  position: absolute;
+  left: 8.5rem;
+  top: 5.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .ellipse-71-Lm4 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 25.1rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .rectangle-4120-T4z {
+  width: 60.7rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .rectangle-4128-bgz {
+  width: 60.8rem;
+  height: 9.3rem;
+  position: absolute;
+  left: 60.7rem;
+  top: 0;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .rectangle-4121-vzA {
+  width: 60.7rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 60.7rem;
+  top: 0;
+  background-color: #ffffff;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .rectangle-4123-UEz {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 68.1rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 1.7rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .expanddownlight-B9Q {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 62.7625rem;
+  top: 1.8948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .rectangle-4122-6nA {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 16.6rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 1.7rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .closeround-D66 {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 39.475rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .closeround-MCJ {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 90.975rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .rectangle-4128-h1G {
+  width: 121.5rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 5.2rem;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .dux2009-p5t {
+  width: 7.4rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 25.6rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .note-1-Xkz {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 78.7rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .add-FBC {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 46.9rem;
+  top: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .search-9XU {
+  width: 1.8667rem;
+  height: 1.8666rem;
+  position: absolute;
+  left: 8.4667rem;
+  top: 1.8667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .translate-4-V5Y {
+  width: 2.2917rem;
+  height: 2.2917rem;
+  position: absolute;
+  left: 12.1042rem;
+  top: 1.6042rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .expanddownlight-1pa {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.2875rem;
+  top: 2.0552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .item-2023-05-03-959-4-Lbx {
+  width: 51.8rem;
+  height: 71.7rem;
+  position: absolute;
+  left: 5rem;
+  top: 10.5rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .vector-272-D9x {
+  width: 1rem;
+  height: 0;
+  position: absolute;
+  left: 25.5rem;
+  top: 7.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .item-515-x7Y {
+  width: 3.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 31.2rem;
+  top: 6.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .ellipse-72-Tpz {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 27.8rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .highlighter-5-man {
+  width: 2.5259rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 12rem;
+  top: 5.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .format-textbox-4-ugz {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 19.1rem;
+  top: 5.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .line-6-Swp {
+  width: 6.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 8.2rem;
+  background-color: #918f8f;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .mouse-pointer-4-mjC {
+  width: 1.7618rem;
+  height: 2.4221rem;
+  position: absolute;
+  left: 8.5rem;
+  top: 5.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .ellipse-73-h74 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 25.1rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-78-Q1U {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 28.2rem;
+  top: 6.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .polygon-4-Y7g {
+  width: 0.8rem;
+  height: 0.7rem;
+  position: absolute;
+  left: 35.7rem;
+  top: 6.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.05rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .rectangle-4125-U1L {
+  width: 0.8rem;
+  height: 14.4rem;
+  position: absolute;
+  left: 59.4rem;
+  top: 9.7rem;
+  background-color: #918f8f;
+  border-radius: 1rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .filedockduotone-bbk {
+  width: 1.4584rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 44.4208rem;
+  top: 2.1125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .add-w9p {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 98.6rem;
+  top: 2.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .filedockduotone-rXg {
+  width: 1.4584rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 96.1208rem;
+  top: 2.0125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .tutorial-ngE {
+  width: 4.6rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 53.8rem;
+  top: 6.4rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .questionfill-WML {
+  width: 1.425rem;
+  height: 1.425rem;
+  position: absolute;
+  left: 52.1375rem;
+  top: 6.4375rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .imgbox-Eo8 {
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  left: 15.75rem;
+  top: 6.05rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .back-BCa {
+  width: 2.2rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 66.1rem;
+  top: 6.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .vector-273-X1Y {
+  width: 2.2rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 70rem;
+  top: 6.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .polygon-5-rZc {
+  width: 1.1rem;
+  height: 1rem;
+  position: absolute;
+  left: 93.4rem;
+  top: 6.9rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.1rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .heading-BLz {
+  width: 6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 85.5rem;
+  top: 6.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .meatballsmenu-haE {
+  width: 1.4rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 114.1rem;
+  top: 6.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .polygon-6-SGv {
+  width: 1.1rem;
+  height: 1rem;
+  position: absolute;
+  left: 110.2rem;
+  top: 6.5rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.1rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .imgbox-aP8 {
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  left: 79.25rem;
+  top: 6.25rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .highlighter-6-hyY {
+  width: 2.5259rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 74.0678rem;
+  top: 5.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .sortalfalight-FEN {
+  width: 1.45rem;
+  height: 2.0542rem;
+  position: absolute;
+  left: 108.525rem;
+  top: 5.9625rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .u-anS {
+  width: 1.8rem;
+  height: 3rem;
+  position: absolute;
+  left: 104.7rem;
+  top: 5.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .i-WAJ {
+  width: 0.7rem;
+  height: 3rem;
+  position: absolute;
+  left: 101.5rem;
+  top: 5.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  font-style: italic;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .b-qCa {
+  width: 1.6rem;
+  height: 3rem;
+  position: absolute;
+  left: 98.3rem;
+  top: 5.7rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .line-7-9yx {
+  width: 0.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 83.6rem;
+  top: 6.3rem;
+  background-color: #bcbcbc;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .line-8-uCS {
+  width: 0.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 96.4rem;
+  top: 6.2rem;
+  background-color: #bcbcbc;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .vuesax-linear-arrow-square-right-FGJ {
+  width: 1.1rem;
+  height: 2rem;
+  position: absolute;
+  left: 51.4rem;
+  top: 18.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .hovering-sign-aJa {
+  width: 1.1rem;
+  height: 2rem;
+  position: absolute;
+  left: 51.6rem;
+  top: 54.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .item--he6 {
+  width: 21.1rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 29.9rem;
+  top: 18rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .item--he6 .rectangle-4145-RKC {
+  margin: 0rem 0rem 0.4rem 1rem;
+  width: 20.1rem;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .item--he6 .rectangle-4146-Lh4 {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .item--he6 .rectangle-4147-HcJ {
+  margin-bottom: 0.4rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .item--he6 .rectangle-4148-2pn {
+  width: 2.2rem;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-82-BSn {
+  width: 21.1rem;
+  height: 5.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 30.2rem;
+  top: 53.1rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-82-BSn .rectangle-4145-WEA {
+  margin: 0rem 0rem 0.4rem 7.1rem;
+  width: 14rem;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-82-BSn .rectangle-4146-3E6 {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-82-BSn .rectangle-4147-bFc {
+  margin-bottom: 0.4rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-82-BSn .rectangle-4148-92E {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-82-BSn .rectangle-4149-tkW {
+  margin-bottom: 0.3rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-82-BSn .rectangle-4150-dxz {
+  width: 2.6rem;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc {
+  width: 56.8rem;
+  height: 24.6rem;
+  position: absolute;
+  left: 62.7rem;
+  top: 11.8rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-d2a2-KL2 {
+  box-sizing: border-box;
+  padding: 1.1rem 3.016rem 1rem 3.1rem;
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.0500000007);
+  background-color: #f5f5f5;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-d2a2-KL2 .group-84-qpA {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-d2a2-KL2 .group-84-qpA .pg1684-Q6a {
+  margin-right: 42rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-d2a2-KL2 .group-84-qpA .group-83-w6W {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-d2a2-KL2 .group-84-qpA .group-83-w6W .item-2-Vti {
+  margin-right: 1rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-d2a2-KL2 .group-84-qpA .group-83-w6W .vuesax-linear-arrow-down-RXU {
+  margin-bottom: 0.1902rem;
+  width: 0.984rem;
+  height: 0.5098rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-8ibg-hUz {
+  box-sizing: border-box;
+  padding: 1.9rem 2.9rem 0rem 3.1rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-8ibg-hUz .auto-group-ptxv-2GN {
+  margin-bottom: 0.9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-8ibg-hUz .auto-group-ptxv-2GN .item-1-NLE {
+  margin-right: 43.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-8ibg-hUz .auto-group-ptxv-2GN .may-1-2023-hNW {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-8ibg-hUz .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-fringilla-augue-lorem-facilisis-porttitor-lorem-commodo-ut-fusce-nec-imperdiet-erat-nunc-sagittis-turpis-dictum-placerat-iaculis-ante-quam-luctus-mauris-eu-tincidunt-nulla-sem-sit-amet-mauris-dGA {
+  margin: 0rem 0.4rem 2.1rem 0rem;
+  max-width: 50.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-8ibg-hUz .auto-group-jpbg-d9g {
+  margin-bottom: 0.9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-8ibg-hUz .auto-group-jpbg-d9g .item-2-wgA {
+  margin-right: 43.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-8ibg-hUz .auto-group-jpbg-d9g .may-1-2023-g7x {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-85-Bjc .auto-group-8ibg-hUz .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-fringilla-augue-lorem-facilisis-porttitor-lorem-commodo-ut-zuL {
+  margin-right: 2.8rem;
+  max-width: 48rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .item-1-sTL {
+  width: 1.2rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 65.8rem;
+  top: 45.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-88-NQ6 {
+  width: 56.8rem;
+  height: 22.9rem;
+  position: absolute;
+  left: 62.7rem;
+  top: 39.3rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-88-NQ6 .auto-group-qnf8-5pJ {
+  margin-bottom: 2.2rem;
+  box-sizing: border-box;
+  padding: 1.1rem 3.016rem 1rem 3.1rem;
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.0500000007);
+  background-color: #f5f5f5;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-88-NQ6 .auto-group-qnf8-5pJ .group-84-zwG {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-88-NQ6 .auto-group-qnf8-5pJ .group-84-zwG .pg1685-k9k {
+  margin-right: 42.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-88-NQ6 .auto-group-qnf8-5pJ .group-84-zwG .group-83-gJJ {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-88-NQ6 .auto-group-qnf8-5pJ .group-84-zwG .group-83-gJJ .item-1-dzE {
+  margin-right: 1rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-88-NQ6 .auto-group-qnf8-5pJ .group-84-zwG .group-83-gJJ .vuesax-linear-arrow-down-xWi {
+  margin-bottom: 0.1902rem;
+  width: 0.984rem;
+  height: 0.5098rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-88-NQ6 .may-2-2023-RfC {
+  margin: 0rem 2.7rem 1.2rem 0rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-88-NQ6 .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-fringilla-augue-lorem-facilisis-porttitor-lorem-commodo-ut-fusce-nec-imperdiet-erat-nunc-sagittis-turpis-dictum-placerat-iaculis-ante-quam-luctus-mauris-eu-tincidunt-nulla-sem-sit-amet-mauris-YUv {
+  margin: 0rem 3.3rem 2.9rem 0rem;
+  max-width: 50.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-88-NQ6 .rectangle-4152-wmx {
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.0500000007);
+  background-color: #f5f5f5;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS {
+  width: 51rem;
+  height: 23.5rem;
+  position: absolute;
+  left: 65.8rem;
+  top: 59.3rem;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-e1rw-nXg {
+  box-sizing: border-box;
+  padding-bottom: 2.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-e1rw-nXg .group-84-XVG {
+  margin: 0rem 0.316rem 2.9rem 0rem;
+  width: calc(100% - 0.316rem);
+  height: 1.9rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-e1rw-nXg .group-84-XVG .pg1687-3Tc {
+  margin-right: 42.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-e1rw-nXg .group-84-XVG .group-83-BJv {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-e1rw-nXg .group-84-XVG .group-83-BJv .item-4-8jx {
+  margin-right: 1rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-e1rw-nXg .group-84-XVG .group-83-BJv .vuesax-linear-arrow-down-TnE {
+  margin-bottom: 0.1902rem;
+  width: 0.984rem;
+  height: 0.5098rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-e1rw-nXg .auto-group-e9jw-arr {
+  margin: 0rem 0.2rem 0.9rem 0rem;
+  width: calc(100% - 0.2rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-e1rw-nXg .auto-group-e9jw-arr .item-1-7bt {
+  margin-right: 43.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-e1rw-nXg .auto-group-e9jw-arr .may-1-2023-ebp {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-e1rw-nXg .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-fringilla-augue-lorem-facilisis-porttitor-lorem-commodo-ut-fusce-nec-imperdiet-erat-nunc-sagittis-turpis-dictum-placerat-iaculis-ante-quam-luctus-mauris-eu-tincidunt-nulla-sem-sit-amet-mauris-Bbk {
+  max-width: 50.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-pgpe-pei {
+  margin-bottom: 0.9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-pgpe-pei .item-2-mpr {
+  margin-right: 43.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .auto-group-pgpe-pei .may-3-2023-6s8 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .group-87-GJS .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-fringilla-augue-lorem-facilisis-porttitor-lorem-commodo-ut-2Vt {
+  max-width: 48rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+}
+.notetaking--eAr .group-79-3Cz .auto-group-cale-yGz .line-9-7ve {
+  width: 0.05rem;
+  height: 83.3rem;
+  position: absolute;
+  left: 60.7rem;
+  top: 0;
+  background-color: #b0b0b0;
+}

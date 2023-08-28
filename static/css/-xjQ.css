@@ -1,0 +1,245 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.item--iwG {
+  box-sizing: border-box;
+  padding: 23rem 11.1rem 11.1rem 61.8rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/bg-XHg.png');
+  background-color: #ffffff;
+}
+.item--iwG .rectangle-4133-R4z {
+  margin: 0rem 32.5rem 1.6rem 12.2rem;
+  width: calc(100% - 44.7rem);
+  height: 2.2rem;
+  background-color: rgba(22, 86, 193, 0.25);
+  flex-shrink: 0;
+}
+.item--iwG .group-118-XNv {
+  margin-bottom: 0.4rem;
+  box-sizing: border-box;
+  padding: 2.6rem 2.3rem 5.9rem 3.3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+  flex-shrink: 0;
+}
+.item--iwG .group-118-XNv .auto-group-ggwi-SEz {
+  margin-bottom: 0.3rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.item--iwG .group-118-XNv .auto-group-ggwi-SEz .featurally-arz {
+  margin-right: 33.6rem;
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 0.9259259259;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--iwG .group-118-XNv .auto-group-ggwi-SEz .checkringduotone-hgi {
+  margin-top: 0.2rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--iwG .group-118-XNv .eng-kor-pmL {
+  margin-bottom: 1.1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3888888889;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--iwG .group-118-XNv .group-81-9oc {
+  margin: 0rem 0rem 0.9rem 0.1rem;
+  width: 4.1rem;
+  height: 2.5rem;
+  position: relative;
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.item--iwG .group-118-XNv .group-81-9oc .item--4va {
+  width: 1.7rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 0.7rem;
+  top: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7857142857;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--iwG .group-118-XNv .group-81-9oc .rectangle-4142-xm4 {
+  width: 4.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+}
+.item--iwG .group-118-XNv .water-feature-an-interesting-feature-of-the-city-is-the-old-market--etn {
+  margin: 0rem 0rem 3.5rem 0.1rem;
+  max-width: 39.8rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.item--iwG .group-118-XNv .water-feature-an-interesting-feature-of-the-city-is-the-old-market--etn .water-feature-an-interesting-feature-of-the-city-is-the-old-market--etn-sub-0 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+}
+.item--iwG .group-118-XNv .water-feature-an-interesting-feature-of-the-city-is-the-old-market--etn .water-feature-an-interesting-feature-of-the-city-is-the-old-market--etn-sub-1 {
+}
+.item--iwG .group-118-XNv .auto-group-urjc-jBU {
+  width: 41.8rem;
+  height: 6.7rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.item--iwG .group-118-XNv .auto-group-urjc-jBU .olive-oil-and-garlic-feature-prominently-in-his-recipes--f58 {
+  width: 41.6rem;
+  height: 6rem;
+  position: absolute;
+  left: 0.2rem;
+  top: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+}
+.item--iwG .group-118-XNv .auto-group-urjc-jBU .olive-oil-and-garlic-feature-prominently-in-his-recipes--f58 .olive-oil-and-garlic-feature-prominently-in-his-recipes--f58-sub-0 {
+}
+.item--iwG .group-118-XNv .auto-group-urjc-jBU .olive-oil-and-garlic-feature-prominently-in-his-recipes--f58 .olive-oil-and-garlic-feature-prominently-in-his-recipes--f58-sub-1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+}
+.item--iwG .group-118-XNv .auto-group-urjc-jBU .olive-oil-and-garlic-feature-prominently-in-his-recipes--f58 .olive-oil-and-garlic-feature-prominently-in-his-recipes--f58-sub-2 {
+}
+.item--iwG .group-118-XNv .auto-group-urjc-jBU .group-80-JGW {
+  width: 4.1rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0.4rem;
+}
+.item--iwG .group-118-XNv .auto-group-urjc-jBU .group-80-JGW .item--FBk {
+  width: 1.7rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 0.7rem;
+  top: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7857142857;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--iwG .group-118-XNv .auto-group-urjc-jBU .group-80-JGW .rectangle-4143-xM4 {
+  width: 4.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+}
+.item--iwG .group-95-1KL {
+  margin-right: 32rem;
+  box-sizing: border-box;
+  padding: 1.2rem 1.2rem 2.5rem 3.3rem;
+  width: 23.1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+  flex-shrink: 0;
+}
+.item--iwG .group-95-1KL .auto-group-2q5l-uQi {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.item--iwG .group-95-1KL .auto-group-2q5l-uQi .add-to-note-rKx {
+  margin: 1.5rem 7rem 0rem 0rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--iwG .group-95-1KL .auto-group-2q5l-uQi .x-kRL {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--iwG .group-95-1KL .embed-to-file-HgA {
+  margin-right: 7.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

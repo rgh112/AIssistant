@@ -1,0 +1,25 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 65.6rem;
+}.add-to-note-embed-to-file--nnS {
+  width: 100%;
+  height: 7.3rem;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2125;
+  color: #ffe0e0;
+  font-family: Inter, 'Source Sans Pro';
+}

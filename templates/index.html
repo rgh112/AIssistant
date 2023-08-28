@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>논문 읽는 화면</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="../static/css/index.css"/>
+  <style>
+    .chat-container {
+      display: flex;
+      flex-direction: column;
+      height: 38%;
+      background-color: white; /* 흰색 배경 추가 */
+    }
+
+    .writing-container {
+      display: flex;
+      flex-direction: column;
+      height: 60%;
+      border-top: 1px solid #ccc;
+    }
+
+    .chat-output {
+      flex-grow: 1;
+      overflow-y: scroll;
+      padding: 10px;
+      background-color: #e9e9e9;
+    }
+
+    .chat-input {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      color: black;
+    }
+
+    .chat-input input {
+      flex-grow: 1;
+      margin-right: 10px;
+    }
+
+    .writing-area {
+      flex-grow: 1;
+      padding: 10px;
+    }
+
+    .user-message {
+      background-color: #F5F5F5; /* 회색으로 변경 */
+      color: black;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .bot-message {
+      background-color: #D5E5F5; /* 답변의 배경색을 연한 파란색으로 변경 */
+      color: black;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    
+    .chatbot-title {
+      text-align: center;      
+    }
+
+    /* Submit 버튼 스타일 변경 */
+    #chat-submit {
+      background-color: #D5E5F5;
+      color: black;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* 팝업창에 대한 스타일 추가 */
+    .popup {
+      display: none;
+      position: absolute;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      padding: 10px;
+      z-index: 1;
+    }
+
+    .translate-button {
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+
+  </style>
+
+  <script>
+    async function onChatSubmit() {
+      const inputField = document.getElementById("chat-input");
+      const outputDiv = document.getElementById("chat-output");
+      const question = inputField.value;
+  
+      // Clear the input field
+      inputField.value = "";
+  
+      if (question.trim() !== "") {
+        const response = await fetch("/ask", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: `question=${encodeURIComponent(question)}`,
+        });
+  
+        const data = await response.json();
+        const answer = data.answer;
+  
+        // Display the question and answer in the chat-output div
+        outputDiv.innerHTML += `
+          <div class="chat-message user-message"><strong>Q:</strong> ${question}</div>
+          <div class="chat-message bot-message"><strong>A:</strong> ${answer}</div>
+        `;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const popup = document.createElement('div');
+      const button = document.createElement('button');
+      button.textContent = 'Translate';
+      button.className = 'translate-button';
+
+      popup.className = 'popup';
+      document.body.appendChild(popup);
+      document.body.appendChild(button);
+
+      let selectedText = '';
+
+      document.addEventListener('mouseup', function(event) {
+        selectedText = window.getSelection().toString().trim();
+        if (selectedText) {
+          button.style.display = 'block';
+          button.style.left = `${event.pageX}px`;
+          button.style.top = `${event.pageY}px`;
+        } else {
+          button.style.display = 'none';
+        }
+      });
+
+      button.addEventListener('click', async function() {
+        // Call the translation API
+        const response = await fetch('/ask', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: `question=translate ${selectedText} in Korean`,
+        });
+        const data = await response.json();
+        const translatedText = data.answer;
+
+        popup.textContent = translatedText;
+        popup.style.display = 'block';
+        popup.style.left = button.style.left;
+        popup.style.top = button.style.top;
+
+        button.style.display = 'none';
+      });
+    });
+  </script>
+  
+</head>
+<body>
+<div class="item--SSJ">
+  <div class="auto-group-jdix-dWn">
+    <img class="user-Pnn" src="../static/assets/user.png"/>
+    <img class="dashboard-Vqp" src="../static/assets/dashboard-ZnE.png"/>
+    <p class="dashboard-D18">Dashboard</p>
+    <img class="bookmarkfill-6ai" src="../static/assets/bookmarkfill-mWW.png"/>
+    <p class="contents-cZ4">Contents</p>
+    <img class="vuesax-linear-setting-2-Vsk" src="../static/assets/vuesax-linear-setting-2.png"/>
+    <img class="logout-Mux" src="../static/assets/logout-G8n.png"/>
+  </div>
+  <div class="auto-group-qtmh-1jc">
+    <div class="auto-group-p5w5-khC">
+      <div class="rectangle-4-3gJ">
+      </div>
+      <div class="rectangle-4104-ZuY">
+      </div>
+      <img class="closeround-eg6" src="../static/assets/closeround-966.png"/>
+      <p class="dux2009-Zo4">Dux_2009</p>
+      <p class="add-oxJ">Add </p>
+      <img class="search-6wQ" src="../static/assets/search.png"/>
+      <img class="translate-1-2aA" src="../static/assets/translate-1-GXx.png"/>
+      <img class="expanddownlight-9en" src="../static/assets/expanddownlight-S94.png"/>
+      <div class="rectangle-7-4Wr">
+      </div>
+      <img class="vector-269-NnS" src="REPLACE_IMAGE:13:489"/>
+      <p class="item-515-v3G">51.5%</p>
+      <div class="ellipse-67-b9Q">
+      </div>
+      <img class="highlighter-1-ThQ" src="../static/assets/highlighter-1-Bee.png"/>
+      <img class="format-textbox-1-bYi" src="../static/assets/format-textbox-1-ZLr.png"/>
+      <div class="line-1-KzW">
+      </div>
+      <img class="mouse-pointer-1-dkJ" src="../static/assets/mouse-pointer-1-k2i.png"/>
+      <div class="ellipse-66-Z8A">
+      </div>
+      <img class="group-77-4Kp" src="../static/assets/group-77.png"/>
+      <img class="polygon-1-bae" src="../static/assets/polygon-1-JZc.png"/>
+      <img class="filedockduotone-VAE" src="../static/assets/filedockduotone.png"/>
+      <p class="tutorial-z6z">Tutorial</p>
+      <img class="questionfill-Hbt" src="../static/assets/questionfill-pxe.png"/>
+      <img class="imgbox-E1L" src="../static/assets/imgbox-U7p.png"/>
+    </div>
+    <div class="auto-group-9nyu-9e6">
+      <object data="/static/pdf/gpt understands too.pdf" type="application/pdf" width="100%" height="740px">
+        <p>PDF 파일을 볼 수 없습니다. <a href="/static/pdf/gpt understands too.pdf">여기</a>를 클릭하여 다운로드하세요.</p>
+    </object>      
+      <!--<div class="rectangle-92-iKp">
+      </div>-->
+    </div>
+  </div>
+  <div class="auto-group-casy-cvz">
+    <div class="rectangle-9-tdc">
+    </div>
+    <img class="expanddownlight-dbC" src="../static/assets/expanddownlight-Xiv.png"/>
+    <div class="rectangle-4105-ALE">
+    </div>
+    <img class="closeround-sVY" src="../static/assets/closeround-1G2.png"/>
+    <p class="note-1-otz">Note 1</p>
+    <p class="add-WoQ">Add </p>
+    <img class="filedockduotone-qKt" src="../static/assets/filedockduotone-cc6.png"/>
+    <div class="rectangle-5-Mp2">
+      <div class="writing-container">
+        <textarea class="writing-area" placeholder="Write your notes..."></textarea>
+      </div>
+      <div class="chatbot">
+        <h3 class="chatbot-title">Ask your Questions to AI</h3>
+      </div>
+      <div class="chat-container">
+        <div class="chat-output" id="chat-output"></div>
+        <div class="chat-input">
+          <input type="text" id="chat-input" placeholder="Give any questions..." />
+          <button id="chat-submit" onclick="onChatSubmit()">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="rectangle-4106-Saa">
+    </div>
+    <img class="back-MSe" src="../static/assets/back-4ZU.png"/>
+    <img class="vector-10-gzi" src="../static/assets/vector-10.png"/>
+    <img class="polygon-3-RhQ" src="../static/assets/polygon-3-VQz.png"/>
+    <p class="heading-Z2v">Heading</p>
+    <img class="meatballsmenu-4kN" src="../static/assets/meatballsmenu-6d4.png"/>
+    <img class="polygon-2-PGr" src="../static/assets/polygon-2-wuQ.png"/>
+    <img class="imgbox-uW6" src="../static/assets/imgbox.png"/>
+    <img class="highlighter-2-dS6" src="../static/assets/highlighter-2-neJ.png"/>
+    <img class="sortalfalight-iiS" src="../static/assets/sortalfalight-CGn.png"/>
+    <p class="u-rJr">U</p>
+    <p class="i-AaS">I</p>
+    <p class="b-fXC">B</p>
+    <div class="line-2-nbp">
+    </div>
+    <div class="line-3-vT8">
+    </div>
+  </div>
+</div>
+</body>
