@@ -4,14 +4,22 @@ from flask import Flask, render_template, request, jsonify
 import openai
 from flask_cors import CORS
 from dotenv import load_dotenv
+
 import os
 from googleapiclient.discovery import build
 
+# from google.cloud import translate_v2 as translate
 
 load_dotenv("./.env")
 
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./chiproject-397210-1961457205cc.json"
+
+# Initialize Google Translate client
+# translate_client = translate.Client()
+
 app = Flask(__name__)
-CORS(app, resources={r"/ask": {"origins": "*"}})
+# CORS(app, resources={r"/ask": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Initialize the Google Search API client
 def google_search(search_query, api_key, cse_id, **kwargs):
@@ -49,10 +57,22 @@ def ask():
         # If the question is a Google Search
         if question.startswith("Google Search: "):
             search_query = question[len("Google Search: "):]
+            
             # Google Search API 호출
             search_results = google_search(search_query, my_api_key, my_cse_id, num=5)
-            search_results_str = "\n".join([result["title"] for result in search_results])
-            return jsonify({"answer": search_results_str})
+            
+            # 새로운 로직: 검색 결과 포맷팅
+            formatted_results = []
+            for result in search_results:
+                formatted_result = {
+                    'title': result.get('title', ''),
+                    'link': result.get('link', ''),
+                    'snippet': result.get('snippet', ''),
+                    'thumbnail': result.get('pagemap', {}).get('cse_thumbnail', [{}])[0].get('src', '')
+                }
+                formatted_results.append(formatted_result)
+            
+            return jsonify({"answer": formatted_results})
 
         # Otherwise, handle as OpenAI API call
         else:
@@ -78,6 +98,28 @@ def ask():
     except Exception as e:
         print(f"An exception occurred: {e}")
         return jsonify({"error": str(e)})
+    
+# app.route("/translate", methods=["POST"])
+# def translate_text():
+#     try:
+#         # Get the text to be translated from the POST request
+#         text_to_translate = request.form["text"]
+#         print(f"Text to be translated: {text_to_translate}")  # 로그 출력
+
+
+#         # Perform translation
+#         result = translate_client.translate(text_to_translate, target_language='ko')
+
+#         # Extract translated text
+#         translated_text = result['translatedText']
+#         print(f"Translated text: {translated_text}")  # 로그 출력
+
+
+#         return jsonify({"translatedText": translated_text})
+#     except Exception as e:
+#         print(f"An exception occurred: {e}")
+#         return jsonify({"error": str(e)})
+
 
 print("API Key:", os.getenv("OPENAI_API_KEY"))
 

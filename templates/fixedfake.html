@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Times+New+Roman%3A400%2C700"/>
   <link rel="stylesheet" href="../static/css/-wDG.css"/>
+  <title>Text Selection Popup Example</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 <style>
   .chat-container {
     display: flex;
@@ -223,136 +226,354 @@
 }
 
 .dropdown-menu {
-    position: absolute;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    z-index: 1000;
-    display: none;
+  position: absolute;
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
 }
+
 .option-button {
-    display: block;
-    padding: 5px;
-    border: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }
+
 .google-search-popup {
-    position: absolute;
-    width: 300px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+  position: absolute;
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 300px;
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+.google-search-results {
+  padding: 10px;
+}
+
+.url-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
     z-index: 1000;
-    display: none;
+    border: 1px solid #ccc;
+    width: 420px;
+    height: 440px;
+    overflow: hidden;
+}
+
+.translate-popup {
+  display: none;
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  height: 21rem;
+  left: 61.5rem;
+  padding: 1.4rem 1.7rem 2.3rem 2.4rem;
+  position: absolute;
+  top: 31.4rem;
+  overflow: auto;
+  width: 23.1rem;
+}
+
+.summarize-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.popup-header {
+  background-color: #f1f1f1;
+  cursor: move;
+  z-index: 1001;
 }
 
 </style>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    let lastMouseX = 0, lastMouseY = 0;
 
-    function clearSelectionAndClosePopups() {
-      window.getSelection().removeAllRanges();
+<script>
+  function showURLPopup(url) {
+    const urlPopup = document.createElement('div');
+    urlPopup.className = 'url-popup';
+
+    const header = document.createElement('div');
+    header.className = 'popup-header';
+    header.innerText = 'URL Popup';
+    urlPopup.appendChild(header);
+
+    makeHeaderDraggable(header, urlPopup);
+
+    const iframe = document.createElement('iframe');
+    iframe.src = url;
+    iframe.style.width = '400px';
+    iframe.style.height = '400px';
+    urlPopup.appendChild(iframe);
+
+    const closeButton = document.createElement('button');
+    closeButton.textContent = "Close";
+    closeButton.addEventListener('click', function() {
+      urlPopup.remove();
+    });
+    urlPopup.appendChild(closeButton);
+    document.body.appendChild(urlPopup);
+  }
+
+
+  function makeHeaderDraggable(header, popupElement, iframeElement) {
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    // 투명한 레이어를 생성합니다.
+    const transparentLayer = document.createElement('div');
+    transparentLayer.style.position = 'absolute';
+    transparentLayer.style.top = '0';
+    transparentLayer.style.left = '0';
+    transparentLayer.style.right = '0';
+    transparentLayer.style.bottom = '0';
+    transparentLayer.style.zIndex = '9999';
+    transparentLayer.style.display = 'none';
+
+    // 레이어를 팝업에 추가합니다.
+    popupElement.appendChild(transparentLayer);
+
+    header.addEventListener('mousedown', function(event) {
+        isDragging = true;
+        offsetX = event.clientX - popupElement.getBoundingClientRect().left;
+        offsetY = event.clientY - popupElement.getBoundingClientRect().top;
+
+        // 투명한 레이어를 보이게 합니다.
+        transparentLayer.style.display = 'block';
+
+        document.addEventListener('mousemove', mouseMoveHandler);
+        document.addEventListener('mouseup', mouseUpHandler);
+    });
+
+    const mouseMoveHandler = function(event) {
+        if (isDragging) {
+            const x = event.clientX - offsetX;
+            const y = event.clientY - offsetY;
+            popupElement.style.left = x + 'px';
+            popupElement.style.top = y + 'px';
+        }
+    };
+
+    const mouseUpHandler = function() {
+        isDragging = false;
+
+        // 투명한 레이어를 다시 숨깁니다.
+        transparentLayer.style.display = 'none';
+
+        document.removeEventListener('mousemove', mouseMoveHandler);
+        document.removeEventListener('mouseup', mouseUpHandler);
+    };
+  }
+
+  // 이 부분은 문서가 로드된 후에 실행됩니다.
+  document.addEventListener('DOMContentLoaded', function() {
+  let lastMouseX = 0, lastMouseY = 0;
+
+  function clearSelectionAndClosePopups() {
+    window.getSelection().removeAllRanges();
+    dropdownMenu.style.display = 'none';
+  }
+
+  // 번역 팝업과 버튼을 생성
+  const translatePopup = document.createElement('div');
+  translatePopup.id = 'translate-popup';
+  translatePopup.className = 'translate-popup';
+  translatePopup.style.display = 'none';
+
+  // 번역된 텍스트를 표시할 요소
+  const translatedTextElement = document.createElement('p');
+  translatedTextElement.id = 'translated-text';
+  translatePopup.appendChild(translatedTextElement);
+
+
+  // Add Memo 팝업 생성
+  const addMemoPopup = document.createElement('div');
+  addMemoPopup.id = 'add-memo-popup';
+  addMemoPopup.className = 'popup';  // 스타일 적용
+  addMemoPopup.style.display = 'none';
+  document.body.appendChild(addMemoPopup);
+
+  document.body.appendChild(translatePopup);
+
+  // Add Memo 버튼 추가
+  const addMemoButton = document.createElement('button');
+  addMemoButton.textContent = 'Add Memo';
+  addMemoButton.className = 'option-button';  // 이 부분을 추가
+  addMemoButton.addEventListener('click', function() {
+    const writingArea = document.querySelector('.writing-area');
+    if (writingArea && translatedTextElement.textContent) {
+    writingArea.value += translatedTextElement.textContent + "\n";
+    }
+    translatePopup.style.display = 'none';
+  });
+  translatePopup.appendChild(addMemoButton);
+
+  // 번역 함수
+  async function handleTranslate(text) {
+  try {
+    const response = await fetch('http://ec2-3-38-64-51.ap-northeast-2.compute.amazonaws.com:8080/translate', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `text=${encodeURIComponent(text)}`
+    });
+
+    const data = await response.json();
+    if (data.translatedText) {
+      translatedTextElement.textContent = data.translatedText;
+      translatePopup.style.left = `${dropdownPosition.x}px`;
+      translatePopup.style.top = `${dropdownPosition.y + 30}px`;
+      translatePopup.style.display = 'block';
+    }
+  } catch (error) {
+    console.error('Translation Error:', error);
+  }
+}
+
+
+  async function handleGoogleSearch(query) {
+    try {
+        const response = await fetch('http://ec2-3-38-64-51.ap-northeast-2.compute.amazonaws.com:8080/ask', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `question=Google Search: ${query}`
+        });
+
+        const data = await response.json();
+        if (data.answer) {
+            let htmlContent = '';
+            data.answer.forEach((result, index) => {
+                htmlContent += `
+                    <div class="search-result">
+                        <a href="#" onclick="showURLPopup('${result.link}')" id="result-link-${index}">${result.title}</a>
+                        <p>${result.snippet}</p>
+                        ${result.thumbnail ? `<img src="${result.thumbnail}" alt="${result.title}">` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById("google-search-results").innerHTML = htmlContent;
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+  }
+
+  const dropdownMenu = document.createElement('div');
+  dropdownMenu.className = 'dropdown-menu';
+  document.body.appendChild(dropdownMenu);
+
+  const options = ['Translate', 'Summarize', 'RQ Generation', 'Add memo'];
+  options.forEach(option => {
+    const button = document.createElement('button');
+    button.textContent = option;
+    button.classList.add('option-button');
+    dropdownMenu.appendChild(button);
+
+    button.addEventListener('click', function(event) {
+      event.stopPropagation();
+      dropdownMenu.style.display = 'none';
+
+      const highlightedText = window.getSelection().toString().trim();
+
+      if (option === 'Translate') {
+        window.open('https://www.google.com', '_blank', 'width=600,height=500,top=100,left=100');
+      }
+
+      // Summarize 버튼을 눌렀을 때 동작
+      if (option === 'Summarize') {
+        window.open('https://www.google.com', '_blank', 'width=600,height=500,top=100,left=100');
+      }
+
+      
+      if (option === 'RQ Generation') {
+        window.open('https://www.google.com', '_blank', 'width=600,height=500,top=100,left=100');
+      }
+
+      if (option === 'Add memo') {
+        const highlightedText = window.getSelection().toString().trim();
+        const writingArea = document.querySelector('.writing-area');
+        if (writingArea && highlightedText) {
+          writingArea.value += highlightedText + "\n";
+        }
+        clearSelectionAndClosePopups();
+      }
+      
+     clearSelectionAndClosePopups();
+    });
+  });
+
+  let dropdownPosition = { x: 0, y: 0 };
+
+  document.addEventListener('mouseup', function(event) {
+    const selectedText = window.getSelection().toString().trim();
+    if (selectedText) {
+      dropdownMenu.style.display = 'block';
+      dropdownMenu.style.left = `${event.pageX}px`;
+      dropdownMenu.style.top = `${event.pageY}px`;
+
+      // Save the position
+      dropdownPosition.x = event.pageX;
+      dropdownPosition.y = event.pageY;
+    } else {
       dropdownMenu.style.display = 'none';
     }
-
-    async function handleGoogleSearch(query) {
-      console.log("Handling Google Search for query:", query);
-      try {
-        // Make a server request here to get search results
-        // For demonstration, I'm setting a dummy result.
-        const searchResults = 'Dummy Google Search Results for query: ' + query;
-        
-        // Update the popup with search results
-        document.getElementById("google-search-results").textContent = searchResults;
-        
-        // Show the popup at the last mouse click position
-          googleSearchPopup.style.left = `${lastMouseX}px`;
-          googleSearchPopup.style.top = `${lastMouseY}px`;
-          googleSearchPopup.style.display = 'block';
-
-      } catch (error) {
-        console.error('Error:', error);
-      }
-    }
-
-    const dropdownMenu = document.createElement('div');
-    dropdownMenu.className = 'dropdown-menu';
-    document.body.appendChild(dropdownMenu);
-
-    const options = ['Google Search', 'Add memo'];
-    options.forEach(option => {
-      const button = document.createElement('button');
-      button.textContent = option;
-      button.classList.add('option-button');
-      dropdownMenu.appendChild(button);
-
-      button.addEventListener('click', function(event) {
-        event.stopPropagation();
-        dropdownMenu.style.display = 'none';
-        
-        if (option === 'Google Search') {
-          // 팝업 위치 설정
-          googleSearchPopup.style.left = `${dropdownPosition.x}px`;
-          googleSearchPopup.style.top = `${dropdownPosition.y}px`;
-
-          // 팝업 표시
-          googleSearchPopup.style.display = 'block';
-        }
-
-        if (option === 'Add memo') {
-            const highlightedText = window.getSelection().toString().trim();
-            const writingArea = document.querySelector('.writing-area');
-            if (writingArea && highlightedText) {
-              writingArea.value += highlightedText + "\n";
-            }
-            clearSelectionAndClosePopups();
-          }
-        
-        clearSelectionAndClosePopups();
-      });
-    });
-
-    let dropdownPosition = { x: 0, y: 0 };
-
-    document.addEventListener('mouseup', function(event) {
-      const selectedText = window.getSelection().toString().trim();
-      if (selectedText) {
-        dropdownMenu.style.display = 'block';
-        dropdownMenu.style.left = `${event.pageX}px`;
-        dropdownMenu.style.top = `${event.pageY}px`;
-
-        // Save the position
-        dropdownPosition.x = event.pageX;
-        dropdownPosition.y = event.pageY;
-      } else {
-        dropdownMenu.style.display = 'none';
-      }
-    });
-
-    const googleSearchPopup = document.getElementById("google-search-popup");
-    const googleSearchInput = document.getElementById("google-search-input");
-    const googleSearchForm = document.getElementById("google-search-form");
-
-    googleSearchForm.addEventListener("submit", function(event) {
-      event.preventDefault();
-      const query = googleSearchInput.value;
-      handleGoogleSearch(query);
-    });
-
-    document.addEventListener('click', function(event) {
-      if (event.target.closest('.dropdown-menu') === null && event.target.closest('#google-search-popup') === null) {
-        //clearSelectionAndClosePopups();
-        googleSearchPopup.style.display = 'none';
-      }
-    });
-
-
-
   });
-</script>
-</head>
 
+ 
+  const googleSearchInput = document.getElementById("google-search-input");
+  const googleSearchForm = document.getElementById("google-search-form");
+
+  googleSearchForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const query = googleSearchInput.value;
+    handleGoogleSearch(query);
+  });
+
+  document.addEventListener('click', function(event) {
+    if (event.target.closest('.dropdown-menu') === null &&
+        event.target.closest('.google-search-popup') === null &&
+        event.target.closest('.translate-popup') === null &&
+        event.target.closest('.url-popup') === null) {  // url-popup 조건 추가
+      googleSearchPopup.style.display = 'none';
+      translatePopup.style.display = 'none';
+    }
+  });
+
+  // Google Search 팝업 생성 코드
+  const googleSearchPopup = document.getElementById("google-search-popup") || document.createElement('div');
+  googleSearchPopup.className = 'google-search-popup';  
+
+  const googleHeader = document.createElement('div');
+  googleHeader.className = 'popup-header';
+  googleHeader.innerText = 'Google Search Popup';
+  googleSearchPopup.appendChild(googleHeader);
+
+  makeHeaderDraggable(googleHeader, googleSearchPopup);
+  document.body.appendChild(googleSearchPopup);
+
+  makeHeaderDraggable(summarizeHeader, summarizePopup);
+
+  // ... 팝업 내용 등 ...
+
+  document.body.appendChild(summarizePopup);
+
+});
+</script>
+
+</head>
 <body>
 <div class="item--fLA">
   <div class="group-79-X7U">
@@ -483,19 +704,30 @@
         <div class="line-7-bQa">
         </div>
         <div class="line-8-8vJ">
-        </div>
-        <img class="back-7nE" src="../static/assets/back-WpE.png"/>
-        <img class="vector-273-enA" src="../static/assets/vector-273-dug.png"/>
-        <div id="google-search-popup" class="google-search-popup">
-          <form id="google-search-form">
-            <input id="google-search-input" type="text" placeholder="Google Search" />
-            <button type="submit">Search</button>
-          </form>
-          <div id="google-search-results">
-            <!-- Search results will appear here -->
-          </div>
-        </div>
-    </div>
+      </div>
+  </div>
+  <img class="back-7nE" src="../static/assets/back-WpE.png"/>
+  <img class="vector-273-enA" src="../static/assets/vector-273-dug.png"/>
+  <div class="content">
+    <p>Here is some text you can select.</p>
+    <p>When you select text, a dropdown will appear.</p>
+  </div>
+
+  <div id="dropdown-menu" class="dropdown-menu"></div>
+
+  <div id="google-search-popup" class="google-search-popup">
+    <form id="google-search-form">
+      <input type="text" id="google-search-input">
+      <button type="submit">Search</button>
+    </form>
+    <div id="google-search-results" class="google-search-results"></div>
+  </div>
+
+  <div id="translate-popup" style="display: none;">
+    <div id="translated-text"></div>
+    <button id="add-memo-button">Add Memo</button>
+  </div>  
+
   </div>
 </div>
 </body>

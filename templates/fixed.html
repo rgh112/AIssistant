@@ -227,7 +227,7 @@
   let selectedText = '';
 
   // 이 함수를 호출하면 선택한 텍스트가 해제되고 팝업과 드롭다운 메뉴가 닫힙니다.
-  function clearSelectionAndClosePopups() {
+  async function clearSelectionAndClosePopups() {
     window.getSelection().removeAllRanges(); // 하이라이트 해제
     dropdownMenu.style.display = 'none';
     subDropdownMenu.style.display = 'none';
@@ -295,7 +295,11 @@
       popup_dropdown.style.left = `${popup.getBoundingClientRect().left}px`;
       popup_dropdown.style.top = `${popup.getBoundingClientRect().bottom}px`;
 
-      dropdownMenu.style.display = 'none';
+       // 위치 재설정
+      subDropdownMenu.style.left = `${dropdownMenu.getBoundingClientRect().right}px`;
+      subDropdownMenu.style.top = `${dropdownMenu.getBoundingClientRect().top}px`;
+
+      //dropdownMenu.style.display = 'none';
 
       document.addEventListener('click', function() {
         popup.style.display = 'none';
@@ -354,7 +358,7 @@
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
           },
-          body: `question=explain this contexts in detail but very straightforward: ${highlightedText}`,
+          body: `question=Suggest possible research questions based on the following texts: ${highlightedText}`,
         });
 
         const data = await response.json();
@@ -383,86 +387,12 @@
 
         // Optionally, store the processed text if needed
         storeProcessedText(generatedExplanation);
-        clearSelectionAndClosePopups();
+       clearSelectionAndClosePopups();
 
       } catch (error) {
         console.error('Error generating explanations:', error);
       }
     }
-
-  //   function handleDictionary() {
-  //   // Clear previous content
-
-  //   const dictionaryPopup = document.createElement('div');
-  //   dictionaryPopup.classList.add('popup', 'group-118-Eo8');
-  //   document.body.appendChild(dictionaryPopup);
-
-  //   dictionaryPopup.innerHTML = `
-      
-  //       <div class="auto-group-ggwi-KZg" id="4u74TX7qhL6wNrTxj1GgWi">
-  //         <p class="featurally-err" id="17:2101" style="font-size: 20px;"><strong>Featurally</strong></p>
-  //       </div>
-  //       <br/>
-  //       <strong><p class="eng-kor-DHg" id="17:2105">ENG -&gt; KOR</p></strong>
-  //       <br/>
-  //       <div class="group-81-tei" id="17:2119">
-  //       <p class="item--CvJ" id="17:2115"><strong>명사</strong></p>
-  //       <div class="rectangle-4142-tYE" id="17:2113"></div>
-  //       </div>
-  //       <p class="water-feature-an-interesting-feature-of-the-city-is-the-old-market--Mwc" id="17:2106">
-  //       <span class="water-feature-an-interesting-feature-of-the-city-is-the-old-market--Mwc-sub-0">
-  //       1 특색, 특징, 특성 (→water feature)
-
-  //       <br/>
-  //       </span>
-  //       <span class="water-feature-an-interesting-feature-of-the-city-is-the-old-market--Mwc-sub-1">
-  //       An interesting feature of the city is the old market.
-
-  //       <br/>
-  //       그 도시의 재미있는 특색 중 하나가 재래시장이다.
-
-  //       </span>
-  //       </p>
-  //       <div class="auto-group-urjc-M6N" id="4u74YgduHnFGAT5BxjuRjC">
-  //       <p class="olive-oil-and-garlic-feature-prominently-in-his-recipes--5o4" id="17:2114">
-  //       <span class="olive-oil-and-garlic-feature-prominently-in-his-recipes--5o4-sub-0">
-  //       <br/>
-  //       </span>
-
-  //       <div class="group-80-fPt" id="17:2118">
-  //       <p class="item--mC2" id="17:2116"><strong>동사</strong></p>
-  //       <div class="rectangle-4143-fYJ" id="17:2117"></div>
-  //       <span class="olive-oil-and-garlic-feature-prominently-in-his-recipes--5o4-sub-1">
-  //       2 (~의) 특징을 이루다
-
-  //       <br/>
-  //       </span>
-  //       <span class="olive-oil-and-garlic-feature-prominently-in-his-recipes--5o4-sub-2">
-  //       Olive oil and garlic feature prominently in his recipes.
-  //       <br/>
-  //       그의 요리법에서는 올리브 오일과 마늘이 두드러진 특징을 이룬다.
-
-  //       </span>
-  //       </p>
-        
-  //       </div>
-  //       </div>
-      
-  //   `;
-  //   dictionaryPopup.style.display = 'block';
-  //   dictionaryPopup.style.left = dropdownMenu.style.left;
-  //   dictionaryPopup.style.top = dropdownMenu.style.top;
-  //   popup_dropdown.style.display = 'block';
-  //   popup_dropdown.style.left = `${dictionaryPopup.getBoundingClientRect().left}px`;
-  //   popup_dropdown.style.top = `${dictionaryPopup.getBoundingClientRect().bottom}px`;
-
-  //   dropdownMenu.style.display = 'none';
-  //   // Add an event listener to close the dictionaryPopup when clicked outside
-  //   document.addEventListener('click', function() {
-  //     dictionaryPopup.style.display = 'none';
-  //     popup_dropdown.style.display = 'none';
-  //   });
-  // }
 
     const popup = document.createElement('div');
     popup.className = 'popup';
@@ -511,7 +441,6 @@
       // Add CSS class
       button.classList.add('option-button');
       popup_dropdown.appendChild(button);
-      
       button.addEventListener('click', function(event) {
         event.stopPropagation();
         console.log(`Selected option: ${option}`);
@@ -541,9 +470,9 @@
 
 
 
-      dropdownMenu.appendChild(titleContainer);
+    dropdownMenu.appendChild(titleContainer);
 
-    const options = ['Add memo', 'Summarize', 'Translate', 'Explanation'];
+    const options = ['Add memo', 'Summarize', 'Translate', 'RQ Generation'];
     options.forEach(option => {
     const button = document.createElement('button');
     button.textContent = option;
@@ -570,13 +499,16 @@
           dropdownMenu.style.display = 'none';
           subDropdownMenu.style.display = 'none';
         }
-        if (option === 'Explanation') {
+        if (option === 'RQ Generation') {
           handleExplanation();
           console.log(`Selected option: ${option}`);
           dropdownMenu.style.display = 'none';
           subDropdownMenu.style.display = 'none';
         }
         if (option === 'Translate') {
+          const rect = dropdownMenu.getBoundingClientRect();
+          console.log('Dropdown Menu Rect:', rect);
+
           const languages = ['Korean', 'Chinese', 'Japanese', 'Spanish', 'German'];
           subDropdownMenu.innerHTML = '';
           languages.forEach(language => {
@@ -621,11 +553,11 @@
       }
     });
 
-    document.addEventListener('click', function() {
-      subDropdownMenu.style.display = 'none';
-    });
+    // document.addEventListener('click', function() {
+    //   subDropdownMenu.style.display = 'none';
+    // });
     
-        // Global variable to store the last processed text
+    // Global variable to store the last processed text
     let lastProcessedText = "";
 
     // Function to store the last processed text
