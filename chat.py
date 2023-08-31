@@ -43,6 +43,14 @@ def index():
 def fake():
     return render_template("fixedfake.html")
 
+@app.route("/fixed2.html")
+def fixed2():
+    return render_template("fixed2.html")
+
+@app.route("/fixedfake2.html")
+def fake2():
+    return render_template("fixedfake2.html")
+
 @app.route("/ask", methods=["POST"])
 def ask():
     try:
