@@ -295,11 +295,10 @@
       popup_dropdown.style.left = `${popup.getBoundingClientRect().left}px`;
       popup_dropdown.style.top = `${popup.getBoundingClientRect().bottom}px`;
 
-       // 위치 재설정
       subDropdownMenu.style.left = `${dropdownMenu.getBoundingClientRect().right}px`;
       subDropdownMenu.style.top = `${dropdownMenu.getBoundingClientRect().top}px`;
 
-      //dropdownMenu.style.display = 'none';
+      dropdownMenu.style.display = 'none';
 
       document.addEventListener('click', function() {
         popup.style.display = 'none';
@@ -441,6 +440,7 @@
       // Add CSS class
       button.classList.add('option-button');
       popup_dropdown.appendChild(button);
+
       button.addEventListener('click', function(event) {
         event.stopPropagation();
         console.log(`Selected option: ${option}`);
@@ -528,8 +528,7 @@
           });
 
           subDropdownMenu.style.display = 'block';
-          subDropdownMenu.style.left = `${dropdownMenu.getBoundingClientRect().right}px`;
-          subDropdownMenu.style.top = `${dropdownMenu.getBoundingClientRect().top}px`;
+
         } else {
           console.log(`Selected option: ${option}`);
         }
@@ -544,6 +543,9 @@
           dropdownMenu.style.left = `${event.pageX}px`;
           dropdownMenu.style.top = `${event.pageY}px`;
           subDropdownMenu.style.display = 'none';  // Ensure the sub-dropdown menu is closed
+          // 이벤트의 페이지 좌표를 사용하여 subDropdownMenu의 위치를 설정
+          subDropdownMenu.style.left = `${event.pageX}px`;
+          subDropdownMenu.style.top = `${event.pageY}px`;
         }
       } else {
         // If there's no selected text, close the menus and popup
@@ -553,9 +555,9 @@
       }
     });
 
-    // document.addEventListener('click', function() {
-    //   subDropdownMenu.style.display = 'none';
-    // });
+    document.addEventListener('click', function() {
+      subDropdownMenu.style.display = 'none';
+    });
     
     // Global variable to store the last processed text
     let lastProcessedText = "";
