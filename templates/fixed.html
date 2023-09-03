@@ -5,7 +5,7 @@
   <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <title>논문 읽는 화면 - 민제 건희야 이거 써야해 고친 버전</title>
+  <title>AIssitant</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Times+New+Roman%3A400%2C700"/>
@@ -317,7 +317,7 @@
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: `question=summarize this: ${selectedText}`,
+        body: `question=make it shorter by summarizing this:${selectedText}`,
       });
 
       const data = await response.json();
