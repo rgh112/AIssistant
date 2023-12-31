@@ -1,0 +1,1283 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.notetaking--o2W {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+.notetaking--o2W .auto-group-69dg-uLS {
+  box-sizing: border-box;
+  padding: 2rem 0.7rem 3.1rem 1.1rem;
+  width: 6.5rem;
+  height: 83.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+  flex-shrink: 0;
+}
+.notetaking--o2W .auto-group-69dg-uLS .group-91-pCW {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.notetaking--o2W .auto-group-69dg-uLS .group-91-pCW .user-ZA6 {
+  margin: 0rem 0.1rem 2.4rem 0rem;
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--o2W .auto-group-69dg-uLS .group-91-pCW .dashboard-fyp {
+  margin: 0rem 0.3rem 0.3rem 0rem;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--o2W .auto-group-69dg-uLS .group-91-pCW .dashboard-1Gz {
+  margin-bottom: 58.6rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .auto-group-69dg-uLS .group-91-pCW .vuesax-linear-setting-2-KoU {
+  margin: 0rem 0rem 1.5rem 0.5rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--o2W .auto-group-69dg-uLS .group-91-pCW .logout-3Dg {
+  margin-left: 0.1rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc {
+  margin-bottom: 0.1rem;
+  height: 83.2rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU {
+  margin-top: 0.1rem;
+  width: 60.7rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 9.2rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .rectangle-4114-K4i {
+  width: 60.7rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .rectangle-4116-TAv {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 16.6rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f8f7f6;
+  border-radius: 1.7rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .closeround-jeE {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 39.475rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .dux2009-Tq8 {
+  width: 7.4rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 25.6rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .add-yHg {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 46.9rem;
+  top: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .search-5bc {
+  width: 1.8667rem;
+  height: 1.8666rem;
+  position: absolute;
+  left: 8.4667rem;
+  top: 1.8667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .translate-3-R9g {
+  width: 2.2917rem;
+  height: 2.2917rem;
+  position: absolute;
+  left: 12.1042rem;
+  top: 1.6042rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .expanddownlight-9bU {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.2875rem;
+  top: 2.0552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .vector-271-5V8 {
+  width: 1rem;
+  height: 0;
+  position: absolute;
+  left: 25.5rem;
+  top: 7.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .item-515-R3C {
+  width: 3.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 31.2rem;
+  top: 6.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .ellipse-70-8CW {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 27.8rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .highlighter-4-2Yn {
+  width: 2.5259rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 12rem;
+  top: 5.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .format-textbox-3-MLA {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 19.1rem;
+  top: 5.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .line-5-5X4 {
+  width: 6.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 8.2rem;
+  background-color: #918f8f;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .mouse-pointer-3-1Qi {
+  width: 1.7618rem;
+  height: 2.4221rem;
+  position: absolute;
+  left: 8.5rem;
+  top: 5.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .ellipse-71-ipv {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 25.1rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .rectangle-4120-1p2 {
+  width: 60.7rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .rectangle-4122-LrJ {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 16.6rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f8f7f6;
+  border-radius: 1.7rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .closeround-3Vp {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 39.475rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .dux2009-AqL {
+  width: 7.4rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 25.6rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .add-U5L {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 46.9rem;
+  top: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .search-mq8 {
+  width: 1.8667rem;
+  height: 1.8666rem;
+  position: absolute;
+  left: 8.4667rem;
+  top: 1.8667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .translate-4-ter {
+  width: 2.2917rem;
+  height: 2.2917rem;
+  position: absolute;
+  left: 12.1042rem;
+  top: 1.6042rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .expanddownlight-cqk {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.2875rem;
+  top: 2.0552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .rectangle-4124-x8v {
+  width: 60.7rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 5.2rem;
+  background-color: #f5f5f5;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .vector-272-h6W {
+  width: 1rem;
+  height: 0;
+  position: absolute;
+  left: 25.5rem;
+  top: 7.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .item-515-2ea {
+  width: 3.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 31.2rem;
+  top: 6.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .ellipse-72-Ycv {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 27.8rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .highlighter-5-evr {
+  width: 2.5259rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 12rem;
+  top: 5.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .format-textbox-4-Bft {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 19.1rem;
+  top: 5.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .line-6-Wy4 {
+  width: 6.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 8.2rem;
+  background-color: #918f8f;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .mouse-pointer-4-r1L {
+  width: 1.7618rem;
+  height: 2.4221rem;
+  position: absolute;
+  left: 8.5rem;
+  top: 5.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .ellipse-73-nQn {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 25.1rem;
+  top: 6.4rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .group-78-VKC {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 28.2rem;
+  top: 6.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .polygon-4-Rie {
+  width: 0.8rem;
+  height: 0.7rem;
+  position: absolute;
+  left: 35.7rem;
+  top: 6.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.05rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .filedockduotone-YYN {
+  width: 1.4583rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 44.4208rem;
+  top: 2.1125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .tutorial-HF4 {
+  width: 4.6rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 53.8rem;
+  top: 6.4rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .questionfill-bWe {
+  width: 1.425rem;
+  height: 1.425rem;
+  position: absolute;
+  left: 52.1375rem;
+  top: 6.4375rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-ck8z-cRC .imgbox-j74 {
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  left: 15.75rem;
+  top: 6.05rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok {
+  margin: 0rem 0.5rem 0rem 5rem;
+  width: calc(100% - 5.5rem);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v {
+  margin: 0.8rem 2.6rem 0rem 0rem;
+  box-sizing: border-box;
+  padding: 7.5rem 4.1rem 23.4rem 24.9rem;
+  width: 51.8rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/bg-3Pc.png');
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-gkqe-GWJ {
+  margin: 0rem 0.2rem 31.3rem 0rem;
+  width: calc(100% - 0.2rem);
+  height: 3.8rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-gkqe-GWJ .item--PL2 {
+  margin-right: 0.4rem;
+  width: 21.1rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-gkqe-GWJ .item--PL2 .rectangle-4145-hbc {
+  margin: 0rem 0rem 0.4rem 1rem;
+  width: 20.1rem;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-gkqe-GWJ .item--PL2 .rectangle-4146-R1p {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-gkqe-GWJ .item--PL2 .rectangle-4147-xGe {
+  margin-bottom: 0.4rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-gkqe-GWJ .item--PL2 .rectangle-4148-uBt {
+  width: 2.2rem;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-gkqe-GWJ .vuesax-linear-arrow-square-right-efG {
+  margin-top: 0.4rem;
+  width: 1.1rem;
+  height: 2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-af6w-mzn {
+  margin-left: 0.3rem;
+  width: calc(100% - 0.3rem);
+  height: 5.7rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-af6w-mzn .group-82-WhU {
+  margin-right: 0.3rem;
+  width: 21.1rem;
+  height: 100%;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-af6w-mzn .group-82-WhU .rectangle-4145-FQA {
+  margin: 0rem 0rem 0.4rem 7.1rem;
+  width: 14rem;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-af6w-mzn .group-82-WhU .rectangle-4146-yqx {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-af6w-mzn .group-82-WhU .rectangle-4147-j4S {
+  margin-bottom: 0.4rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-af6w-mzn .group-82-WhU .rectangle-4148-gEa {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-af6w-mzn .group-82-WhU .rectangle-4149-Rxr {
+  margin-bottom: 0.3rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-af6w-mzn .group-82-WhU .rectangle-4150-Bh8 {
+  width: 2.6rem;
+  height: 0.7rem;
+  background-color: rgba(22, 86, 193, 0.1700000018);
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .auto-group-2qra-o6v .auto-group-af6w-mzn .hovering-sign-wAW {
+  margin-bottom: 0.9rem;
+  width: 1.1rem;
+  height: 2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-yuii-4uU .auto-group-uk4s-Tok .rectangle-4125-Qpn {
+  width: 0.8rem;
+  height: 14.4rem;
+  background-color: #918f8f;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x {
+  width: 60.8rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .rectangle-4115-THG {
+  width: 60.7rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .expanddownlight-Cke {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.0625rem;
+  top: 1.8948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .rectangle-4117-LM4 {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 7.4rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f8f7f6;
+  border-radius: 1.7rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .closeround-qoc {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 30.275rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .note-1-NoY {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 18rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .rectangle-4121-tmt {
+  width: 60.7rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .expanddownlight-3Pt {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.0625rem;
+  top: 1.8948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .rectangle-4123-AzJ {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 7.4rem;
+  top: 1.2rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f8f7f6;
+  border-radius: 1.7rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .closeround-t9c {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 30.275rem;
+  top: 3.075rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .note-1-cLW {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 18rem;
+  top: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .add-hcr {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 37.9rem;
+  top: 2.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .filedockduotone-1dY {
+  width: 1.4583rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 35.4208rem;
+  top: 2.0125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .rectangle-4126-8y4 {
+  width: 60.8rem;
+  height: 74.3rem;
+  position: absolute;
+  left: 0;
+  top: 8.8rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .rectangle-4127-r8N {
+  width: 60.8rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 5.2rem;
+  background-color: #f5f5f5;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .back-nXp {
+  width: 2.2rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 5.4rem;
+  top: 7.1rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .vector-273-KXk {
+  width: 2.2rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 9.3rem;
+  top: 7.1rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .polygon-5-FRQ {
+  width: 1.1rem;
+  height: 1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 7.5rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.1rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .heading-tjG {
+  width: 6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 24.1rem;
+  top: 7.1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .meatballsmenu-bNn {
+  width: 1.4rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 53.4rem;
+  top: 7.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .polygon-6-87p {
+  width: 1.1rem;
+  height: 1rem;
+  position: absolute;
+  left: 49.5rem;
+  top: 7.1rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.1rem;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .imgbox-r3p {
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  left: 17.5399rem;
+  top: 6.85rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .highlighter-6-B66 {
+  width: 2.5259rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 13.6rem;
+  top: 6.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .sortalfalight-JAi {
+  width: 1.45rem;
+  height: 2.0542rem;
+  position: absolute;
+  left: 47.825rem;
+  top: 6.5625rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .u-RWE {
+  width: 1.8rem;
+  height: 3rem;
+  position: absolute;
+  left: 44.3rem;
+  top: 6.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .i-8Qe {
+  width: 0.7rem;
+  height: 3rem;
+  position: absolute;
+  left: 41.7rem;
+  top: 6.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  font-style: italic;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .b-3Gi {
+  width: 1.6rem;
+  height: 3rem;
+  position: absolute;
+  left: 38.2rem;
+  top: 6.3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .line-7-mCi {
+  width: 0.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 21.5rem;
+  top: 6.9rem;
+  background-color: #bcbcbc;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .line-8-tYE {
+  width: 0.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 33.7rem;
+  top: 6.8rem;
+  background-color: #bcbcbc;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL {
+  width: 56.8rem;
+  height: 24.6rem;
+  position: absolute;
+  left: 2rem;
+  top: 11.8rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-t7ne-xnz {
+  box-sizing: border-box;
+  padding: 1.1rem 3.016rem 1rem 3.1rem;
+  width: 100%;
+  height: 4rem;
+  background-color: #d9d9d9;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-t7ne-xnz .group-84-sux {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-t7ne-xnz .group-84-sux .pg1684-SCN {
+  margin-right: 42rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-t7ne-xnz .group-84-sux .group-83-kyk {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-t7ne-xnz .group-84-sux .group-83-kyk .item-2-7ZQ {
+  margin-right: 1rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-t7ne-xnz .group-84-sux .group-83-kyk .vuesax-linear-arrow-down-oh8 {
+  margin-bottom: 0.1902rem;
+  width: 0.984rem;
+  height: 0.5098rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-u2gv-6w8 {
+  box-sizing: border-box;
+  padding: 1.9rem 2.9rem 0rem 3.1rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-u2gv-6w8 .auto-group-zmga-dRG {
+  margin-bottom: 0.9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-u2gv-6w8 .auto-group-zmga-dRG .item-1-abQ {
+  margin-right: 43.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-u2gv-6w8 .auto-group-zmga-dRG .may-1-2023-udg {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-u2gv-6w8 .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-fringilla-augue-lorem-facilisis-porttitor-lorem-commodo-ut-fusce-nec-imperdiet-erat-nunc-sagittis-turpis-dictum-placerat-iaculis-ante-quam-luctus-mauris-eu-tincidunt-nulla-sem-sit-amet-mauris-3E6 {
+  margin: 0rem 0.4rem 2.1rem 0rem;
+  max-width: 50.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-u2gv-6w8 .auto-group-jjlv-qQr {
+  margin-bottom: 0.9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-u2gv-6w8 .auto-group-jjlv-qQr .item-2-z2r {
+  margin-right: 43.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-u2gv-6w8 .auto-group-jjlv-qQr .may-1-2023-7dG {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-85-2uL .auto-group-u2gv-6w8 .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-fringilla-augue-lorem-facilisis-porttitor-lorem-commodo-ut-TBL {
+  margin-right: 2.8rem;
+  max-width: 48rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .item-1-vai {
+  width: 1.2rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 5.1rem;
+  top: 45.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-88-dEE {
+  width: 56.8rem;
+  height: 16rem;
+  position: absolute;
+  left: 2rem;
+  top: 39.3rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-88-dEE .auto-group-m7bt-Z7t {
+  margin-bottom: 2.2rem;
+  box-sizing: border-box;
+  padding: 1.1rem 3.016rem 1rem 3.1rem;
+  width: 100%;
+  height: 4rem;
+  background-color: #d9d9d9;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-88-dEE .auto-group-m7bt-Z7t .group-84-Tyx {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-88-dEE .auto-group-m7bt-Z7t .group-84-Tyx .pg1685-d7k {
+  margin-right: 42.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-88-dEE .auto-group-m7bt-Z7t .group-84-Tyx .group-83-Z1Q {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-88-dEE .auto-group-m7bt-Z7t .group-84-Tyx .group-83-Z1Q .item-1-uLA {
+  margin-right: 1rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-88-dEE .auto-group-m7bt-Z7t .group-84-Tyx .group-83-Z1Q .vuesax-linear-arrow-down-SL6 {
+  margin-bottom: 0.1902rem;
+  width: 0.984rem;
+  height: 0.5098rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-88-dEE .may-2-2023-LgN {
+  margin: 0rem 2.7rem 1.2rem 0rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-88-dEE .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-fringilla-augue-lorem-facilisis-porttitor-lorem-commodo-ut-fusce-nec-imperdiet-erat-nunc-sagittis-turpis-dictum-placerat-iaculis-ante-quam-luctus-mauris-eu-tincidunt-nulla-sem-sit-amet-mauris-eh4 {
+  margin-right: 3.3rem;
+  max-width: 50.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz {
+  width: 56.8rem;
+  height: 24.6rem;
+  position: absolute;
+  left: 2rem;
+  top: 58.2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-wgdc-1vv {
+  box-sizing: border-box;
+  padding: 1.1rem 3.016rem 1rem 3.1rem;
+  width: 100%;
+  height: 4rem;
+  background-color: #d9d9d9;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-wgdc-1vv .group-84-k7p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-wgdc-1vv .group-84-k7p .pg1687-6xN {
+  margin-right: 42.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-wgdc-1vv .group-84-k7p .group-83-3ci {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-wgdc-1vv .group-84-k7p .group-83-3ci .item-4-QiA {
+  margin-right: 1rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-wgdc-1vv .group-84-k7p .group-83-3ci .vuesax-linear-arrow-down-YpN {
+  margin-bottom: 0.1902rem;
+  width: 0.984rem;
+  height: 0.5098rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-abug-4ni {
+  box-sizing: border-box;
+  padding: 1.9rem 2.7rem 0rem 3.1rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-abug-4ni .auto-group-jztc-Ppz {
+  margin: 0rem 0.2rem 0.9rem 0rem;
+  width: calc(100% - 0.2rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-abug-4ni .auto-group-jztc-Ppz .item-1-8Gn {
+  margin-right: 43.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-abug-4ni .auto-group-jztc-Ppz .may-1-2023-fGi {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-abug-4ni .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-fringilla-augue-lorem-facilisis-porttitor-lorem-commodo-ut-fusce-nec-imperdiet-erat-nunc-sagittis-turpis-dictum-placerat-iaculis-ante-quam-luctus-mauris-eu-tincidunt-nulla-sem-sit-amet-mauris-bgA {
+  margin: 0rem 0.6rem 2.1rem 0rem;
+  max-width: 50.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-abug-4ni .auto-group-vgsq-1Uz {
+  margin-bottom: 0.9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-abug-4ni .auto-group-vgsq-1Uz .item-2-Mok {
+  margin-right: 43.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-abug-4ni .auto-group-vgsq-1Uz .may-3-2023-hMp {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.notetaking--o2W .group-79-iqc .auto-group-mpmc-k7x .group-87-Uvz .auto-group-abug-4ni .lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-sed-fringilla-augue-lorem-facilisis-porttitor-lorem-commodo-ut-qU2 {
+  margin-right: 3rem;
+  max-width: 48rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}

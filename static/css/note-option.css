@@ -1,0 +1,343 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.note-option-fq8 {
+  width: 100%;
+  height: 83.2rem;
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/bg-Ukn.png');
+  background-color: #ffffff;
+}
+.note-option-fq8 .rectangle-44-PFL {
+  width: 55.1rem;
+  height: 8.4rem;
+  position: absolute;
+  left: 61.6rem;
+  top: 32rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+}
+.note-option-fq8 .checkringduotone-gkE {
+  width: 2.8rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 111.6rem;
+  top: 34.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.note-option-fq8 .rectangle-4128-pLe {
+  width: 48.7rem;
+  height: 2.3rem;
+  position: absolute;
+  left: 67.4rem;
+  top: 15.5rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.note-option-fq8 .rectangle-4129-kEJ {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 18.1rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.note-option-fq8 .rectangle-4130-5nN {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 20.6rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.note-option-fq8 .rectangle-4131-RLS {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 23.2rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.note-option-fq8 .rectangle-4132-xLN {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 25.8rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.note-option-fq8 .rectangle-4133-6Sa {
+  width: 18.4rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 28.3rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.note-option-fq8 .group-93-dhQ {
+  box-sizing: border-box;
+  padding: 1.7rem 1.7rem 2.6rem 3.3rem;
+  width: 23.1rem;
+  height: 11.2rem;
+  position: absolute;
+  left: 61.6rem;
+  top: 40.9rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+}
+.note-option-fq8 .group-93-dhQ .auto-group-jzbl-jEe {
+  margin-bottom: 2.2rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.note-option-fq8 .group-93-dhQ .auto-group-jzbl-jEe .add-to-note-5ZQ {
+  margin: 0.5rem 7.5rem 0rem 0rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.note-option-fq8 .group-93-dhQ .auto-group-jzbl-jEe .x-nTp {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.note-option-fq8 .group-93-dhQ .embed-to-file-Qzz {
+  margin-right: 7.4rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.note-option-fq8 .target-report-accuracy-was-about-70-with-a-single-target-defined-7Pc {
+  width: 42.6rem;
+  height: 5rem;
+  position: absolute;
+  left: 64.9rem;
+  top: 33.3rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.4705882353;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+}
+.note-option-fq8 .rectangle-4169-ziJ {
+  width: 138.8rem;
+  height: 93rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(21, 21, 21, 0.400000006);
+}
+.note-option-fq8 .rectangle-4170-LXG {
+  width: 55.1rem;
+  height: 8.4rem;
+  position: absolute;
+  left: 61.6rem;
+  top: 32rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+}
+.note-option-fq8 .checkringduotone-F8S {
+  width: 2.8rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 111.6rem;
+  top: 34.8rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.note-option-fq8 .rectangle-43-BGz {
+  width: 23.1rem;
+  height: 11.2rem;
+  position: absolute;
+  left: 61.6rem;
+  top: 40.9rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+}
+.note-option-fq8 .x-5tA {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 82rem;
+  top: 42.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.note-option-fq8 .embed-to-file-EWA {
+  width: 10.7rem;
+  height: 2.1rem;
+  position: absolute;
+  left: 64.9rem;
+  top: 47.4rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.note-option-fq8 .add-to-note-8Le {
+  width: 9.6rem;
+  height: 2.1rem;
+  position: absolute;
+  left: 64.9rem;
+  top: 43.1rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.note-option-fq8 .target-report-accuracy-was-about-70-with-a-single-target-defined-qkr {
+  width: 42.6rem;
+  height: 5rem;
+  position: absolute;
+  left: 64.9rem;
+  top: 33.3rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.4705882353;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+}
+.note-option-fq8 .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U {
+  width: 32.2rem;
+  height: 13.6rem;
+  position: absolute;
+  left: 28.5rem;
+  top: 36.3rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.note-option-fq8 .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U-sub-0 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.note-option-fq8 .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U-sub-1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.note-option-fq8 .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U-sub-2 {
+}
+.note-option-fq8 .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U-sub-3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  text-decoration-line: underline;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.note-option-fq8 .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U .add-to-note-can-add-the-summarized-translated-part-definition-to-the-note-section-Y9U-sub-4 {
+}
+.note-option-fq8 .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna {
+  width: 32.2rem;
+  height: 13.6rem;
+  position: absolute;
+  left: 51.3rem;
+  top: 53.8rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.note-option-fq8 .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna-sub-0 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.note-option-fq8 .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna-sub-1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.note-option-fq8 .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna-sub-2 {
+}
+.note-option-fq8 .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna-sub-3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  text-decoration-line: underline;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.note-option-fq8 .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna .embed-to-file-can-add-the-summarized-translated-part-definition-to-the-thesis-itself-Sna-sub-4 {
+}
+.note-option-fq8 .next--eva {
+  width: 6.4rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 76.6rem;
+  top: 66.1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.note-option-fq8 .skip--WSz {
+  width: 6.2rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 118.2rem;
+  top: 77.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}

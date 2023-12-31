@@ -1,0 +1,853 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.item--fLA {
+  width: 170rem;
+  height: 83.2rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+.item--fLA .group-79-X7U {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.item--fLA .group-79-X7U .auto-group-eydg-fUa {
+  width: 6.5rem;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-eydg-fUa .vuesax-linear-setting-2-c8v {
+  width: 3.8rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 1.6rem;
+  top: 71.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-eydg-fUa .group-90-7bU {
+  width: 4.7rem;
+  height: 77.9rem;
+  position: absolute;
+  left: 1.1rem;
+  top: 2.2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.item--fLA .group-79-X7U .auto-group-eydg-fUa .group-90-7bU .vuesax-linear-profile-circle-co8 {
+  margin: 0rem 0.3rem 2.5rem 0rem;
+  width: 3.6rem;
+  height: 3.7rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-eydg-fUa .group-90-7bU .dashboard-w4i {
+  margin: 0rem 0.3rem 0.3rem 0rem;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-eydg-fUa .group-90-7bU .dashboard-ezi {
+  margin-bottom: 1.4125rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-eydg-fUa .group-90-7bU .bookmarkfill-AiA {
+  margin: 0rem 0.2rem 0.5rem 0rem;
+  width: 2.2rem;
+  height: 2.3879rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-eydg-fUa .group-90-7bU .contents-gwQ {
+  margin-bottom: 58.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-eydg-fUa .group-90-7bU .logout-d5x {
+  margin-left: 0.1rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU {
+  box-sizing: border-box;
+  padding-top: 1.2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei {
+  margin-bottom: 0rem;
+  width: 100rem;
+  height: 100%;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 8rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .closeround-JrJ {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 39.475rem;
+  top: 1.875rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .add-Ejx {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 46.9rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .search-Lnz {
+  width: 1.8667rem;
+  height: 1.8667rem;
+  position: absolute;
+  left: 8.4667rem;
+  top: 0.6667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .expanddownlight-sH8 {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.2875rem;
+  top: 0.8552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .vector-271-axE {
+  width: 1rem;
+  height: 0;
+  position: absolute;
+  left: 25.5rem;
+  top: 6.1rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .item-515-jKL {
+  width: 3.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 31.2rem;
+  top: 5.2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .ellipse-70-2ZL {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 27.8rem;
+  top: 5.2rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .highlighter-4-WUW {
+  width: 2.5259rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 12rem;
+  top: 4.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .format-textbox-3-eKp {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 19.1rem;
+  top: 4.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .line-5-B4r {
+  width: 6.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 7rem;
+  background-color: #918f8f;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .mouse-pointer-3-umY {
+  width: 1.7618rem;
+  height: 2.4221rem;
+  position: absolute;
+  left: 8.5rem;
+  top: 4.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .ellipse-71-ej8 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 25.1rem;
+  top: 5.2rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .rectangle-4122-Z5Q {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 16.6rem;
+  top: 0;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 1.7rem;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .closeround-4H4 {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 39.475rem;
+  top: 1.875rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .rectangle-4128-C8N {
+  width: 100rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  background-color: #f5f5f5;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .add-LEa {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 46.9rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .search-3ug {
+  width: 1.8667rem;
+  height: 1.8667rem;
+  position: absolute;
+  left: 8.4667rem;
+  top: 0.6667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .expanddownlight-PTk {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.2875rem;
+  top: 0.8552rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .item-515-KMQ {
+  width: 3.3rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 31.2rem;
+  top: 5.2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .ellipse-72-dN6 {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 27.8rem;
+  top: 5.2rem;
+  border: solid 0.1rem #5e5c5c;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.9rem;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .format-textbox-4-YEA {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 19.1rem;
+  top: 4.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .line-6-Udc {
+  width: 6.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 7rem;
+  background-color: #918f8f;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .mouse-pointer-4-pBg {
+  width: 1.7618rem;
+  height: 2.4221rem;
+  position: absolute;
+  left: 8.5rem;
+  top: 4.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .group-78-YdU {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 28.2rem;
+  top: 5.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .polygon-4-VHp {
+  width: 0.8rem;
+  height: 0.7rem;
+  position: absolute;
+  left: 35.7rem;
+  top: 5.6rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.05rem;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .filedockduotone-ctE {
+  width: 1.4583rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 44.4208rem;
+  top: 0.9125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .tutorial-9dG {
+  width: 4.6rem;
+  height: 1.6rem;
+  position: absolute;
+  left: 53.8rem;
+  top: 5.2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .questionfill-GSz {
+  width: 1.425rem;
+  height: 1.425rem;
+  position: absolute;
+  left: 52.1375rem;
+  top: 5.2375rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .imgbox-bEN {
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  left: 15.75rem;
+  top: 4.85rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .the-attention-blink--1ot {
+  width: 15.4rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 21.7rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .vector-Wke {
+  width: 2.5259rem;
+  height: 2.8259rem;
+  position: absolute;
+  left: 12rem;
+  top: 4.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .group-113-3En {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 25.1rem;
+  top: 5.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-nmin-CoG .item-2023-06-02-212-1-Nnr {
+  width: 2.8rem;
+  height: 2.7rem;
+  position: absolute;
+  left: 11.4rem;
+  top: 0.3rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din {
+  margin: 0rem 1rem 0rem 1rem;
+  width: calc(95%);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA {
+  margin: 4.3rem 4.6rem 0rem 0rem;
+  width: 46.9rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .item-2023-05-03-959-4-66a {
+  margin: 0rem 1.1rem 0.2rem 0rem;
+  width: 43rem;
+  height: 2.9rem;
+  position: relative;
+  background-size: 113.647% 2473.145%;
+  background-position: -1.7925rem -3.924rem;
+  background-image: url('../assets/-o3c.png');
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .auto-group-jwlv-7XU {
+  width: 100%;
+  height: 63.8rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .auto-group-jwlv-7XU .group-97-3vv {
+  width: 46.7rem;
+  height: 61.7rem;
+  position: absolute;
+  left: 0.2rem;
+  top: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .auto-group-jwlv-7XU .group-97-3vv .rectangle-4165-kqL {
+  width: 25rem;
+  height: 61.3rem;
+  position: absolute;
+  left: 21.7rem;
+  top: 0;
+  background-color: #ffffff;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .auto-group-jwlv-7XU .group-97-3vv .rectangle-4166-HaN {
+  width: 25rem;
+  height: 26.3rem;
+  position: absolute;
+  left: 0;
+  top: 35.4rem;
+  background-color: #ffffff;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .auto-group-jwlv-7XU .group-97-3vv .figure-1-standard-attentional-blink-ab-task-and-results-a-graphical-depiction-of-a-lag-3-trial-on-which-a-large-ab-deficit-is-typically-observed-in-a-standard-ab-task-in-this-task-subjects-are-required-to-search-for-two-letter-targets-target-1-t1-target-2-t2-among-digit-distractors-and-report-them-at-the-end-of-the-stream-typically-both-t1-serial-position-and-t1t2-lag-are-varied-across-trials-each-gray-frame-represents-the-presentation-of-a-stimulus-for-100-msec-b-characteristic-t1-and-t2-t1-t2-report-given-t1-correct-report-accuracy-as-a-function-of-t1t2-lag-RwU {
+  width: 20.9rem;
+  height: 13rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 34.9rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  font-family: Times New Roman, 'Source Sans Pro';
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .auto-group-jwlv-7XU .group-97-3vv .a-striking-characteristic-of-temporal-attention-is-that-even-with-rsvp-rates-of-up-to-approximately-16-items-sec-the-selection-and-encoding-of-a-single-target-is-quite-easy-lawrence-1971-found-that-at-this-presentation-rate-target-report-accuracy-was-approximately-70-with-rsvp-streams-of-words-that-contained-a-single-target-defined-either-featurally-uppercase-letters-as-opposed-to-lowercase-letters-or-categorically-animal-word-among-nonanimal-words-similarly-in-a-seminal-article-potter-1975-see-also-potter-faulconer-1975-thorpe-fize-marlot-1996-demonstrated-that-when-subjects-searched-rsvp-streams-of-scenes-8-items-sec-accuracy-was-comparable-whether-they-looked-for-a-particular-stimulus-that-they-had-seen-previously-or-one-that-had-simply-been-described-to-them-the-results-discussed-above-could-be-taken-to-suggest-that-target-processing-in-rsvp-is-complete-after-only-100-msec-however-it-can-be-shown-that-this-is-not-the-case-when-an-additional-target-is-added-to-an-rsvp-stream-in-fact-at-presentation-rates-of-approximately-100-msec-item-subjects-show-a-remarkable-deficit-in-reporting-the-second-t2-of-two-different-targets-presented-among-distractors-if-it-appears-within-approximately-200500-msec-of-the-first-target-t1-broadbent-broadbent-1987-raymond-et-al-1992-this-effect-is-the-ab-figure-1b-and-is-an-important-discovery-since-it-helps-characterize-the-limits-of-our-ability-to-consciously-perceive-stimuli-that-are-distributed-across-time-sergent-dehaene-2004-U2a {
+  width: 21.1rem;
+  height: 36rem;
+  position: absolute;
+  left: 22.4rem;
+  top: 2.1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 0.9090909091;
+  color: #000000;
+  font-family: Times New Roman, 'Source Sans Pro';
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .auto-group-jwlv-7XU .group-97-3vv .the-discovery-of-the-attentional-blink-rUN {
+  width: 18.3rem;
+  height: 1rem;
+  position: absolute;
+  left: 22.4rem;
+  top: 39.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 0.9090909091;
+  color: #000000;
+  font-family: Times New Roman, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .auto-group-jwlv-7XU .group-97-3vv .item-2023-05-03-959-3-X4i {
+  width: 19.4rem;
+  height: 29.9rem;
+  position: relative;
+  left: 0.4rem;
+  top: 3rem;
+  background-size: 230.222% 206.785%;
+  background-position: -1.6382rem -5.8828rem;
+  background-image: url('../assets/-hcr.png');
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .auto-group-jwlv-7XU .tion-of-a-second-each-eg-100-msec-and-subjects-are-typically-required-either-to-report-all-the-items-presented-full-report-or-to-report-prespecified-target-items-and-ignore-the-remaining-distractor-stimuli-partial-report-the-basic-rationale-behind-rsvp-paradigms-is-that-by-stressing-the-temporal-processing-mechanisms-to-their-limit-researchers-are-able-to-assess-the-rate-at-which-information-is-analyzed-and-encoded-chun-wolfe-2001-coltheart-1999-8KQ {
+  width: 21.1rem;
+  height: 11rem;
+  position: absolute;
+  left: 0;
+  top: 50.8rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 0.9090909091;
+  color: #000000;
+  font-family: Times New Roman, 'Source Sans Pro';
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .auto-group-aybt-xWA .auto-group-jwlv-7XU .broadbent-and-broadbent-1987-were-the-first-to-report-an-ab-when-they-presented-subjects-with-rsvp-streams-of-words-containing-two-targets-defined-by-either-category-or-letter-case-on-trials-on-which-t1-was-reported-correctly-t2-performance-was-impaired-if-it-appeared-up-to-half-a-second-after-t1-broadbent-and-broadbent-explained-this-result-by-proposing-that-although-early-perceptual-features-were-extracted-in-parallel-from-rsvp-streams-at-short-temporal-intervals-target-identification-processes-interfered-with-one-another-thereby-resulting-in-the-t2-deficit-a-similar-posttarget-processing-deficit-was-found-by-weichselgartner-and-sperling-1987-in-one-of-their-experiments-subjects-were-presented-with-rsvp-streams-of-digits-at-the-rate-of-100-msec-item-and-their-task-was-to-name-an-outlined-or-bright-digit-t1-and-then-the-three-stimuli-that-directly-followed-it-subjects-typically-reported-t1-the-subsequent-SDc {
+  width: 21.1rem;
+  height: 23rem;
+  position: absolute;
+  left: 22.7rem;
+  top: 40.8rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 0.9090909091;
+  color: #000000;
+  font-family: Times New Roman, 'Source Sans Pro';
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din .rectangle-4125-ace {
+  width: 0.8rem;
+  height: 14.4rem;
+  background-color: #918f8f;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc {
+  width: 60.8rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .expanddownlight-bne {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.0625rem;
+  top: 0.6948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .closeround-Jwx {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 30.275rem;
+  top: 1.875rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .note-1-27G {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 18rem;
+  top: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .rectangle-4123-uRx {
+  width: 25.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 7.4rem;
+  top: 0;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 1.7rem;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .expanddownlight-nke {
+  width: 0.85rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 2.0625rem;
+  top: 0.6948rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .closeround-uaN {
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  left: 30.275rem;
+  top: 1.875rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .note-1-phL {
+  width: 4.6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 18rem;
+  top: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .rectangle-4128-7gS {
+  width: 60.8rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  background-color: #f5f5f5;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .add-Sii {
+  width: 3.3rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 37.9rem;
+  top: 0.9rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #918f8f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .filedockduotone-kUW {
+  width: 1.4583rem;
+  height: 1.875rem;
+  position: absolute;
+  left: 35.4208rem;
+  top: 0.8125rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .rectangle-4126-5mg {
+  width: 60.5rem;
+  height: 74.3rem;
+  position: absolute;
+  left: 0;
+  top: 7.7rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .polygon-5-oBt {
+  width: 1.1rem;
+  height: 1rem;
+  position: absolute;
+  left: 30.9rem;
+  top: 6.3rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.1rem;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .heading-7yG {
+  width: 6rem;
+  height: 1.9rem;
+  position: absolute;
+  left: 24.1rem;
+  top: 5.9rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .meatballsmenu-q8a {
+  width: 1.4rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 53.4rem;
+  top: 6.3rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .polygon-6-mH8 {
+  width: 1.1rem;
+  height: 1rem;
+  position: absolute;
+  left: 49.5rem;
+  top: 6rem;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 0.1rem;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .sortalfalight-t6r {
+  width: 1.45rem;
+  height: 2.0542rem;
+  position: absolute;
+  left: 47.825rem;
+  top: 5.3625rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .u-RMg {
+  width: 1.8rem;
+  height: 3rem;
+  position: absolute;
+  left: 44.3rem;
+  top: 5.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .i-wav {
+  width: 0.7rem;
+  height: 3rem;
+  position: absolute;
+  left: 41.7rem;
+  top: 5.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  font-style: italic;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .b-fmp {
+  width: 1.6rem;
+  height: 3rem;
+  position: absolute;
+  left: 38.2rem;
+  top: 5.1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #5e5c5c;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .line-7-bQa {
+  width: 0.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 21.5rem;
+  top: 5.7rem;
+  background-color: #bcbcbc;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .line-8-8vJ {
+  width: 0.1rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 33.7rem;
+  top: 5.6rem;
+  background-color: #bcbcbc;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .ellipse-209-gB8 {
+  width: 7.2rem;
+  height: 7.2rem;
+  position: absolute;
+  left: 48.5rem;
+  top: 70.7rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #1656c1;
+  border-radius: 3.6rem;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .chatalt3duotone-yvv {
+  width: 3.0667rem;
+  height: 3.3264rem;
+  position: absolute;
+  left: 50.5667rem;
+  top: 72.7667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .back-7nE {
+  width: 2.2rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 13.7rem;
+  top: 5.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ucyc-Vjc .vector-273-enA {
+  width: 2.2rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 17.6rem;
+  top: 5.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}

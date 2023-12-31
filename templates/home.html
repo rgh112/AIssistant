@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Home</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C500%2C600%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A300%2C400%2C500%2C600%2C700"/>
+  <link rel="stylesheet" href="../static/css/home-.css"/>
+</head>
+<body>
+<div class="home--vBg">
+  <div class="backgrounds-ECN">
+    <div class="background2-white-LWJ">
+    </div>
+    <div class="background2-white-dVQ">
+    </div>
+    <p class="aissistant-kK8">AIssistant</p>
+    <div class="dashboard-eQW">
+      <img class="vuesax-linear-element-2-Ate" src="../static/assets/vuesax-linear-element-2-xSi.png"/>
+      <p class="dashboard-hdg">Dashboard</p>
+    </div>
+    <div class="folder-cke">
+      <img class="folder-kbx" src="../static/assets/folder-YNA.png"/>
+      <p class="folder-5eE">Folder</p>
+    </div>
+    <div class="settings-cPG">
+      <img class="vuesax-linear-setting-2-M5x" src="../static/assets/vuesax-linear-setting-2-Lbg.png"/>
+      <p class="settings-Gii">Settings</p>
+    </div>
+    <div class="help-1AW">
+      <img class="vuesax-linear-message-question-LTg" src="../static/assets/vuesax-linear-message-question-Vv6.png"/>
+      <p class="help-F4r">Help</p>
+    </div>
+    <div class="log-out-nKg">
+      <img class="logout-ij8" src="../static/assets/logout-vhk.png"/>
+      <p class="log-out-fPU">Log Out</p>
+    </div>
+    <div class="recent-Q6A">
+      <img class="auto-group-r2yl-LVc" src="../static/assets/auto-group-r2yl.png"/>
+      <p class="recent-5TC">Recent</p>
+    </div>
+    <div class="favorite-1Lr">
+      <img class="star-M9p" src="../static/assets/star-Fta.png"/>
+      <p class="favorite-UVL">Favorite</p>
+    </div>
+    <div class="trash-bK4">
+      <img class="star-XCi" src="../static/assets/star-W1C.png"/>
+      <p class="trash-eo8">Trash</p>
+    </div>
+    <div class="highlight-neS">
+    </div>
+    <div class="search-WqL">
+      <img class="vuesax-linear-search-normal-Cy4" src="../static/assets/vuesax-linear-search-normal-QHU.png"/>
+      <p class="search-vu4">Search</p>
+    </div>
+    <p class="dashboard-FAe">Dashboard</p>
+    <p class="quick-access-MUa">Quick Access</p>
+    <p class="recently-opened-files-TnW">Recently Opened Files</p>
+    <div class="upload-ZqY">
+      <div class="group-66-5Yz">
+        <img class="vuesax-linear-element-plus-SeS" src="../static/assets/vuesax-linear-element-plus-6bY.png"/>
+        <p class="upload-file-Zj4">Upload File</p>
+      </div>
+      <input type="file" id="hiddenFileInput" accept="application/pdf" style="display: none;">
+        <script>
+          document.querySelector('.upload-ZqY').addEventListener('click', () => {
+          document.getElementById('hiddenFileInput').click();
+          });
+
+          document.getElementById('hiddenFileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file && file.type === "application/pdf") {
+              const reader = new FileReader();
+              reader.onload = function(e) {
+                const base64String = e.target.result;
+                localStorage.setItem('uploadedPDF', base64String);
+                alert('PDF file uploaded and stored.');
+                window.location.href = '/Aissistant1.html'; // 페이지 전환
+              };
+              reader.readAsDataURL(file);
+            } else {
+              alert("Please select a PDF file.");
+            }
+          });
+        </script> 
+    </div>    
+    <div class="files-H9G">
+      <div class="file-QDt">
+        <div class="auto-group-k9an-KLr">
+          <div class="auto-group-vggw-G1C">
+            <img class="vuesax-linear-folder-myY" src="../static/assets/vuesax-linear-folder-m7U.png"/>
+          </div>
+          <p class="item--6F8">...</p>
+        </div>
+        <p class="hci-ux-EML">HCI/UX</p>
+        <p class="mb-20-jul-2023-y42">32 MB  ·  20/JUL/2023</p>
+      </div>
+      <div class="file-H4i">
+        <div class="auto-group-qxbl-ook">
+          <div class="auto-group-ugpp-4Dt">
+            <img class="vuesax-linear-folder-yLr" src="../static/assets/vuesax-linear-folder-mbk.png"/>
+          </div>
+          <p class="item--gWA">...</p>
+        </div>
+        <p class="visual-system-pMU">Visual System</p>
+        <p class="mb-20-jul-2023-xCn">32 MB  ·  20/JUL/2023</p>
+      </div>
+      <div class="file-GUN">
+        <div class="auto-group-vjhq-zvA">
+          <div class="auto-group-83yz-MVp">
+            <img class="vuesax-linear-folder-5Av" src="../static/assets/vuesax-linear-folder-fee.png"/>
+          </div>
+          <p class="item--bux">...</p>
+        </div>
+        <p class="seminar-YKQ">Seminar</p>
+        <p class="mb-20-jul-2023-HXt">32 MB  ·  20/JUL/2023</p>
+      </div>
+      <div class="file-DRY">
+        <div class="auto-group-b7hx-MGr">
+          <div class="auto-group-pqur-JSz">
+            <img class="vuesax-linear-folder-RGi" src="../static/assets/vuesax-linear-folder-eBx.png"/>
+          </div>
+          <p class="item--9Tc">...</p>
+        </div>
+        <p class="capstone-Hpi">Capstone</p>
+        <p class="mb-20-jul-2023-qbL">32 MB  ·  20/JUL/2023</p>
+      </div>
+    </div>
+    <img class="item--XUA" src="../static/assets/-DFt.png"/>
+  </div>
+  <div class="recent-files-EtN">
+    <div class="auto-group-poee-Zfk">
+      <img class="group-68-5PC" src="../static/assets/group-68-2sp.png"/>
+    <a href="/Aissistant1.html">
+      <p class="design-systempdf-oa6">Design System.pdf</p>
+    </a>
+      <p class="albert-flores-L4E">Albert Flores</p>
+      <p class="may-2023-f6W">3 May 2023</p>
+      <p class="mb-PoC">6.09 Mb</p>
+      <div class="item--jMG">...</div>
+    </div>
+    <div class="auto-group-mxwr-ej8">
+      <img class="group-67-a6z" src="../static/assets/group-67-xKp.png"/>
+    <a href="/Aissistant2.html">
+      <p class="through-the-valley-of--X2E">Through the Valley of ...</p>
+    </a>
+      <p class="arlene-mccoy-SQ6">Arlene McCoy</p>
+      <p class="may-2023-mSN">3 May 2023</p>
+      <p class="kb-HvW">531 Kb</p>
+      <div class="item--cC6">...</div>
+    </div>
+    <div class="auto-group-tl1c-8RL">
+      <img class="group-70-r6S" src="../static/assets/group-70-rbY.png"/>
+    <a href="/Aissistant3.html">
+      <p class="gender-bias-as-evidenced-b42">Gender Bias As Evidenced...</p>
+    </a>
+      <p class="annette-black-u4i">Annette Black</p>
+      <p class="may-2023-29L">3 May 2023</p>
+      <p class="kb-YtN">737 Kb</p>
+      <div class="item--V2v">...</div>
+    </div>
+    <div class="auto-group-f4ri-c7Y">
+      <img class="group-69-jT4" src="../static/assets/group-69-Rie.png"/>
+    <a href="/Aissistant4.html">
+      <p class="physician-communicationdocx-g7Q">Physician Communication.docx</p>
+    </a>
+      <p class="minje-kim-ztn">Minje Kim</p>
+      <p class="may-2023-X82">2 May 2023</p>
+      <p class="kb-eiS">426 Kb</p>
+      <div class="item--nZk">...</div>
+    </div>
+    <div class="auto-group-wrna-uuG">
+      <img class="group-71-3En" src="../static/assets/group-71-DMx.png"/>
+      <p class="characteristics-of-modern-b1Q">Characteristics of Modern...</p>
+      <p class="kunhee-ryu-W8N">Kunhee Ryu</p>
+      <p class="may-2023-qAe">2 May 2023</p>
+      <p class="mb-LdC">42 Mb</p>
+      <div class="item--UDc">...</div>
+    </div>
+    <div class="auto-group-wjpg-bJE">
+      <img class="group-72-Wg6" src="../static/assets/group-72-PTk.png"/>
+      <p class="e-learning-versus-social-Spe">E-Learning Versus Social...</p>
+      <p class="bee-shin-kqL">Bee Shin</p>
+      <p class="may-2023-giz">2 May 2023</p>
+      <p class="kb-22A">315 Kb</p>
+      <div class="item--YmC">...</div>
+    </div>
+    <div class="auto-group-qy38-4zS">
+      <img class="auto-group-dzfp-PWv" src="../static/assets/auto-group-dzfp.png"/>
+      <p class="great-depressiondocx-j4z">Great Depression.docx</p>
+      <p class="jongyoon-jung-FZ8">Jongyoon Jung</p>
+      <p class="may-2023-yk2">1 May 2023</p>
+      <p class="kb-K3C">62.4 Kb</p>
+      <div class="item--qnE">...</div>
+    </div>
+    <div class="auto-group-rjwq-yNe">
+      <img class="auto-group-d1l2-JA2" src="../static/assets/auto-group-d1l2.png"/>
+      <p class="elasticity-the-impact-of-job-EpN">Elasticity: The Impact of Job...</p>
+      <p class="seonghui-yoon-xkN">Seonghui Yoon</p>
+      <p class="may-2023-te2">1 May 2023</p>
+      <p class="kb-Rdx">35.1 Kb</p>
+      <div class="item--ZVG">...</div>
+    </div>
+    <div class="auto-group-gptw-5Tc">
+      <p class="file-name-oPc">FILE NAME</p>
+      <p class="author-LeS">AUTHOR</p>
+      <p class="date-5M8">DATE</p>
+      <p class="size-pJi">SIZE</p>
+    </div>
+    <div class="auto-group-4vfc-ZXC">
+      <img class="group-76-HCJ" src="../static/assets/group-76-kBG.png"/>
+      <p class="the-evolution-of-administra-pi2">The Evolution of Administra...</p>
+      <p class="albert-flores-9EW">Albert Flores</p>
+      <p class="april-2023-4sG">30 April 2023</p>
+      <p class="mb-oZx">1.01 Mb</p>
+      <div class="item--8s8">...</div>
+    </div>
+  </div>
+</div>
+</body>

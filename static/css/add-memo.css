@@ -1,0 +1,240 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.add-memo-6Bx {
+  width: 100%;
+  height: 83.2rem;
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/bg-xGe.png');
+  background-color: #ffffff;
+}
+.add-memo-6Bx .rectangle-4128-beW {
+  width: 48.7rem;
+  height: 2.3rem;
+  position: absolute;
+  left: 67.4rem;
+  top: 15.5rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.add-memo-6Bx .rectangle-4129-7cr {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 18.1rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.add-memo-6Bx .rectangle-4130-eMt {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 20.6rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.add-memo-6Bx .rectangle-4131-Nog {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 23.2rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.add-memo-6Bx .rectangle-4132-JxE {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 25.8rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.add-memo-6Bx .rectangle-4133-3up {
+  width: 18.4rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 28.3rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.add-memo-6Bx .group-92-ncW {
+  box-sizing: border-box;
+  padding: 1.4rem 1.7rem 2.3rem 2.4rem;
+  width: 23.1rem;
+  height: 22.9rem;
+  position: absolute;
+  left: 61.5rem;
+  top: 31.4rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+}
+.add-memo-6Bx .group-92-ncW .auto-group-w3pl-Dhp {
+  margin-bottom: 1.6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.add-memo-6Bx .group-92-ncW .auto-group-w3pl-Dhp .from-selected-ANA {
+  margin-right: 5.2rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.add-memo-6Bx .group-92-ncW .auto-group-w3pl-Dhp .x-gLW {
+  margin-bottom: 0.6rem;
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.add-memo-6Bx .group-92-ncW .add-memo-QGW {
+  margin: 0rem 0rem 2.2rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.add-memo-6Bx .group-92-ncW .summarize-6f8 {
+  margin: 0rem 0rem 2.4rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.add-memo-6Bx .group-92-ncW .translate-PeE {
+  margin: 0rem 0rem 2.4rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.add-memo-6Bx .group-92-ncW .dictionary-7KL {
+  margin-left: 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b3b3b3;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.add-memo-6Bx .rectangle-4169-wJN {
+  width: 138.8rem;
+  height: 93rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(21, 21, 21, 0.400000006);
+}
+.add-memo-6Bx .group-93-g14 {
+  box-sizing: border-box;
+  padding: 1.1rem 3.3rem 1.6rem 3.3rem;
+  width: 23.1rem;
+  height: 4.8rem;
+  position: absolute;
+  left: 61.5rem;
+  top: 35.5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+}
+.add-memo-6Bx .rectangle-4171-sbL {
+  width: 25.7rem;
+  height: 25.2rem;
+  position: absolute;
+  left: 60.3rem;
+  top: 30.5rem;
+  border: solid 0.1rem #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+.add-memo-6Bx .add-memo-can-add-annotation-to-the-selected-area-Xft {
+  width: 31.8rem;
+  height: 10.2rem;
+  position: absolute;
+  left: 88.2rem;
+  top: 30rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.add-memo-6Bx .add-memo-can-add-annotation-to-the-selected-area-Xft .add-memo-can-add-annotation-to-the-selected-area-Xft-sub-0 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.add-memo-6Bx .add-memo-can-add-annotation-to-the-selected-area-Xft .add-memo-can-add-annotation-to-the-selected-area-Xft-sub-1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.add-memo-6Bx .add-memo-can-add-annotation-to-the-selected-area-Xft .add-memo-can-add-annotation-to-the-selected-area-Xft-sub-2 {
+}
+.add-memo-6Bx .next--JCn {
+  width: 6.4rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 112.9rem;
+  top: 39.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.add-memo-6Bx .skip--ndk {
+  width: 6.2rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 118.2rem;
+  top: 77.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}

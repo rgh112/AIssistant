@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>AIssitant</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Times+New+Roman%3A400%2C700"/>
+  <link rel="stylesheet" href="../static/css/-wDG.css"/>
+<style>
+
+  .gray-line {
+    background-color: #f5f5f5;
+    height: 0.3rem;
+  }
+
+  .writing-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-color: #ffffff;
+  }
+
+  .writing-area {
+    flex-grow: 1;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+  }
+
+  .popup {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 1.4rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    height: 8rem;
+    left: 0;
+    padding: 2rem 2.3rem 2rem 2.3rem;
+    position: absolute;
+    top: 0;
+    width: 40rem;
+    font-size: 1.3rem;
+    font-family: 'Source Sans Pro';
+    /* Enable scrolling if the content exceeds the boundaries */
+    overflow: auto;
+  }
+
+  .translate-button {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .dropdown-menu {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 1.4rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    height: 22.9rem;
+    left: 61.5rem;
+    padding: 1.4rem 1.7rem 2.3rem 2.4rem;
+    position: absolute;
+    top: 31.4rem;
+    width: 23.1rem;
+  }
+
+
+  .dropdown-menu button {
+    display: block;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .dropdown-menu button:hover {
+    background-color: #ddd;
+  }
+
+  .sub-dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 2;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+
+  .dropdown-menu .dropdown-title {
+    color: #4f4f4f;
+    flex-shrink: 0;
+    font-family: Inter, 'Source Sans Pro';
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2125;
+    margin-right: 5.2rem;
+    white-space: nowrap;
+  }
+
+  .option-button {
+    color: #4f4f4f;
+    font-family: Inter, 'Source Sans Pro';
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.2125;
+    margin: 1rem 0rem 1rem 0rem;
+    white-space: nowrap;
+  }
+
+  .language-button {
+    color: #4f4f4f;
+    font-family: Inter, 'Source Sans Pro';
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.2125;
+    margin: 1rem 0rem 1rem 0rem;
+    white-space: nowrap;
+  }
+
+  .popup_dropdown {
+  display: none;
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  height: 10.9rem;
+  left: 61.5rem;
+  padding: 1rem 1.7rem 1rem 2.4rem;
+  position: absolute;
+  top: 31.4rem;
+  width: 23.1rem;
+}
+
+.group-118-Eo8 {
+    background-color: #ffffff;
+    border-radius: 1.4rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 0.4rem;
+    padding: 2.6rem 2.3rem 5.9rem 3.3rem;
+    width: 42%;
+    height: 20%;
+}
+
+</style>
+<script>
+  let selectedText = '';
+
+  // 이 함수를 호출하면 선택한 텍스트가 해제되고 팝업과 드롭다운 메뉴가 닫힙니다.
+  async function clearSelectionAndClosePopups() {
+    window.getSelection().removeAllRanges(); // 하이라이트 해제
+    dropdownMenu.style.display = 'none';
+    subDropdownMenu.style.display = 'none';
+    popup_dropdown.style.display = 'none';
+    popup.style.display = 'none';
+  }
+
+  async function onChatSubmit() {
+    const inputField = document.getElementById("chat-input");
+    const outputDiv = document.getElementById("chat-output");
+    const question = inputField.value;
+
+    // Clear the input field
+    inputField.value = "";
+
+    if (question.trim() !== "") {
+      const response = await fetch('http://ec2-3-38-64-51.ap-northeast-2.compute.amazonaws.com:8080/ask', {
+        method: "POST",
+        mode: 'cors',
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: `question=${encodeURIComponent(question)}`,
+      });
+
+      const data = await response.json();
+      const answer = data.answer;
+
+      // Display the question and answer in the chat-output div
+      outputDiv.innerHTML += `
+        <div class="chat-message user-message"><strong>Q:</strong> ${question}</div>
+        <div class="chat-message bot-message"><strong>A:</strong> ${answer}</div>
+      `;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+
+    async function handleTranslation(language) {
+    // Call the translation API
+    try {
+      const response = await fetch('http://ec2-3-38-64-51.ap-northeast-2.compute.amazonaws.com:8080/ask', {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `question=translate to ${language}: ${selectedText}`
+      });
+
+      const data = await response.json();
+      const translatedText = data.answer;
+
+      // Clear previous content
+      popup.innerHTML = '';
+
+      const translatedTextElement = document.createElement('div');
+      translatedTextElement.textContent = translatedText;
+      popup.appendChild(translatedTextElement);
+
+      popup.style.display = 'block';
+      popup.style.left = dropdownMenu.style.left;
+      popup.style.top = dropdownMenu.style.top;
+      popup_dropdown.style.display = 'block';
+      popup_dropdown.style.left = `${popup.getBoundingClientRect().left}px`;
+      popup_dropdown.style.top = `${popup.getBoundingClientRect().bottom}px`;
+
+      subDropdownMenu.style.left = `${dropdownMenu.getBoundingClientRect().right}px`;
+      subDropdownMenu.style.top = `${dropdownMenu.getBoundingClientRect().top}px`;
+
+      dropdownMenu.style.display = 'none';
+
+      document.addEventListener('click', function() {
+        popup.style.display = 'none';
+        popup_dropdown.style.display = 'none'; // Add this line
+      });
+
+      storeProcessedText(translatedText);
+    } catch (error) {
+          console.error("An error occurred:", error);
+      }
+      clearSelectionAndClosePopups();
+  }
+
+  async function handleSummary() {
+      // Call the summarization API
+      const response = await fetch('http://ec2-3-38-64-51.ap-northeast-2.compute.amazonaws.com:8080/ask', {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `question=summarize this: ${selectedText}`,
+      });
+
+      const data = await response.json();
+      const summarizedText = data.answer;
+
+      // Clear previous content
+      popup.innerHTML = '';
+
+      const summarizedTextElement = document.createElement('div');
+      summarizedTextElement.textContent = summarizedText;
+      popup.appendChild(summarizedTextElement);
+
+      popup.style.display = 'block';
+      popup.style.left = dropdownMenu.style.left;
+      popup.style.top = dropdownMenu.style.top;
+      popup_dropdown.style.display = 'block';
+      popup_dropdown.style.left = `${popup.getBoundingClientRect().left}px`;
+      popup_dropdown.style.top = `${popup.getBoundingClientRect().bottom}px`;
+
+      dropdownMenu.style.display = 'none';
+
+      storeProcessedText(summarizedText);
+      clearSelectionAndClosePopups();
+    }
+
+    async function handleExplanation() {
+      try {
+        // Call the OpenAI API here to generate an explanation based on the highlighted text
+        const highlightedText = window.getSelection().toString().trim();
+
+        // Call the API to generate an explanation
+        const response = await fetch('http://ec2-3-38-64-51.ap-northeast-2.compute.amazonaws.com:8080/ask', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: `question=explain following contexts simply, but very straightforward and suggest possible research questions based on it: ${highlightedText}`,
+        });
+
+        const data = await response.json();
+        const generatedExplanation = data.answer;
+
+        // Clear previous content
+        popup.innerHTML = '';
+
+        // Create a new div element to display the generated explanation
+        const explanationElement = document.createElement('div');
+        explanationElement.textContent = generatedExplanation;
+
+        // Append the new element to the popup
+        popup.appendChild(explanationElement);
+
+        // Show the popup
+        popup.style.display = 'block';
+        popup.style.left = dropdownMenu.style.left;
+        popup.style.top = dropdownMenu.style.top;
+        popup_dropdown.style.display = 'block';
+        popup_dropdown.style.left = `${popup.getBoundingClientRect().left}px`;
+        popup_dropdown.style.top = `${popup.getBoundingClientRect().bottom}px`;
+
+        // Hide the dropdown menu
+        dropdownMenu.style.display = 'none';
+
+        // Optionally, store the processed text if needed
+        storeProcessedText(generatedExplanation);
+       clearSelectionAndClosePopups();
+
+      } catch (error) {
+        console.error('Error generating explanations:', error);
+      }
+    }
+
+    const popup = document.createElement('div');
+    popup.className = 'popup';
+    document.body.appendChild(popup);
+
+    const dropdownMenu = document.createElement('div');
+    dropdownMenu.className = 'dropdown-menu';
+    document.body.appendChild(dropdownMenu);
+
+    const subDropdownMenu = document.createElement('div');
+    subDropdownMenu.className = 'dropdown-menu';
+    document.body.appendChild(subDropdownMenu);
+
+    const titleContainer = document.createElement('div');
+    titleContainer.style.display = 'flex';
+    titleContainer.style.justifyContent = 'space-between';
+    titleContainer.style.alignItems = 'center';
+
+    const dropdownTitle = document.createElement('div');
+    dropdownTitle.textContent = 'From selected';
+    dropdownTitle.className = 'dropdown-title';
+    dropdownTitle.classList.add('title-style'); // Add the new class
+    titleContainer.appendChild(dropdownTitle);
+
+
+    const closeButton = document.createElement('button');
+      closeButton.textContent = 'X';
+      closeButton.className = 'close-button';
+      titleContainer.appendChild(closeButton);
+
+      closeButton.addEventListener('click', function() {
+        dropdownMenu.style.display = 'none';
+        subDropdownMenu.style.display = 'none';
+        popup_dropdown.style.display = 'none';
+        clearSelectionAndClosePopups();
+      });
+
+    const popup_dropdown = document.createElement('div');
+    popup_dropdown.className = 'popup_dropdown dropdown-menu';
+    document.body.appendChild(popup_dropdown);
+
+    const popupDropdownOptions = ['Add to note', 'Embed to file'];
+    popupDropdownOptions.forEach(option => {
+      const button = document.createElement('button');
+      button.textContent = option;
+      // Add CSS class
+      button.classList.add('option-button');
+      popup_dropdown.appendChild(button);
+
+      button.addEventListener('click', function(event) {
+        event.stopPropagation();
+        console.log(`Selected option: ${option}`);
+        popup_dropdown.style.display = 'none';
+
+        if (option === 'Add to note') {
+          console.log("Copying to clipboard:", lastProcessedText);
+          if (lastProcessedText) {
+            try {
+              navigator.clipboard.writeText(lastProcessedText);  // No need for await here, unless you want to handle errors
+              console.log("Text successfully copied to clipboard.");
+            } catch (err) {
+              console.error("Failed to copy text: ", err);
+            }
+
+            const writingArea = document.querySelector('.writing-area');
+            console.log(writingArea);  // 이 값이 null이면 문제가 있는 것입니다.
+
+            if (writingArea && lastProcessedText) {
+              writingArea.value += lastProcessedText + "\n";  // 새로운 줄을 추가
+            }
+            clearSelectionAndClosePopups();
+          }
+        }
+      });
+    });
+
+
+
+    dropdownMenu.appendChild(titleContainer);
+
+    const options = ['Add memo', 'Summarize', 'Translate', 'RQ Generation'];
+    options.forEach(option => {
+    const button = document.createElement('button');
+    button.textContent = option;
+    // Add CSS class
+    button.classList.add('option-button');
+    dropdownMenu.appendChild(button);
+      button.addEventListener('click', function(event) {
+        event.stopPropagation();
+        console.log(`Selected option: ${option}`);
+        dropdownMenu.style.display = 'none';
+        subDropdownMenu.style.display = 'none';
+        
+        if (event.target.textContent === 'Add memo') {
+          const highlightedText = window.getSelection().toString().trim();
+          const writingArea = document.querySelector('.writing-area');
+          if (writingArea && highlightedText) {
+            writingArea.value += highlightedText + "\n";
+          }
+          clearSelectionAndClosePopups();
+        }
+        if (option === 'Summarize') {
+          handleSummary();
+          console.log(`Selected option: ${option}`);
+          dropdownMenu.style.display = 'none';
+          subDropdownMenu.style.display = 'none';
+        }
+        if (option === 'RQ Generation') {
+          handleExplanation();
+          console.log(`Selected option: ${option}`);
+          dropdownMenu.style.display = 'none';
+          subDropdownMenu.style.display = 'none';
+        }
+        if (option === 'Translate') {
+          const rect = dropdownMenu.getBoundingClientRect();
+          console.log('Dropdown Menu Rect:', rect);
+
+          const languages = ['Korean', 'Chinese', 'Japanese', 'Spanish', 'German'];
+          subDropdownMenu.innerHTML = '';
+          languages.forEach(language => {
+            const langButton = document.createElement('button');
+            langButton.textContent = language;
+            // Add CSS class
+            langButton.classList.add('language-button');
+            subDropdownMenu.appendChild(langButton);
+
+            langButton.addEventListener('click', function() {
+              // 여기서 언어를 지정해줍니다.
+              handleTranslation(language);  // <-- 언어를 인자로 넘김
+              console.log(`Selected option: ${option}`);
+              dropdownMenu.style.display = 'none';
+              subDropdownMenu.style.display = 'none';
+            });
+          });
+
+          subDropdownMenu.style.display = 'block';
+
+        } else {
+          console.log(`Selected option: ${option}`);
+        }
+      });
+    });
+
+    document.addEventListener('mouseup', function(event) {
+      selectedText = window.getSelection().toString().trim();
+      if (selectedText) {
+        if (dropdownMenu.style.display !== 'block') {
+          dropdownMenu.style.display = 'block';
+          dropdownMenu.style.left = `${event.pageX}px`;
+          dropdownMenu.style.top = `${event.pageY}px`;
+          subDropdownMenu.style.display = 'none';  // Ensure the sub-dropdown menu is closed
+          // 이벤트의 페이지 좌표를 사용하여 subDropdownMenu의 위치를 설정
+          subDropdownMenu.style.left = `${event.pageX}px`;
+          subDropdownMenu.style.top = `${event.pageY}px`;
+        }
+      } else {
+        // If there's no selected text, close the menus and popup
+        dropdownMenu.style.display = 'none';
+        subDropdownMenu.style.display = 'none';
+        popup_dropdown.style.display = 'none';
+        popup.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('click', function() {
+      subDropdownMenu.style.display = 'none';
+    });
+    
+    // Global variable to store the last processed text
+    let lastProcessedText = "";
+
+    // Function to store the last processed text
+    function storeProcessedText(processedText) {
+      console.log("Storing processed text:", processedText);
+      lastProcessedText = processedText;
+      console.log("Storing last processed text:", lastProcessedText);
+    }
+  });
+</script>
+</head>
+
+<body>
+<div class="item--fLA">
+  <div class="group-79-X7U">
+    <div class="auto-group-eydg-fUa">
+      <img class="vuesax-linear-setting-2-c8v" src="../static/assets/vuesax-linear-setting-2-QmU.png"/>
+      <div class="group-90-7bU">
+        <img class="vuesax-linear-profile-circle-co8" src="../static/assets/vuesax-linear-profile-circle-sGz.png"/>
+        <img class="dashboard-w4i" src="../static/assets/dashboard-cEr.png"/>
+        <p class="dashboard-ezi">Dashboard</p>
+        <img class="bookmarkfill-AiA" src="../static/assets/bookmarkfill-Cqt.png"/>
+        <p class="contents-gwQ">Contents</p>
+        <img class="logout-d5x" src="../static/assets/logout-V1Y.png"/>
+      </div>
+    </div>
+    <div class="auto-group-ufaw-KjU">
+      <div class="auto-group-ca6a-Gei">
+        <div class="auto-group-nmin-CoG">
+          <img class="closeround-JrJ" src="../static/assets/closeround-qwt.png"/>
+          <p class="add-Ejx">Add </p>
+          <img class="search-Lnz" src="../static/assets/search-NhL.png"/>
+          <img class="expanddownlight-sH8" src="../static/assets/expanddownlight-XRg.png"/>
+          <img class="vector-271-axE" src="REPLACE_IMAGE:161:493"/>
+          <p class="item-515-jKL">51.5%</p>
+          <div class="ellipse-70-2ZL">
+          </div>
+          <img class="highlighter-4-WUW" src="../static/assets/highlighter-4-s6n.png"/>
+          <img class="format-textbox-3-eKp" src="../static/assets/format-textbox-3-7kz.png"/>
+          <div class="line-5-B4r">
+          </div>
+          <img class="mouse-pointer-3-umY" src="../static/assets/mouse-pointer-3-eaz.png"/>
+          <div class="ellipse-71-ej8">
+          </div>
+          <div class="rectangle-4122-Z5Q">
+          </div>
+          <img class="closeround-4H4" src="../static/assets/closeround-Lwp.png"/>
+          <div class="rectangle-4128-C8N">
+          </div>
+          <p class="add-LEa">Add </p>
+          <img class="search-3ug" src="../static/assets/search-xd4.png"/>
+          <img class="expanddownlight-PTk" src="../static/assets/expanddownlight-m3U.png"/>
+          <p class="item-515-KMQ">51.5%</p>
+          <div class="ellipse-72-dN6">
+          </div>
+          <img class="format-textbox-4-YEA" src="../static/assets/format-textbox-4-fcA.png"/>
+          <div class="line-6-Udc">
+          </div>
+          <img class="mouse-pointer-4-pBg" src="../static/assets/mouse-pointer-4-74J.png"/>
+          <img class="group-78-YdU" src="../static/assets/group-78-ALE.png"/>
+          <img class="polygon-4-VHp" src="../static/assets/polygon-4-WAJ.png"/>
+          <img class="filedockduotone-ctE" src="../static/assets/filedockduotone-hKk.png"/>
+          <p class="tutorial-9dG">Tutorial</p>
+          <img class="questionfill-GSz" src="../static/assets/questionfill-Yg6.png"/>
+          <img class="imgbox-bEN" src="../static/assets/imgbox-wjL.png"/>
+          <p class="the-attention-blink--1ot">Much to discuss in...</p>
+          <img class="vector-Wke" src="../static/assets/vector-9GS.png"/>
+          <img class="group-113-3En" src="../static/assets/group-113-peS.png"/>
+          <img class="item-2023-06-02-212-1-Nnr" src="../static/assets/-DBc.png"/>
+        </div>
+        <div class="auto-group-95mq-din">
+          <div class="auto-group-aybt-xWA">
+            <div class="auto-group-jwlv-7XU">
+              <div class="group-97-3vv">
+                <p class="a-recent-phase-of-excitement-in-quantum-computing-and-quantum-machine-learning-has-attracted-substantial-funding-to-develop-the-technology-with-big-tech-companies-such-as-nvidia-amazon-microsoft-google-and-ibm-conducting-fundamental-and-applied-research-in-this-emerging-field-in-addition-to-start-ups-and-academic-labs-the-excitement-is-undoubtedly-caused-at-least-partly-by-several-experimental-demonstrations-in-recent-years-that-have-provided-evidence-of-a-quantum-computational-advantage-in-specific-tasks-examples-in-which-classical-computers-would-be-able-to-complete-the-same-task-only-in-a-substantially-impractically-longer-time-could-a-revolution-in-quantum-computing-indeed-be-underway-as-advances-in-quantum-algorithms-and-device-technology-are-continuing-apace-realizing-suitable-hardware-remains-a-hurdle-there-is-no-shortage-of-approaches-to-building-qubits-the-building-blocks-of-a-quantum-computer-with-some-of-the-most-common-ones-being-based-on-trapped-ions-superconducting-circuits-and-quantum-optical-systems-although-silicon-based-options-and-phonon-based-options-are-also-currently-under-investigation-however-a-general-challenge-is-that-qubit-quantum-states-are-easily-disturbed-during-interaction-with-other-qubits-and-the-rest-of-the-environment-errors-in-qubit-operation-can-be-corrected-with-well-developed-protocols-but-these-require-large-amounts-of-qubits-the-reality-is-that-the-fabrication-of-quantum-chips-with-sufficient-numbers-of-qubits-and-sufficiently-low-error-rates-for-full-scale-fault-tolerant-quantum-computing-is-currently-out-of-reach-resigned-to-this-state-of-affairs-the-present-phase-of-quantum-computing-is-called-the-noisy-intermediate-scale-quantum-nisq-era-which-refers-to-devices-that-operate-with-noisy-qubits-that-are-not-error-corrected-and-therefore-have-limited-imperfect-computational-capabilities-currently-the-most-powerful-quantum-processor-made-by-ibm-has-433-qubits-and-the-company-says-it-will-release-a-quantum-processor-with-more-than-1000-qubits-later-this-year-nisq-devices-usually-consist-of-hybrid-architectures-wherein-parts-of-the-computations-are-carried-out-by-quantum-systems-while-other-tasks-are-performed-by-classical-processors-some-of-these-devices-can-be-accessed-and-manipulated-via-internet-based-cloud-services-and-are-often-used-in-proof-of-principle-experiments-nisq-devices-have-a-limited-promise-for-the-sort-of-full-scale-quantum-computing-applications-that-were-originally-envisioned-for-example-in-factoring-large-numbers-however-recent-research-shows-that-many-specialized-but-still-useful-tasks-can-be-identified-that-are-realistically-feasible-with-current-nisq-devices-EVX">
+                  <span class="a-recent-phase-of-excitement-in-quantum-computing-and-quantum-machine-learning-has-attracted-substantial-funding-to-develop-the-technology-with-big-tech-companies-such-as-nvidia-amazon-microsoft-google-and-ibm-conducting-fundamental-and-applied-research-in-this-emerging-field-in-addition-to-start-ups-and-academic-labs-the-excitement-is-undoubtedly-caused-at-least-partly-by-several-experimental-demonstrations-in-recent-years-that-have-provided-evidence-of-a-quantum-computational-advantage-in-specific-tasks-examples-in-which-classical-computers-would-be-able-to-complete-the-same-task-only-in-a-substantially-impractically-longer-time-could-a-revolution-in-quantum-computing-indeed-be-underway-as-advances-in-quantum-algorithms-and-device-technology-are-continuing-apace-realizing-suitable-hardware-remains-a-hurdle-there-is-no-shortage-of-approaches-to-building-qubits-the-building-blocks-of-a-quantum-computer-with-some-of-the-most-common-ones-being-based-on-trapped-ions-superconducting-circuits-and-quantum-optical-systems-although-silicon-based-options-and-phonon-based-options-are-also-currently-under-investigation-however-a-general-challenge-is-that-qubit-quantum-states-are-easily-disturbed-during-interaction-with-other-qubits-and-the-rest-of-the-environment-errors-in-qubit-operation-can-be-corrected-with-well-developed-protocols-but-these-require-large-amounts-of-qubits-the-reality-is-that-the-fabrication-of-quantum-chips-with-sufficient-numbers-of-qubits-and-sufficiently-low-error-rates-for-full-scale-fault-tolerant-quantum-computing-is-currently-out-of-reach-resigned-to-this-state-of-affairs-the-present-phase-of-quantum-computing-is-called-the-noisy-intermediate-scale-quantum-nisq-era-which-refers-to-devices-that-operate-with-noisy-qubits-that-are-not-error-corrected-and-therefore-have-limited-imperfect-computational-capabilities-currently-the-most-powerful-quantum-processor-made-by-ibm-has-433-qubits-and-the-company-says-it-will-release-a-quantum-processor-with-more-than-1000-qubits-later-this-year-nisq-devices-usually-consist-of-hybrid-architectures-wherein-parts-of-the-computations-are-carried-out-by-quantum-systems-while-other-tasks-are-performed-by-classical-processors-some-of-these-devices-can-be-accessed-and-manipulated-via-internet-based-cloud-services-and-are-often-used-in-proof-of-principle-experiments-nisq-devices-have-a-limited-promise-for-the-sort-of-full-scale-quantum-computing-applications-that-were-originally-envisioned-for-example-in-factoring-large-numbers-however-recent-research-shows-that-many-specialized-but-still-useful-tasks-can-be-identified-that-are-realistically-feasible-with-current-nisq-devices-EVX-sub-0">
+                    So-called large language models (LLMs), which are based on the deep neural network transformer architecture and pretrained with large amounts of unlabelled data, have led to breakthrough capabilities in the past few years. Models such as GPT-3 from OpenAI and LaMDA from Google, with many billions of parameters, can perform a range of language tasks, from translation to conversational agents and text generation. Most recently, OpenAI released ChatGPT, a chatbot that is taking the world by storm with its impressive abilities to give interesting and engaging responses. Moreover, LLMs can be developed into a range of other generative tools when trained on specific types of data from the web: for example, in code writing, such as Copilot from Microsoft, which is trained on GitHub repositories, and in image generation, such as DALL-E (OpenAI) or Stable Diffusion. Recently, Meta announced a new tool called Galactica, which is trained on preprints and free-to-access papers, for summarizing, annotating and gathering scientific knowledge. An online demo version of Galactica was withdrawn, however, within days after much online criticism about the potential for harmful outputs. For instance, it was shown that the tool could be used to write authoritative-sounding scientific papers or explanations that were incorrect and potentially dangerously so.<br/>
+                  
+                  <br/>
+                    A persistent problem with many experimental AI tools, such as those based on LLMs, is that they have many limitations that are not sufficiently understood, but that could lead, intentionally or unintentionally, to harmful applications. Those who contribute to AI developments, therefore, need to engage more with ethical processes to ensure responsible publication and release of AI tools. This is urgent and necessary given the reach of AI, with many applications being pervasive in society and posing a substantial risk of potential harm and misuse. The AI community should look towards the biomedical sciences that lead the way in discussing emerging research topics where risk of harm and ethical concerns are identified, and where consensus is reached over rules and guidance in research outputs, such as in gene editing and stem cell research.
+                  <br/>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rectangle-4125-ace">
+          </div>
+        </div>
+      </div>
+      <div class="auto-group-ucyc-Vjc">
+        <img class="expanddownlight-bne" src="../static/assets/expanddownlight-5qg.png"/>
+        <img class="closeround-Jwx" src="../static/assets/closeround-e7Y.png"/>
+        <p class="note-1-27G">Note 1</p>
+        <div class="rectangle-4123-uRx">
+        </div>
+        <img class="expanddownlight-nke" src="../static/assets/expanddownlight-mbc.png"/>
+        <img class="closeround-uaN" src="../static/assets/closeround-Nyc.png"/>
+        <p class="note-1-phL">Note 1</p>
+        <div class="rectangle-4128-7gS">
+        </div>
+        <p class="add-Sii">Add </p>
+        <img class="filedockduotone-kUW" src="../static/assets/filedockduotone-8ge.png"/>
+        <div class="rectangle-4126-5mg">
+          <div class="writing-container">
+            <textarea class="writing-area" placeholder="Write your notes..."></textarea>
+          </div>
+        </div>
+        <img class="polygon-5-oBt" src="../static/assets/polygon-5-TK4.png"/>
+        <p class="heading-7yG">Heading</p>
+        <img class="meatballsmenu-q8a" src="../static/assets/meatballsmenu-9N6.png"/>
+        <img class="polygon-6-mH8" src="../static/assets/polygon-6-1ok.png"/>
+        <img class="sortalfalight-t6r" src="../static/assets/sortalfalight-2jg.png"/>
+        <p class="u-RMg">U</p>
+        <p class="i-wav">I</p>
+        <p class="b-fmp">B</p>
+        <div class="line-7-bQa">
+        </div>
+        <div class="line-8-8vJ">
+        </div>
+        <img class="back-7nE" src="../static/assets/back-WpE.png"/>
+        <img class="vector-273-enA" src="../static/assets/vector-273-dug.png"/>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

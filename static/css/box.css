@@ -1,0 +1,287 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.box-wYA {
+  width: 100%;
+  height: 83.2rem;
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/bg-LrJ.png');
+  background-color: #ffffff;
+}
+.box-wYA .rectangle-4128-46z {
+  width: 48.7rem;
+  height: 2.3rem;
+  position: absolute;
+  left: 67.4rem;
+  top: 15.5rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.box-wYA .rectangle-4129-Mbt {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 18.1rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.box-wYA .rectangle-4130-5Gz {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 20.6rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.box-wYA .rectangle-4131-z94 {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 23.2rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.box-wYA .rectangle-4132-Wt6 {
+  width: 54rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 25.8rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.box-wYA .rectangle-4133-3t2 {
+  width: 18.4rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 62.1rem;
+  top: 28.3rem;
+  background-color: rgba(22, 86, 193, 0.25);
+}
+.box-wYA .group-92-ZrN {
+  box-sizing: border-box;
+  padding: 1.4rem 1.7rem 2.3rem 2.4rem;
+  width: 23.1rem;
+  height: 22.9rem;
+  position: absolute;
+  left: 61.5rem;
+  top: 31.4rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+}
+.box-wYA .group-92-ZrN .auto-group-lacv-oVp {
+  margin-bottom: 1.6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.box-wYA .group-92-ZrN .auto-group-lacv-oVp .from-selected-9Jn {
+  margin-right: 5.2rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.box-wYA .group-92-ZrN .auto-group-lacv-oVp .x-Fsc {
+  margin-bottom: 0.6rem;
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.box-wYA .group-92-ZrN .add-memo-oPL {
+  margin: 0rem 0rem 2.2rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.box-wYA .group-92-ZrN .summarize-8Ai {
+  margin: 0rem 0rem 2.4rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.box-wYA .group-92-ZrN .translate-dtA {
+  margin: 0rem 0rem 2.4rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.box-wYA .group-92-ZrN .dictionary-mUa {
+  margin-left: 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b3b3b3;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.box-wYA .rectangle-4169-2vJ {
+  width: 138.8rem;
+  height: 93rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(21, 21, 21, 0.400000006);
+}
+.box-wYA .group-93-jZp {
+  box-sizing: border-box;
+  padding: 1.4rem 1.7rem 2.3rem 2.4rem;
+  width: 23.1rem;
+  height: 22.9rem;
+  position: absolute;
+  left: 61.5rem;
+  top: 31.4rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+}
+.box-wYA .group-93-jZp .auto-group-tqxe-eAz {
+  margin-bottom: 1.6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.box-wYA .group-93-jZp .auto-group-tqxe-eAz .from-selected-BRp {
+  margin-right: 5.2rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.box-wYA .group-93-jZp .auto-group-tqxe-eAz .x-K2E {
+  margin-bottom: 0.6rem;
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.box-wYA .group-93-jZp .add-memo-r2A {
+  margin: 0rem 0rem 2.2rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.box-wYA .group-93-jZp .summarize-NWJ {
+  margin: 0rem 0rem 2.4rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.box-wYA .group-93-jZp .translate-Vav {
+  margin: 0rem 0rem 2.4rem 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #4f4f4f;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.box-wYA .group-93-jZp .dictionary-DWv {
+  margin-left: 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b3b3b3;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.box-wYA .rectangle-4171-rZt {
+  width: 25.7rem;
+  height: 25.2rem;
+  position: absolute;
+  left: 60.3rem;
+  top: 30.5rem;
+  border: solid 0.1rem #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+.box-wYA .aissistant-box-contains-features-to-assist-studying-a-thesis-irz {
+  width: 53.7rem;
+  height: 6.8rem;
+  position: absolute;
+  left: 60.3rem;
+  top: 56.6rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.box-wYA .aissistant-box-contains-features-to-assist-studying-a-thesis-irz .aissistant-box-contains-features-to-assist-studying-a-thesis-irz-sub-0 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.36;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+}
+.box-wYA .aissistant-box-contains-features-to-assist-studying-a-thesis-irz .aissistant-box-contains-features-to-assist-studying-a-thesis-irz-sub-1 {
+}
+.box-wYA .next--eg6 {
+  width: 6.4rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 107rem;
+  top: 63.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.box-wYA .skip--Vwc {
+  width: 6.2rem;
+  height: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 118.2rem;
+  top: 77.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}

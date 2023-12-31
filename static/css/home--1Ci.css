@@ -1,0 +1,1347 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 128rem;
+}.home--ibp {
+  width: 100%;
+  height: 83.2rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+}
+.home--ibp .backgrounds-eEa {
+  width: 128.1rem;
+  height: 83.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #f5f5f5;
+}
+.home--ibp .backgrounds-eEa .background2-white-Men {
+  width: 128.1rem;
+  height: 10.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.0799999982);
+  background-color: #ffffff;
+}
+.home--ibp .backgrounds-eEa .background2-white-ffU {
+  width: 25.2rem;
+  height: 83.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0.4rem 0 1rem rgba(0, 0, 0, 0.0799999982);
+  background-color: #ffffff;
+}
+.home--ibp .backgrounds-eEa .dashboard-Bdp {
+  width: 10.5rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.2rem;
+  top: 12.7rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .backgrounds-eEa .dashboard-Bdp .vuesax-linear-element-2-WRC {
+  margin-right: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .dashboard-Bdp .dashboard-SJr {
+  margin-bottom: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #1656c1;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .folder-kaS {
+  width: 7.4rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.2rem;
+  top: 17.3rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .backgrounds-eEa .folder-kaS .folder-sf4 {
+  margin-right: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .folder-kaS .folder-DU2 {
+  margin-top: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .settings-MKL {
+  width: 8.7rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.2rem;
+  top: 70.1rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .backgrounds-eEa .settings-MKL .vuesax-linear-setting-2-VAe {
+  margin-right: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .settings-MKL .settings-DsL {
+  margin-top: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .help-x4E {
+  width: 6.1rem;
+  height: 1.7rem;
+  position: absolute;
+  left: 3.4rem;
+  top: 65.9rem;
+  display: flex;
+  align-items: flex-end;
+}
+.home--ibp .backgrounds-eEa .help-x4E .vuesax-linear-message-question-gkv {
+  margin: 0rem 1.333rem 0.006rem 0rem;
+  width: 1.6667rem;
+  height: 1.5941rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .help-x4E .help-12W {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .log-out-Laa {
+  width: 8.5rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.2rem;
+  top: 74.6rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .backgrounds-eEa .log-out-Laa .logout-g8e {
+  margin-right: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .log-out-Laa .log-out-cY6 {
+  margin-bottom: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .recent-x6A {
+  width: 7.9rem;
+  height: 2rem;
+  position: absolute;
+  left: 3.2rem;
+  top: 21.9rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .backgrounds-eEa .recent-x6A .auto-group-2brp-6CN {
+  margin-right: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .recent-x6A .recent-qQr {
+  margin-top: 0.1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .favorite-BUi {
+  width: 8.4332rem;
+  height: 1.7269rem;
+  position: absolute;
+  left: 3.2rem;
+  top: 26.5rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .backgrounds-eEa .favorite-BUi .star-KL2 {
+  margin: 0rem 1.366rem 0.074rem 0rem;
+  width: 1.6669rem;
+  height: 1.6532rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .favorite-BUi .favorite-3Wv {
+  margin-top: 0.0269rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .trash-yfU {
+  width: 6.6832rem;
+  height: 1.7064rem;
+  position: absolute;
+  left: 3.2rem;
+  top: 30.8rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .backgrounds-eEa .trash-yfU .star-Hw4 {
+  margin: 0.04rem 1.483rem 0rem 0rem;
+  width: 1.5rem;
+  height: 1.6666rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .trash-yfU .trash-pRC {
+  margin-bottom: 0.0064rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .highlight-k3x {
+  width: 0.4rem;
+  height: 3.3rem;
+  position: absolute;
+  left: 0;
+  top: 12rem;
+  background-color: #1656c1;
+  border-radius: 0.1rem;
+}
+.home--ibp .backgrounds-eEa .search-5M8 {
+  box-sizing: border-box;
+  padding: 0.9rem 24.5rem 1rem 0.7rem;
+  width: 35.5rem;
+  height: 4.3rem;
+  position: absolute;
+  left: 56.7rem;
+  top: 3.1rem;
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 0.4rem;
+}
+.home--ibp .backgrounds-eEa .search-5M8 .vuesax-linear-search-normal-BQA {
+  margin-right: 2.9rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .search-5M8 .search-WhL {
+  margin-top: 0.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #c9c9c9;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .dashboard-EtE {
+  width: 9.7rem;
+  height: 2.2rem;
+  position: absolute;
+  left: 28.6rem;
+  top: 4.1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .quick-access-x3Y {
+  width: 9.4rem;
+  height: 1.7rem;
+  position: absolute;
+  left: 28.6rem;
+  top: 13.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .recently-opened-files-4MU {
+  width: 15.3rem;
+  height: 1.7rem;
+  position: absolute;
+  left: 28.6rem;
+  top: 30.7rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .user-yDY {
+  width: 14.0333rem;
+  height: 4.6667rem;
+  position: absolute;
+  left: 110.9rem;
+  top: 2.9rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .backgrounds-eEa .user-yDY .vuesax-linear-profile-circle-7Kk {
+  margin-right: 1.9667rem;
+  width: 4.6667rem;
+  height: 4.6667rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .user-yDY .user-name-FB4 {
+  margin-top: 0.2333rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .upload-ycr {
+  box-sizing: border-box;
+  padding: 1.1rem 5rem 1.1rem 4.9rem;
+  width: 19.2rem;
+  height: 3.9rem;
+  position: absolute;
+  left: 2.2rem;
+  top: 35.1rem;
+  background-color: #1656c1;
+  border-radius: 0.4rem;
+}
+.home--ibp .backgrounds-eEa .upload-ycr .group-66-tE2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .backgrounds-eEa .upload-ycr .group-66-tE2 .vuesax-linear-element-plus-Eog {
+  margin: 0.1rem 0.8rem 0rem 0rem;
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .upload-ycr .group-66-tE2 .upload-file-xza {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ {
+  width: 64.5rem;
+  height: 11.6rem;
+  position: absolute;
+  left: 28.6rem;
+  top: 16.5rem;
+  display: flex;
+  column-gap: 1.9rem;
+  align-items: center;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.0500000007);
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-c3Y {
+  box-sizing: border-box;
+  padding: 0.5rem 0.9rem 1rem 0.9rem;
+  width: 14.7rem;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-c3Y .auto-group-d4tv-YC6 {
+  margin-bottom: 1.1rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-c3Y .auto-group-d4tv-YC6 .auto-group-doli-HfU {
+  margin: 0.5rem 6.3rem 0rem 0rem;
+  box-sizing: border-box;
+  padding: 1rem 1.1rem 1.1rem 1rem;
+  background-color: rgba(196, 217, 252, 0.5);
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-c3Y .auto-group-d4tv-YC6 .auto-group-doli-HfU .vuesax-linear-folder-Qk6 {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-c3Y .auto-group-d4tv-YC6 .item--Xpi {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-c3Y .folder-name-fvv {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-c3Y .mb-20-jul-2023-pJ2 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-8Ji {
+  box-sizing: border-box;
+  padding: 0.5rem 0.9rem 1rem 0.9rem;
+  width: 14.7rem;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-8Ji .auto-group-gs8n-F8S {
+  margin-bottom: 1.1rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-8Ji .auto-group-gs8n-F8S .auto-group-hb1g-n8N {
+  margin: 0.5rem 6.3rem 0rem 0rem;
+  box-sizing: border-box;
+  padding: 1rem 1.1rem 1.1rem 1rem;
+  background-color: #ffe5e5;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-8Ji .auto-group-gs8n-F8S .auto-group-hb1g-n8N .vuesax-linear-folder-VoU {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-8Ji .auto-group-gs8n-F8S .item--par {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-8Ji .folder-name-Mqg {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-8Ji .mb-20-jul-2023-JF8 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-2B8 {
+  box-sizing: border-box;
+  padding: 0.5rem 0.9rem 1rem 0.9rem;
+  width: 14.7rem;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-2B8 .auto-group-j4r4-YfG {
+  margin-bottom: 1.1rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-2B8 .auto-group-j4r4-YfG .auto-group-dqzi-JPY {
+  margin: 0.5rem 6.3rem 0rem 0rem;
+  box-sizing: border-box;
+  padding: 1rem 1.1rem 1.1rem 1rem;
+  background-color: #e9ffe5;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-2B8 .auto-group-j4r4-YfG .auto-group-dqzi-JPY .vuesax-linear-folder-psg {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-2B8 .auto-group-j4r4-YfG .item--xiz {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-2B8 .folder-name-6aJ {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-2B8 .mb-20-jul-2023-qGz {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-A4N {
+  box-sizing: border-box;
+  padding: 0.5rem 0.9rem 1rem 0.9rem;
+  width: 14.7rem;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-A4N .auto-group-k6mk-VMY {
+  margin-bottom: 1.1rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-A4N .auto-group-k6mk-VMY .auto-group-9eyk-qwC {
+  margin: 0.5rem 6.3rem 0rem 0rem;
+  box-sizing: border-box;
+  padding: 1rem 1.1rem 1.1rem 1rem;
+  background-color: rgba(196, 217, 252, 0.5);
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-A4N .auto-group-k6mk-VMY .auto-group-9eyk-qwC .vuesax-linear-folder-AyU {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-A4N .auto-group-k6mk-VMY .item--W1k {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-A4N .folder-name-eNr {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .files-5ZQ .file-A4N .mb-20-jul-2023-bJ6 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .aissistant-5UA {
+  width: 6.1rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 7.3rem;
+  top: 4.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #1656c1;
+  font-family: Verdana, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home--ibp .backgrounds-eEa .item--Ny4 {
+  width: 4.7rem;
+  height: 4.7rem;
+  position: absolute;
+  left: 2.6rem;
+  top: 2.7rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.home--ibp .recent-files-hVY {
+  width: 64.5rem;
+  height: 52.4rem;
+  position: absolute;
+  left: 28.6rem;
+  top: 33.7rem;
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+}
+.home--ibp .recent-files-hVY .auto-group-6kwa-DCz {
+  width: 60.6rem;
+  height: 3.3rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 5.3rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .recent-files-hVY .auto-group-6kwa-DCz .group-68-LHc {
+  margin-right: 0.7rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-6kwa-DCz .design-systempdf-fKt {
+  margin: 0.1rem 8.6rem 0rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-6kwa-DCz .albert-flores-BZ8 {
+  margin: 0.2rem 8.6rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-6kwa-DCz .may-2023-7Sn {
+  margin: 0.2rem 9.7rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-6kwa-DCz .mb-F3C {
+  margin: 0.2rem 1.8rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-6kwa-DCz .item--NtW {
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  letter-spacing: 0.3rem;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xxve-WE2 {
+  width: 60.6rem;
+  height: 3.3rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 10.1rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .recent-files-hVY .auto-group-xxve-WE2 .group-67-pkW {
+  margin-right: 0.7rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xxve-WE2 .through-the-valley-of--ApN {
+  margin: 0.1rem 6rem 0rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xxve-WE2 .arlene-mccoy-Vbk {
+  margin: 0.2rem 8rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xxve-WE2 .may-2023-dCA {
+  margin: 0.2rem 9.7rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xxve-WE2 .kb-9wC {
+  margin: 0.2rem 2.5rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xxve-WE2 .item--ggE {
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  letter-spacing: 0.3rem;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-h5an-QML {
+  width: 60.6rem;
+  height: 3.3rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 14.9rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .recent-files-hVY .auto-group-h5an-QML .group-70-KjC {
+  margin-right: 0.7rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-h5an-QML .gender-bias-as-evidenced-fHG {
+  margin: 0.1rem 3.7rem 0rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-h5an-QML .annette-black-yYr {
+  margin: 0.2rem 8.1rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-h5an-QML .may-2023-uSW {
+  margin: 0.2rem 9.7rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-h5an-QML .kb-qb4 {
+  margin: 0.2rem 2.4rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-h5an-QML .item--xva {
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  letter-spacing: 0.3rem;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xi7y-JDk {
+  width: 60.6rem;
+  height: 3.3rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 19.7rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .recent-files-hVY .auto-group-xi7y-JDk .group-69-DrW {
+  margin-right: 0.7rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xi7y-JDk .physician-communicationdocx-AWr {
+  margin: 0.1rem 1.9rem 0rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xi7y-JDk .minje-kim-V3L {
+  margin: 0.2rem 10.1rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xi7y-JDk .may-2023-1nN {
+  margin: 0.2rem 9.8rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xi7y-JDk .kb-Y1c {
+  margin: 0.2rem 2.3rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-xi7y-JDk .item--GTQ {
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  letter-spacing: 0.3rem;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pvuw-C6A {
+  width: 60.6rem;
+  height: 3.3rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 24.5rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .recent-files-hVY .auto-group-pvuw-C6A .group-71-7U2 {
+  margin-right: 0.7rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pvuw-C6A .characteristics-of-modern-qQ2 {
+  margin: 0.1rem 3.8rem 0rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pvuw-C6A .kunhee-ryu-Z58 {
+  margin: 0.2rem 9.1rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pvuw-C6A .may-2023-H18 {
+  margin: 0.2rem 9.8rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pvuw-C6A .mb-1C2 {
+  margin: 0.2rem 2.7rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pvuw-C6A .item--YBx {
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  letter-spacing: 0.3rem;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pxz6-4g6 {
+  width: 60.6rem;
+  height: 3.3rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 29.3rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .recent-files-hVY .auto-group-pxz6-4g6 .group-72-yo4 {
+  margin-right: 0.7rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pxz6-4g6 .e-learning-versus-social-7uG {
+  margin: 0.1rem 4.4rem 0rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pxz6-4g6 .bee-shin-pYn {
+  margin: 0.2rem 10.6rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pxz6-4g6 .may-2023-9b4 {
+  margin: 0.2rem 9.8rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pxz6-4g6 .kb-5jc {
+  margin: 0.2rem 2.5rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-pxz6-4g6 .item--1tA {
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  letter-spacing: 0.3rem;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-imdy-MBL {
+  width: 60.6rem;
+  height: 3.3rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 34.1rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .recent-files-hVY .auto-group-imdy-MBL .auto-group-qsun-GJJ {
+  margin-right: 0.7rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-imdy-MBL .great-depressiondocx-op2 {
+  margin: 0.1rem 6.5rem 0rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-imdy-MBL .jongyoon-jung-LZ4 {
+  margin: 0.2rem 7.4rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-imdy-MBL .may-2023-Tta {
+  margin: 0.2rem 9.9rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-imdy-MBL .kb-oBk {
+  margin: 0.2rem 2rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-imdy-MBL .item--8Uv {
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  letter-spacing: 0.3rem;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-lxt8-4dU {
+  width: 60.6rem;
+  height: 3.3rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 38.9rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .recent-files-hVY .auto-group-lxt8-4dU .auto-group-eten-zX8 {
+  margin-right: 0.7rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-lxt8-4dU .elasticity-the-impact-of-job-jDp {
+  margin: 0.1rem 2.6rem 0rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-lxt8-4dU .seonghui-yoon-FCA {
+  margin: 0.2rem 7.6rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-lxt8-4dU .may-2023-P3U {
+  margin: 0.2rem 9.9rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-lxt8-4dU .kb-7kA {
+  margin: 0.2rem 2.3rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-lxt8-4dU .item--49c {
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  letter-spacing: 0.3rem;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-mmu8-nLW {
+  width: 55.6rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .recent-files-hVY .auto-group-mmu8-nLW .file-name-JZk {
+  margin-right: 16.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-mmu8-nLW .author-Sfx {
+  margin-right: 9.7rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-mmu8-nLW .date-njp {
+  margin-right: 12.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-mmu8-nLW .size-LWS {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-wyt2-tH4 {
+  width: 60.6rem;
+  height: 3.3rem;
+  position: absolute;
+  left: 1.4rem;
+  top: 43.7rem;
+  display: flex;
+  align-items: center;
+}
+.home--ibp .recent-files-hVY .auto-group-wyt2-tH4 .group-76-16n {
+  margin-right: 0.7rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-wyt2-tH4 .the-evolution-of-administra-wWE {
+  margin: 0.1rem 3rem 0rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-wyt2-tH4 .albert-flores-fBL {
+  margin: 0.2rem 8.6rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-wyt2-tH4 .april-2023-nFx {
+  margin: 0.2rem 8.9rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #b0b0b0;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-wyt2-tH4 .mb-urN {
+  margin: 0.2rem 2.2rem 0rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .recent-files-hVY .auto-group-wyt2-tH4 .item--3xa {
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  letter-spacing: 0.3rem;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.home--ibp .rectangle-4164-yLS {
+  width: 14.2rem;
+  height: 7.6rem;
+  position: absolute;
+  left: 56.4rem;
+  top: 0;
+  background-color: #000000;
+  border-radius: 1rem;
+}
