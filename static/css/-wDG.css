@@ -117,8 +117,9 @@ body {
   flex-shrink: 0;
 }
 .item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei {
-  margin-bottom: 2.3rem;
+  margin-bottom: 0rem;
   width: 60.7rem;
+  height: 100%;
   align-items: flex-end;
   display: flex;
   flex-direction: column;
@@ -458,8 +459,8 @@ body {
   vertical-align: top;
 }
 .item--fLA .group-79-X7U .auto-group-ufaw-KjU .auto-group-ca6a-Gei .auto-group-95mq-din {
-  margin: 0rem 0.5rem 0rem 7.9rem;
-  width: calc(100% - 8.4rem);
+  margin: 0rem 1rem 0rem 1rem;
+  width: calc(95%);
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;

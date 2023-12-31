@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.5" />
+  <meta name="theme-color" content="#000000" />
+  <title>AIssitant</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Times+New+Roman%3A400%2C700"/>
+  <link rel="stylesheet" href="../static/css/-wDG.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf_viewer.min.css">
+<style>
+  
+  .gray-line {
+    background-color: #f5f5f5;
+    height: 0.3rem;
+  }
+
+  .writing-container {
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    border-color: #ffffff;
+  }
+
+  .writing-area {
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 10px; /* 초기 글씨 크기 설정 */
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+  }
+
+  .popup {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 1.4rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    height: 8rem;
+    left: 0;
+    padding: 2rem 2.3rem 2rem 2.3rem;
+    position: absolute;
+    top: 0;
+    width: 40rem;
+    font-size: 1.3rem;
+    font-family: 'Source Sans Pro';
+    /* Enable scrolling if the content exceeds the boundaries */
+    overflow: auto;
+  }
+
+  .translate-button {
+    display: none;
+    position: absolute;
+    z-index: 1001;
+  }
+
+  .dropdown-menu {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 1.4rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    height: 22.9rem;
+    left: 61.5rem;
+    padding: 1.4rem 1.7rem 2.3rem 2.4rem;
+    position: absolute;
+    top: 31.4rem;
+    width: 23.1rem;
+    z-index: 1000;
+  }
+
+
+  .dropdown-menu button {
+    display: block;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .dropdown-menu button:hover {
+    background-color: #ddd;
+  }
+
+  .sub-dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 2;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+
+  .dropdown-menu .dropdown-title {
+    color: #4f4f4f;
+    flex-shrink: 0;
+    font-family: Inter, 'Source Sans Pro';
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2125;
+    margin-right: 5.2rem;
+    white-space: nowrap;
+  }
+
+  .option-button {
+    color: #4f4f4f;
+    font-family: Inter, 'Source Sans Pro';
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.2125;
+    margin: 1rem 0rem 1rem 0rem;
+    white-space: nowrap;
+  }
+
+  .language-button {
+    color: #4f4f4f;
+    font-family: Inter, 'Source Sans Pro';
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.2125;
+    margin: 1rem 0rem 1rem 0rem;
+    white-space: nowrap;
+  }
+
+  .popup_dropdown {
+  display: none;
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  height: 10.9rem;
+  left: 61.5rem;
+  padding: 1rem 1.7rem 1rem 2.4rem;
+  position: absolute;
+  top: 31.4rem;
+  width: 23.1rem;
+}
+
+.group-118-Eo8 {
+    background-color: #ffffff;
+    border-radius: 1.4rem;
+    box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 0.4rem;
+    padding: 2.6rem 2.3rem 5.9rem 3.3rem;
+    width: 42%;
+    height: 20%;
+}
+
+/* 챗봇 컨테이너 스타일 */
+#chat-container {
+  position: absolute; /* 절대 위치 설정 */
+  bottom: 10px; /* writing-container 아래에 위치하도록 설정 */
+  width: calc(100%); /* 컨테이너의 너비를 조정 */
+  height: 250px; /* 높이 설정 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* 채팅 출력 영역 */
+#chat-output {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* 사용자와 챗봇 메시지 스타일 */
+.chat-message {
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+/* 사용자 메시지 스타일 */
+.user-message {
+  background-color: #007bff;
+  align-self: flex-end;
+  max-width: 100%;
+}
+
+/* 챗봇 메시지 스타일 */
+.bot-message {
+  background-color: #343a40;
+  align-self: flex-start;
+  max-width: 100%;
+}
+
+/* 입력 필드와 전송 버튼 */
+#chat-input, button {
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+#chat-input {
+  flex-grow: 0.2;
+  margin-right: 10px;
+  padding: 5px; /* 내부 여백 조정 */
+  height: 10px; /* 입력 필드의 높이 설정 */
+  /* 기타 스타일 속성 */
+}
+
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#pdfViewerContainer { position: relative;
+                      --scale-factor: 1.5;
+                      width: 600px;
+                      height: 680px;
+                      overflow-y: scroll;
+                      }
+
+.textLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#navigationButtons {
+    text-align: center;
+    position: relative;
+    top: 20px; /* Adjust as needed */
+  }
+
+#prevPage, #nextPage {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+/* 스타일 편집 옵션을 나타내는 <p> 태그의 기본 스타일 */
+  .b-fmp, .i-wav, .u-RMg {
+  cursor: pointer; /* 마우스 오버 시 커서 변경 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  transition: background-color 0.3s, color 0.3s; /* 부드러운 색상 전환 효과 */
+  z-index: 10;
+}
+
+/* 마우스 오버 시 <p> 태그의 스타일 변경 */
+.b-fmp:hover, .i-wav:hover, .u-RMg:hover {
+  background-color: #f0f0f0; /* 배경색 변경 */
+  color: #0056b3; /* 텍스트 색상 변경 */
+}
+
+#writingArea ul {
+  list-style-type: disc; /* 기본 불릿 스타일 */
+  padding-left: 20px; /* 적절한 들여쓰기를 위해 */
+}
+
+#writingArea li {
+  margin: 5px 0; /* 각 항목 사이의 여백 */
+}
+  
+
+</style>
+
+<script>
+
+let selectedText = '';
+
+  // clear selection and close popups when user clicks outside of the popup
+  async function clearSelectionAndClosePopups() {
+    window.getSelection().removeAllRanges(); //remove highlight from text
+    dropdownMenu.style.display = 'none';
+    subDropdownMenu.style.display = 'none';
+    popup_dropdown.style.display = 'none';
+    popup.style.display = 'none';
+  }
+
+  async function onChatSubmit() {
+    const inputField = document.getElementById("chat-input");
+    const outputDiv = document.getElementById("chat-output");
+    const question = inputField.value;
+
+    // Clear the input field and update the placeholder
+    inputField.value = "";
+    inputField.placeholder = "답변을 받는 중입니다...";
+
+    if (question.trim() !== "") {
+      try {
+        const response = await fetch('http://127.0.0.1:8080/ask', {
+          method: "POST",
+          mode: 'cors',
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: `question=${encodeURIComponent(question)}`,
+        });
+
+        const data = await response.json();
+        const answer = data.answer;
+
+        // Display the question and answer in the chat-output div
+        outputDiv.innerHTML += `
+          <div class="chat-message user-message"><strong>Q:</strong> ${question}</div>
+          <div class="chat-message bot-message"><strong>A:</strong> ${answer}</div>
+        `;
+      } catch (error) {
+        console.error('Error:', error);
+        outputDiv.innerHTML += `<div class="chat-message error-message"><strong>Error:</strong> Could not get a response.</div>`;
+      }
+
+      // Reset the placeholder to its original state
+      inputField.placeholder = "질문을 입력하세요...";
+    } else {
+      // If the input was empty, reset the placeholder immediately
+      inputField.placeholder = "질문을 입력하세요...";
+    }
+  }
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+
+  async function handleTranslation(language) {
+  // Call the translation API
+  try {
+    const response = await fetch('http://127.0.0.1:8080/ask', {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `question=translate to ${language}: ${selectedText}`
+    });
+
+    const data = await response.json();
+    const translatedText = data.answer;
+
+    // Clear previous content
+    popup.innerHTML = '';
+
+    const translatedTextElement = document.createElement('div');
+    translatedTextElement.textContent = translatedText;
+    popup.appendChild(translatedTextElement);
+
+    popup.style.display = 'block';
+    popup.style.left = dropdownMenu.style.left;
+    popup.style.top = dropdownMenu.style.top;
+    popup_dropdown.style.display = 'block';
+    popup_dropdown.style.left = `${popup.getBoundingClientRect().left}px`;
+    popup_dropdown.style.top = `${popup.getBoundingClientRect().bottom}px`;
+
+    dropdownMenu.style.display = 'none';
+
+    document.addEventListener('click', function() {
+      popup.style.display = 'none';
+      popup_dropdown.style.display = 'none';
+    });
+
+    storeProcessedText(translatedText);
+  } catch (error) {
+        console.error("An error occurred:", error);
+    }
+    clearSelectionAndClosePopups();
+  }
+
+  async function handleSummary() {
+      // Call the summarization API
+      const response = await fetch('http://127.0.0.1:8080/ask', {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `question=make it shorter by summarizing this:${selectedText}`,
+      });
+
+      const data = await response.json();
+      const summarizedText = data.answer;
+
+      // Clear previous content
+      popup.innerHTML = '';
+
+      const summarizedTextElement = document.createElement('div');
+      summarizedTextElement.textContent = summarizedText;
+      popup.appendChild(summarizedTextElement);
+
+      popup.style.display = 'block';
+      popup.style.left = dropdownMenu.style.left;
+      popup.style.top = dropdownMenu.style.top;
+      popup_dropdown.style.display = 'block';
+      popup_dropdown.style.left = `${popup.getBoundingClientRect().left}px`;
+      popup_dropdown.style.top = `${popup.getBoundingClientRect().bottom}px`;
+
+      dropdownMenu.style.display = 'none';
+
+      storeProcessedText(summarizedText);
+      clearSelectionAndClosePopups();
+    }
+
+    async function handleExplanation() {
+      try {
+        // Call the OpenAI API here to generate an explanation based on the highlighted text
+        const highlightedText = window.getSelection().toString().trim();
+
+        // Call the API to generate an explanation
+        const response = await fetch('http://127.0.0.1:8080/ask', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: `question=what is this?: ${highlightedText}`,
+        });
+
+        const data = await response.json();
+        const generatedExplanation = data.answer;
+
+        // Clear previous content
+        popup.innerHTML = '';
+
+        // Create a new div element to display the generated explanation
+        const explanationElement = document.createElement('div');
+        explanationElement.textContent = generatedExplanation;
+
+        // Append the new element to the popup
+        popup.appendChild(explanationElement);
+
+        // Show the popup
+        popup.style.display = 'block';
+        popup.style.left = dropdownMenu.style.left;
+        popup.style.top = dropdownMenu.style.top;
+        popup_dropdown.style.display = 'block';
+        popup_dropdown.style.left = `${popup.getBoundingClientRect().left}px`;
+        popup_dropdown.style.top = `${popup.getBoundingClientRect().bottom}px`;
+
+        // Hide the dropdown menu
+        dropdownMenu.style.display = 'none';
+
+        // Optionally, store the processed text if needed
+        storeProcessedText(generatedExplanation);
+       clearSelectionAndClosePopups();
+
+      } catch (error) {
+        console.error('Error generating explanations:', error);
+      }
+    }
+
+    const popup = document.createElement('div');
+    popup.className = 'popup';
+    document.body.appendChild(popup);
+
+    const dropdownMenu = document.createElement('div');
+    dropdownMenu.className = 'dropdown-menu';
+    document.body.appendChild(dropdownMenu);
+
+    const subDropdownMenu = document.createElement('div');
+    subDropdownMenu.className = 'dropdown-menu';
+    document.body.appendChild(subDropdownMenu);
+
+    const titleContainer = document.createElement('div');
+    titleContainer.style.display = 'flex';
+    titleContainer.style.justifyContent = 'space-between';
+    titleContainer.style.alignItems = 'center';
+
+    const dropdownTitle = document.createElement('div');
+    dropdownTitle.textContent = 'From selected';
+    dropdownTitle.className = 'dropdown-title';
+    dropdownTitle.classList.add('title-style'); // Add the new class
+    titleContainer.appendChild(dropdownTitle);
+
+
+    const closeButton = document.createElement('button');
+      closeButton.textContent = 'X';
+      closeButton.className = 'close-button';
+      titleContainer.appendChild(closeButton);
+
+      closeButton.addEventListener('click', function() {
+        dropdownMenu.style.display = 'none';
+        subDropdownMenu.style.display = 'none';
+        popup_dropdown.style.display = 'none';
+        clearSelectionAndClosePopups();
+      });
+
+    const popup_dropdown = document.createElement('div');
+    popup_dropdown.className = 'popup_dropdown dropdown-menu';
+    document.body.appendChild(popup_dropdown);
+
+    const popupDropdownOptions = ['Add to note'];
+    popupDropdownOptions.forEach(option => {
+      const button = document.createElement('button');
+      button.textContent = option;
+      // Add CSS class
+      button.classList.add('option-button');
+      popup_dropdown.appendChild(button);
+
+      button.addEventListener('click', function(event) {
+        event.stopPropagation();
+        console.log(`Selected option: ${option}`);
+        popup_dropdown.style.display = 'none';
+
+        if (option === 'Add to note') {
+          console.log("Copying to clipboard:", lastProcessedText);
+          if (lastProcessedText) {
+            try {
+              navigator.clipboard.writeText(lastProcessedText);  // No need for await here, unless you want to handle errors
+              console.log("Text successfully copied to clipboard.");
+            } catch (err) {
+              console.error("Failed to copy text: ", err);
+            }
+
+            const writingArea = document.querySelector('.writing-area');
+            console.log(writingArea);
+
+            if (writingArea && lastProcessedText) {
+              writingArea.innerText += lastProcessedText + "\n";
+            }
+            clearSelectionAndClosePopups();
+          }
+        }
+      });
+    });
+
+    dropdownMenu.appendChild(titleContainer);
+
+    const options = ['Add memo', 'Summarize', 'Translate', 'Explanation'];
+    options.forEach(option => {
+    const button = document.createElement('button');
+    button.textContent = option;
+    // Add CSS class
+    button.classList.add('option-button');
+    dropdownMenu.appendChild(button);
+      button.addEventListener('click', function(event) {
+        event.stopPropagation();
+        console.log(`Selected option: ${option}`);
+        dropdownMenu.style.display = 'none';
+        subDropdownMenu.style.display = 'none';
+        
+        if (event.target.textContent === 'Add memo') {
+          const highlightedText = window.getSelection().toString().trim();
+          const writingArea = document.querySelector('.writing-area');
+          if (writingArea && highlightedText) {
+            writingArea.innerText += highlightedText + "\n";
+          }
+          clearSelectionAndClosePopups();
+        }
+        if (option === 'Summarize') {
+          handleSummary();
+          console.log(`Selected option: ${option}`);
+          dropdownMenu.style.display = 'none';
+          subDropdownMenu.style.display = 'none';
+        }
+        if (option === 'Explanation') {
+          handleExplanation();
+          console.log(`Selected option: ${option}`);
+          dropdownMenu.style.display = 'none';
+          subDropdownMenu.style.display = 'none';
+        }
+        if (option === 'Translate') {
+          const languages = ['Korean', 'Chinese', 'Japanese', 'Spanish', 'German'];
+          subDropdownMenu.innerHTML = '';
+          languages.forEach(language => {
+            const langButton = document.createElement('button');
+            langButton.textContent = language;
+            // Add CSS class
+            langButton.classList.add('language-button');
+            subDropdownMenu.appendChild(langButton);
+
+            langButton.addEventListener('click', function() {
+              // 여기서 언어를 지정해줍니다.
+              handleTranslation(language);  // <-- 언어를 인자로 넘김
+              console.log(`Selected option: ${option}`);
+              dropdownMenu.style.display = 'none';
+              subDropdownMenu.style.display = 'none';
+            });
+          });
+
+          subDropdownMenu.style.display = 'block';
+
+        } else {
+          console.log(`Selected option: ${option}`);
+        }
+      });
+    });
+
+    // Shift 키 상태를 추적하기 위한 변수
+    let isShiftKeyPressed = false;
+
+    // Shift 키가 눌렸는지 확인하는 이벤트 리스너
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Control') {
+        isShiftKeyPressed = true;
+      }
+    });
+
+    // Shift 키가 떼어졌는지 확인하는 이벤트 리스너
+    document.addEventListener('keyup', function(event) {
+      if (event.key === 'Control') {
+        isShiftKeyPressed = false;
+      }
+    });
+
+    // 텍스트 선택 시 드롭다운 메뉴를 표시하는 로직
+    document.addEventListener('mouseup', function(event) {
+      selectedText = window.getSelection().toString().trim();
+      if (selectedText && isShiftKeyPressed) {
+        dropdownMenu.style.display = 'block';
+        dropdownMenu.style.left = `${event.pageX}px`;
+        dropdownMenu.style.top = `${event.pageY}px`;
+        subDropdownMenu.style.display = 'none';  // Ensure the sub-dropdown menu is closed
+        // 이벤트의 페이지 좌표를 사용하여 subDropdownMenu의 위치를 설정
+        subDropdownMenu.style.left = `${event.pageX}px`;
+        subDropdownMenu.style.top = `${event.pageY}px`;
+      } else {
+        dropdownMenu.style.display = 'none';
+        subDropdownMenu.style.display = 'none';
+        popup_dropdown.style.display = 'none';
+        popup.style.display = 'none';
+      }
+    });
+
+    // Global variable to store the last processed text
+    let lastProcessedText = "";
+
+    // Function to store the last processed text
+    function storeProcessedText(processedText) {
+      console.log("Storing processed text:", processedText);
+      lastProcessedText = processedText;
+      console.log("Storing last processed text:", lastProcessedText);
+    }
+  });
+
+  ////////////////////////////////
+
+  document.addEventListener('DOMContentLoaded', function() {
+  const fontSizeInput = document.getElementById('fontSizeInput');
+  fontSizeInput.value = '10'; // 초기 글씨 크기 설정
+
+  // 스타일 토글 및 글씨 크기 조절 이벤트 위임
+  document.querySelector('.toolbar').addEventListener('click', function(event) {
+    if (event.target.id === 'boldButton') toggleStyle('bold');
+    else if (event.target.id === 'italicButton') toggleStyle('italic');
+    else if (event.target.id === 'underlineButton') toggleStyle('underline');
+    else if (event.target.id === 'increaseFontSize') adjustFontSize(1);
+    else if (event.target.id === 'decreaseFontSize') adjustFontSize(-1);
+    else if (event.target.id === 'applyFontSize') applyFontSize();
+    else if (event.target.id === 'bulletButton') document.execCommand('insertUnorderedList', false, null);
+  });
+
+  function toggleStyle(style) {
+    document.execCommand(style);
+  }
+
+
+  function adjustFontSize(adjustment) {
+    const currentSize = parseInt(fontSizeInput.value) + adjustment;
+    fontSizeInput.value = currentSize;
+    applyStyle(`<span style="font-size: ${currentSize}px;">`, '</span>');
+  }
+
+  function applyFontSize() {
+    const size = fontSizeInput.value;
+    writingArea.style.fontSize = size + 'px'; // writing-area의 글씨 크기를 업데이트
+  }
+
+  // 중복된 함수 통합
+  function updateFontSizeInfo() {
+    const writingArea = document.querySelector('.writing-area');
+    const currentFontSize = window.getComputedStyle(writingArea, null).fontSize;
+    fontSizeInput.placeholder = `현재: ${currentFontSize}`;
+  }
+
+  // 이벤트 리스너 설정
+  const writingArea = document.querySelector('.writing-area');
+  writingArea.addEventListener('mouseup', updateFontSizeInfo);
+  writingArea.addEventListener('keyup', updateFontSizeInfo);
+  writingArea.addEventListener('focus', updateFontSizeInfo);
+
+  function applyStyle(openTag, closeTag) {
+    const selection = window.getSelection();
+    if (!selection.rangeCount) return;
+
+    const range = selection.getRangeAt(0);
+    const selectedContent = range.extractContents();
+        
+    // 선택된 텍스트에 새 스타일 적용
+    const span = document.createElement('span');
+    span.innerHTML = openTag + selectedContent.textContent + closeTag;
+    range.insertNode(span);
+
+    // 선택 범위 복원
+    selection.removeAllRanges();
+    const newRange = document.createRange();
+    newRange.selectNodeContents(span);
+    selection.addRange(newRange);
+  }
+});
+
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf_viewer.min.js"></script>
+
+
+</head>
+
+<body>
+<div class="item--fLA">
+  <div class="group-79-X7U">
+    <div class="auto-group-eydg-fUa">
+      <img class="vuesax-linear-setting-2-c8v" src="../static/assets/vuesax-linear-setting-2-QmU.png"/>
+      <div class="group-90-7bU">
+        <img class="vuesax-linear-profile-circle-co8" src="../static/assets/vuesax-linear-profile-circle-sGz.png"/>
+        <img class="dashboard-w4i" src="../static/assets/dashboard-cEr.png"/>
+        <p class="dashboard-ezi">Dashboard</p>
+        <img class="bookmarkfill-AiA" src="../static/assets/bookmarkfill-Cqt.png"/>
+        <p class="contents-gwQ">Contents</p>
+        <img class="logout-d5x" src="../static/assets/logout-V1Y.png"/>
+      </div>
+    </div>
+    <div class="auto-group-ufaw-KjU">
+      <div class="auto-group-ca6a-Gei">
+        <div class="auto-group-nmin-CoG">
+          <img class="closeround-JrJ" src="../static/assets/closeround-qwt.png"/>
+          <p class="add-Ejx">Add </p>
+          <img class="search-Lnz" src="../static/assets/search-NhL.png"/>
+          <img class="expanddownlight-sH8" src="../static/assets/expanddownlight-XRg.png"/>
+          <img class="vector-271-axE" src="REPLACE_IMAGE:161:493"/>
+          <p class="item-515-jKL">51.5%</p>
+          <div class="ellipse-70-2ZL">
+          </div>
+          <img class="highlighter-4-WUW" src="../static/assets/highlighter-4-s6n.png"/>
+          <img class="format-textbox-3-eKp" src="../static/assets/format-textbox-3-7kz.png"/>
+          <div class="line-5-B4r">
+          </div>
+          <img class="mouse-pointer-3-umY" src="../static/assets/mouse-pointer-3-eaz.png"/>
+          <div class="ellipse-71-ej8">
+          </div>
+          <div class="rectangle-4122-Z5Q">
+          </div>
+          <img class="closeround-4H4" src="../static/assets/closeround-Lwp.png"/>
+          <div class="rectangle-4128-C8N">
+          </div>
+          <p class="add-LEa">Add </p>
+          <img class="search-3ug" src="../static/assets/search-xd4.png"/>
+          <img class="expanddownlight-PTk" src="../static/assets/expanddownlight-m3U.png"/>
+          <p class="item-515-KMQ">51.5%</p>
+          <div class="ellipse-72-dN6">
+          </div>
+          <img class="format-textbox-4-YEA" src="../static/assets/format-textbox-4-fcA.png"/>
+          <div class="line-6-Udc">
+          </div>
+          <img class="mouse-pointer-4-pBg" src="../static/assets/mouse-pointer-4-74J.png"/>
+          <img class="group-78-YdU" src="../static/assets/group-78-ALE.png"/>
+          <img class="polygon-4-VHp" src="../static/assets/polygon-4-WAJ.png"/>
+          <img class="filedockduotone-ctE" src="../static/assets/filedockduotone-hKk.png"/>
+          <p class="tutorial-9dG">Tutorial</p>
+          <img class="questionfill-GSz" src="../static/assets/questionfill-Yg6.png"/>
+          <img class="imgbox-bEN" src="../static/assets/imgbox-wjL.png"/>
+          <p class="the-attention-blink--1ot">Seeking a quantum...</p>
+          <img class="vector-Wke" src="../static/assets/vector-9GS.png"/>
+          <img class="group-113-3En" src="../static/assets/group-113-peS.png"/>
+          <img class="item-2023-06-02-212-1-Nnr" src="../static/assets/-DBc.png"/>
+          </div>
+          <div>
+            <button id="prevPage">Previous Page</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage">Next Page</button>
+          </div>
+          <div class="auto-group-95mq-din">
+            <div id="pdfViewerContainer"></div>
+            <script>
+              let currentPage = 1; // 현재 페이지 번호
+              let pdfDoc = null; // PDF 문서 객체
+          
+              document.getElementById('prevPage').addEventListener('click', () => {
+                  if (currentPage > 1) {
+                      renderPage(--currentPage);
+                  }
+              });
+          
+              document.getElementById('nextPage').addEventListener('click', () => {
+                  if (currentPage < pdfDoc.numPages) {
+                      renderPage(++currentPage);
+                  }
+              });
+          
+              window.onload = function() {
+                  // LocalStorage에서 Base64 인코딩된 PDF 데이터를 가져옵니다.
+                  const base64String = localStorage.getItem('uploadedPDF');
+                  if (!base64String) {
+                      alert("No PDF file found in storage.");
+                      return;
+                  }
+          
+                  // Base64 데이터의 헤더를 제거하고 바이트 배열로 변환합니다.
+                  const pdfData = atob(base64String.split(',')[1]);
+                  const pdfDataArray = new Uint8Array(pdfData.length);
+                  for (let i = 0; i < pdfData.length; i++) {
+                      pdfDataArray[i] = pdfData.charCodeAt(i);
+                  }
+          
+                  // PDF 문서를 로드합니다.
+                  pdfjsLib.getDocument({ data: pdfDataArray }).promise.then(doc => {
+                      pdfDoc = doc;
+                      renderPage(currentPage);
+                      updatePageInfo();
+                  });
+              };
+          
+              function updatePageInfo() {
+                const pageInfo = document.getElementById('pageInfo');
+                if (pdfDoc) {
+                  pageInfo.textContent = `${currentPage} / ${pdfDoc.numPages}`;
+                } else {
+                  pageInfo.textContent = '';
+                }
+              }
+
+              function renderPage(num) {
+                  if (num < 1 || num > pdfDoc.numPages) {
+                      return; // Prevent rendering non-existing pages
+                  }
+                  currentPage = num;
+          
+                  // Clear existing content in pdfViewerContainer
+                  const pdfViewerContainer = document.getElementById('pdfViewerContainer');
+                  pdfViewerContainer.innerHTML = ''; 
+          
+                  pdfDoc.getPage(num).then(page => {
+                      const viewport = page.getViewport({ scale: 1.5 });
+                      const canvas = document.createElement("canvas");
+                      canvas.height = viewport.height;
+                      canvas.width = viewport.width;
+                      const context = canvas.getContext('2d');
+                      pdfViewerContainer.appendChild(canvas);
+          
+                      const renderContext = {
+                          canvasContext: context,
+                          viewport: viewport
+                      };
+                      page.render(renderContext).promise.then(() => {
+                          return page.getTextContent();
+                      }).then(textContent => {
+                          const textLayerDiv = document.createElement("div");
+                          textLayerDiv.className = "textLayer";
+                          textLayerDiv.style.height = `${viewport.height}px`;
+                          textLayerDiv.style.width = `${viewport.width}px`;
+                          pdfViewerContainer.appendChild(textLayerDiv);
+          
+                          pdfjsLib.renderTextLayer({
+                              textContentSource: textContent,
+                              container: textLayerDiv,
+                              viewport: viewport,
+                              textDivs: []
+                          });
+                      });
+                  });
+                  updatePageInfo();
+              }
+
+            </script>
+          </div>
+          
+          </div>
+      <div class="auto-group-ucyc-Vjc">
+        <img class="expanddownlight-bne" src="../static/assets/expanddownlight-5qg.png"/>
+        <img class="closeround-Jwx" src="../static/assets/closeround-e7Y.png"/>
+        <p class="note-1-27G">Note 1</p>
+        <div class="rectangle-4123-uRx">
+        </div>
+        <img class="expanddownlight-nke" src="../static/assets/expanddownlight-mbc.png"/>
+        <img class="closeround-uaN" src="../static/assets/closeround-Nyc.png"/>
+        <p class="note-1-phL">Note 1</p>
+        <div class="rectangle-4128-7gS">
+          <div class="toolbar">
+            <button id="boldButton">Bold</button>
+            <button id="italicButton">Italic</button>
+            <button id="underlineButton">Underline</button>
+            <button id="bulletButton">BP</button>
+            <input type="number" id="fontSizeInput" placeholder="글씨 크기">
+            <button id="increaseFontSize">+</button>
+            <button id="decreaseFontSize">-</button>
+            <button id="applyFontSize">적용</button>
+          </div>
+        </div>
+        <p class="add-Sii">Add </p>
+        <img class="filedockduotone-kUW" src="../static/assets/filedockduotone-8ge.png"/>
+        <div class="rectangle-4126-5mg">
+          <div class="writing-container">
+            <div class="writing-area" contenteditable="true" style="border: 1px solid black; min-height: 100px;" placeholder="Write your notes..."></div>
+            <div id="chat-container">
+              <div id="chat-output"></div>
+              <input type="text" id="chat-input" placeholder="질문을 입력하세요...">
+              <button onclick="onChatSubmit()">전송</button>
+            </div>  
+          </div>
+        </div>
+        <!-- <img class="polygon-5-oBt" src="../static/assets/polygon-5-TK4.png"/> -->
+        <!-- <p class="heading-7yG">Heading</p> -->
+        <!-- <img class="meatballsmenu-q8a" src="../static/assets/meatballsmenu-9N6.png"/> -->
+        <!-- <img class="polygon-6-mH8" src="../static/assets/polygon-6-1ok.png"/>
+        <img class="sortalfalight-t6r" src="../static/assets/sortalfalight-2jg.png"/> -->
+        <!-- <p class="u-RMg">U</p>
+        <p class="i-wav">I</p>
+        <p class="b-fmp">B</p> -->
+        <!-- <div class="line-7-bQa">
+        </div>
+        <div class="line-8-8vJ">
+        </div> -->
+        <!-- <img class="back-7nE" src="../static/assets/back-WpE.png"/>
+        <img class="vector-273-enA" src="../static/assets/vector-273-dug.png"/> -->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
