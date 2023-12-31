@@ -309,7 +309,7 @@ let selectedText = '';
 
     if (question.trim() !== "") {
       try {
-        const response = await fetch('http://127.0.0.1:8080/ask', {
+        const response = await fetch('http://ec2-13-209-43-188.ap-northeast-2.compute.amazonaws.com:8080/ask', {
           method: "POST",
           mode: 'cors',
           headers: {
@@ -345,7 +345,7 @@ let selectedText = '';
   async function handleTranslation(language) {
   // Call the translation API
   try {
-    const response = await fetch('http://127.0.0.1:8080/ask', {
+    const response = await fetch('http://ec2-13-209-43-188.ap-northeast-2.compute.amazonaws.com:8080/ask', {
       method: 'POST',
       mode: 'cors',
       headers: {
@@ -387,7 +387,7 @@ let selectedText = '';
 
   async function handleSummary() {
       // Call the summarization API
-      const response = await fetch('http://127.0.0.1:8080/ask', {
+      const response = await fetch('http://ec2-13-209-43-188.ap-northeast-2.compute.amazonaws.com:8080/ask', {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -425,7 +425,7 @@ let selectedText = '';
         const highlightedText = window.getSelection().toString().trim();
 
         // Call the API to generate an explanation
-        const response = await fetch('http://127.0.0.1:8080/ask', {
+        const response = await fetch('http://ec2-13-209-43-188.ap-northeast-2.compute.amazonaws.com:8080/ask', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
